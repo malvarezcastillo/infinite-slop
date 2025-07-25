@@ -1,14 +1,14 @@
 Face/Person Detection Review Directory
 ========================================
 
-Generated: 2025-07-25T23:55:00.981549
+Generated: 2025-07-26T00:11:09.658661
 Mode: ACTUAL MOVE
 Method: MOVED FILES
 
 Summary:
-- Total candidates: 2
-- High confidence (≥0.8): 0 images
-- Medium confidence (0.5-0.8): 2 images
+- Total candidates: 72
+- High confidence (≥0.8): 48 images
+- Medium confidence (0.5-0.8): 24 images
 - Low confidence (<0.5): 0 images
 
 Directories:
