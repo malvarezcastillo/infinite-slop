@@ -1,0 +1,57 @@
+Detection Report
+Generated: 2025-07-25T22:17:00.992168
+Detector Type: face
+============================================================
+
+SUMMARY:
+- Total images scanned: 9607
+- Images with detections: 4
+- Total detections: 4
+- Average per image: 0.00
+
+CONFIDENCE DISTRIBUTION:
+- High (≥0.8): 0 images
+- Medium (0.5-0.8): 4 images
+- Low (<0.5): 0 images
+
+BY DIRECTORY:
+
+gallery/architecture:
+  - Total images: 2207
+  - With detections: 4
+  - Total detections: 4
+
+gallery/interiors:
+  - Total images: 1741
+  - With detections: 0
+  - Total detections: 0
+
+gallery/landscape:
+  - Total images: 1905
+  - With detections: 0
+  - Total detections: 0
+
+gallery/things:
+  - Total images: 3754
+  - With detections: 0
+  - Total detections: 0
+
+============================================================
+IMAGES WITH DETECTIONS (sorted by confidence):
+
+gallery/architecture/43eb8395-2062-42eb-91e4-b9eec9e0e00d.jpg
+  - Detections: 1
+    1. Confidence: 0.534, Box: [305, 689, 346, 740]
+
+gallery/architecture/2e4cf1b9-7259-41c7-a358-37bd867a5739.jpg
+  - Detections: 1
+    1. Confidence: 0.526, Box: [901, 689, 1023, 822]
+
+gallery/architecture/bf9c64f1-852c-415c-a710-227f4aafa013.jpg
+  - Detections: 1
+    1. Confidence: 0.514, Box: [19, 0, 186, 132]
+
+gallery/architecture/f603f750-fc92-470a-a6e7-82f90453bcc0.jpg
+  - Detections: 1
+    1. Confidence: 0.508, Box: [0, 900, 14, 922]
+

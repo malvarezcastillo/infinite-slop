@@ -1,0 +1,617 @@
+/* Clean white background gallery with proper spacing */
+
+/* Overall page styling */
+body {
+    background-color: #fafbfc !important;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Filter menu styling */
+.filter-menu {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.filter-label {
+    display: none; /* Hide the label for minimalism */
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: inherit;
+    color: #555;
+    outline: none;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.4));
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.filter-btn:hover::before {
+    transform: translateX(100%);
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn.active {
+    background: rgba(50, 50, 50, 0.9);
+    color: #fff;
+    border-color: transparent;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.filter-btn.active:hover {
+    background: rgba(70, 70, 70, 0.9);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Layout toggle button styling - Desktop only */
+.layout-toggle {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.layout-btn {
+    padding: 8px 12px;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: inherit;
+    color: #555;
+    outline: none;
+    line-height: 1;
+}
+
+.layout-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.layout-btn.active {
+    background: rgba(50, 50, 50, 0.9);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.layout-btn.active:hover {
+    background: rgba(70, 70, 70, 0.9);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Remove any default header/breadcrumb styling if present */
+header, .breadcrumbs, #albums {
+    display: none;
+}
+
+/* Header styling */
+.header {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #333;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+
+/* Main content container */
+.container,
+#container {
+    max-width: 90%; /* Default to fill mode width */
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 90px 20px 20px 20px; /* Add top padding for fixed filter menu */
+    transition: max-width 0.3s ease;
+}
+
+/* Gallery grid layout */
+.grid,
+#media {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr)); /* Default to fill mode */
+    gap: 15px;
+    padding: 20px 0;
+    padding-top: 60px; /* Add extra top padding to account for filter menu */
+    grid-auto-rows: auto;
+    align-items: start;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 100%;
+    transition: max-width 0.3s ease;
+}
+
+/* Only apply fixed columns on larger screens */
+@media (min-width: 769px) {
+    #media {
+        grid-template-columns: repeat(auto-fill, minmax(256px, 1fr)); /* Default fill mode on desktop */
+    }
+}
+
+/* Individual photo cards */
+.card,
+#media li {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    list-style: none;
+}
+
+.card:hover,
+#media li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Image styling within cards */
+.card img,
+#media li img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    object-fit: contain;
+}
+
+.card img:hover,
+#media li img:hover {
+    opacity: 0.95;
+}
+
+/* Photo metadata */
+.card .caption {
+    padding: 15px;
+    background-color: #ffffff;
+    border-top: 1px solid #f0f0f0;
+}
+
+.card .caption h3 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.card .caption p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Pagination styling */
+.pagination {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #f8f8f8;
+    border-color: #d1d1d1;
+}
+
+.pagination .current {
+    background-color: #333;
+    color: #ffffff;
+    border-color: #333;
+}
+
+/* Lightbox/fullscreen modal improvements */
+.lightbox {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.lightbox img {
+    max-width: 95vw;
+    max-height: 95vh;
+    object-fit: contain;
+}
+
+.lightbox .close {
+    color: #ffffff;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Navigation arrows in lightbox */
+.lightbox .prev,
+.lightbox .next {
+    color: #ffffff;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 20px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.lightbox .prev {
+    left: 20px;
+}
+
+.lightbox .next {
+    right: 20px;
+}
+
+.lightbox .prev:hover,
+.lightbox .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    #container {
+        padding-top: 70px; /* Slightly less padding on tablets */
+    }
+    
+    .grid,
+    #media {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important; /* Override fixed columns */
+        gap: 15px;
+        grid-auto-rows: auto;
+        padding-top: 50px; /* Less padding on tablets */
+    }
+    
+    .header h1 {
+        font-size: 24px;
+    }
+    
+    .pagination a {
+        padding: 8px 12px;
+        margin: 0 3px;
+        font-size: 14px;
+    }
+    
+    .filter-menu {
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        max-width: calc(100% - 20px);
+        padding: 8px 15px;
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+    
+    /* Hide layout toggle on tablets and below */
+    .layout-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        padding-top: 60px; /* Even less padding on phones */
+    }
+    
+    .grid,
+    #media {
+        grid-template-columns: 1fr !important; /* Single column on mobile */
+        gap: 15px;
+        padding-top: 60px; /* More padding on phones to ensure visibility */
+    }
+    
+    .card,
+    #media li {
+        margin: 0 5px;
+    }
+    
+    .filter-menu {
+        padding: 6px 10px;
+        gap: 6px;
+    }
+    
+    .filter-btn {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+}
+
+/* Album view styling */
+.albums .grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.album-card {
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.album-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: inherit;
+}
+
+.album-card .thumbnail {
+    width: 100%;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    position: relative;
+    /* Remove fixed aspect ratio to allow natural image dimensions */
+}
+
+.album-card .thumbnail img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Preserve aspect ratio */
+    display: block;
+}
+
+.album-card .info {
+    padding: 15px;
+}
+
+.album-card .info h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.album-card .info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 40px 20px 20px;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 40px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Loading states */
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+/* Ensure images load smoothly */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img.loading {
+    opacity: 0.5;
+}
+
+/* Lazy loading styles */
+img.lazy {
+    opacity: 0;
+    background: #f0f0f0;
+}
+
+img.loaded {
+    opacity: 1;
+}
+
+/* Additional styles to ensure aspect ratios are preserved */
+.photo img,
+.media img,
+.thumbnail img,
+figure img {
+    width: 100%;
+    height: auto;
+    object-fit: contain !important;
+}
+
+/* Remove any fixed dimensions that might be set by Thumbsup */
+.photo,
+.media,
+.thumbnail,
+figure {
+    height: auto !important;
+}
+
+/* Ensure grid items don't have fixed heights */
+.grid-item,
+.photo-container,
+.media-container {
+    height: auto !important;
+}
+
+/* Force all image containers to preserve natural aspect ratios */
+.thumbnail-container,
+.image-container,
+[class*="thumb"] {
+    height: auto !important;
+    aspect-ratio: unset !important;
+}
+
+/* Ensure thumbnails in cards theme maintain aspect ratio */
+.cards .card,
+.cards .thumbnail {
+    height: auto !important;
+}
+
+.cards .card img,
+.cards .thumbnail img {
+    width: 100%;
+    height: auto !important;
+    max-width: 100%;
+    object-fit: contain !important;
+}
+
+/* Override thumbnail source to use small images if available */
+.card a[data-small] img {
+    content: attr(data-small);
+}
+
+/* Try to use preview images instead of thumbnails */
+.photo img[src*="media/thumbs/"] {
+    display: none;
+}
+
+.photo img[src*="media/small/"] {
+    display: block !important;
+}
+
+/* Hide text elements - keep only image grid */
+header {
+    display: none !important;
+}
+
+.breadcrumbs {
+    display: none !important;
+}
+
+nav.breadcrumbs {
+    display: none !important;
+}
+
+/* Remove any titles or text overlays from images */
+.caption,
+.info,
+figcaption {
+    display: none !important;
+}
+
+/* Custom tooltip styling for prompts */
+#media li a[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 14px;
+    line-height: 1.4;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    max-width: 400px;
+    min-width: 200px;
+    z-index: 1000;
+    pointer-events: none;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#media li a[title] {
+    position: relative;
+}
+
+/* Hide any footer text if present */
+footer {
+    display: none !important;
+}
+
+/* Adjust container spacing since header is hidden */
+#container {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}

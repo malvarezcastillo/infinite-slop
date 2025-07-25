@@ -1,0 +1,22 @@
+{
+  "categories": {
+    "landscape": {
+      "directory": "landscape",
+      "keywords": ["landscape"]
+    },
+    "architecture": {
+      "directory": "architecture",
+      "keywords": ["architecture"]
+    },
+    "interiors": {
+      "directory": "interiors",
+      "keywords": ["interior design"]
+    },
+    "things": {
+      "directory": "things",
+      "keywords": ["object"]
+    }
+  },
+  "skip_unmatched": true,
+  "case_sensitive": false
+}

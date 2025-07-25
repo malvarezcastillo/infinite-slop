@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(test:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git gc:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(docker run:*)",
+      "Bash(thumbsup:*)",
+      "Bash(chmod:*)",
+      "Bash(./add-lazy-loading.sh:*)",
+      "WebFetch(domain:thumbsup.github.io)",
+      "Bash(rm:*)",
+      "Bash(git rm:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(cp:*)",
+      "Bash(sed:*)",
+      "Bash(python:*)",
+      "Bash(convert:*)",
+      "Bash(magick:*)",
+      "Bash(git filter-branch:*)",
+      "Bash(git push:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(./build-gallery.sh:*)",
+      "Bash(grep:*)",
+      "Bash(/dev/null)",
+      "WebFetch(domain:clusterize.js.org)",
+      "Bash(true)",
+      "Bash(diff:*)",
+      "Bash(git init:*)"
+    ],
+    "deny": []
+  }
+}
