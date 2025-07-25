@@ -68,3 +68,4 @@ preprocessed_images/
 .face_detection_cache/
 .face_detection_cache_face/
 review_faces/backup/
+*.pt
