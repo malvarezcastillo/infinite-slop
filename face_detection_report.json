@@ -1,17 +1,17 @@
 {
-  "timestamp": "2025-07-25T22:17:00.992168",
+  "timestamp": "2025-07-25T23:55:02.205698",
   "detector_type": "face",
   "summary": {
-    "total_images_scanned": 9607,
-    "images_with_detections": 4,
-    "total_detections": 4,
-    "average_detections_per_image": 0.00041636306859581555
+    "total_images_scanned": 10060,
+    "images_with_detections": 0,
+    "total_detections": 0,
+    "average_detections_per_image": 0.0
   },
   "by_directory": {
     "gallery/architecture": {
-      "total_images": 2207,
-      "with_detections": 4,
-      "total_detections": 4
+      "total_images": 2660,
+      "with_detections": 0,
+      "total_detections": 0
     },
     "gallery/interiors": {
       "total_images": 1741,
@@ -31,90 +31,21 @@
   },
   "by_confidence": {
     "high": 0,
-    "medium": 4,
+    "medium": 0,
     "low": 0
   },
-  "detections": [
-    {
-      "path": "gallery/architecture/2e4cf1b9-7259-41c7-a358-37bd867a5739.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            901,
-            689,
-            1023,
-            822
-          ],
-          "confidence": 0.5263102650642395,
-          "class": 0
-        }
-      ],
-      "count": 1,
-      "has_detections": true
-    },
-    {
-      "path": "gallery/architecture/43eb8395-2062-42eb-91e4-b9eec9e0e00d.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            305,
-            689,
-            346,
-            740
-          ],
-          "confidence": 0.5344796180725098,
-          "class": 0
-        }
-      ],
-      "count": 1,
-      "has_detections": true
-    },
-    {
-      "path": "gallery/architecture/bf9c64f1-852c-415c-a710-227f4aafa013.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            19,
-            0,
-            186,
-            132
-          ],
-          "confidence": 0.5144142508506775,
-          "class": 0
-        }
-      ],
-      "count": 1,
-      "has_detections": true
-    },
-    {
-      "path": "gallery/architecture/f603f750-fc92-470a-a6e7-82f90453bcc0.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            0,
-            900,
-            14,
-            922
-          ],
-          "confidence": 0.508143424987793,
-          "class": 0
-        }
-      ],
-      "count": 1,
-      "has_detections": true
-    }
-  ],
+  "detections": [],
   "all_results": [
     {
       "path": "gallery/architecture/2a411f8b-ad32-4a0e-8793-cf1db2738fa8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/7adcb43b-c919-4b42-84b5-90276d094b71.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -170,6 +101,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/b2eb23cc-215a-4f5c-a12c-3800c44a0a88.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/62cdeba5-83d0-42ad-99dd-1583d3f1e23d.jpg",
       "width": 1024,
       "height": 1024,
@@ -186,7 +125,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/35a64300-d417-4468-9e9c-d2abb930397d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/ba529fde-ce8e-4d16-bdc6-d9be7aa3f4e6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/b0c322c5-a166-45db-bef2-9883ef35dced.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -243,6 +198,14 @@
     },
     {
       "path": "gallery/architecture/a3410b95-bd93-4341-9c56-b9b35d187c78.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/5b7974fc-22ff-47ba-982d-d8064a2abd2d.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -362,6 +325,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/bba3b038-fdd3-4f5e-8f54-3be653327228.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/7633d4af-a5e6-40ae-92fb-f636420a6f89.jpg",
       "width": 1024,
       "height": 1024,
@@ -474,7 +445,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/5bd3fd7b-b3be-4094-a443-23a2fffc49ea.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/988ae437-46db-4d95-b978-3430cdd2760d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/50392843-2ead-464f-af69-1173efb0c1dc.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -658,6 +645,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/8155b7b8-9b18-48b7-b007-f3a43042300d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/1a985167-194e-41fb-8c24-d26012785553.jpg",
       "width": 1024,
       "height": 1024,
@@ -714,6 +709,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/aba48a57-03c5-4c00-9502-33f26ce8da6b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/4e2e556a-9681-4b98-ad15-aff90d017174.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/05d61850-299f-48a0-bdc4-c7d802fef0e1.jpg",
       "width": 1024,
       "height": 1024,
@@ -731,6 +742,14 @@
     },
     {
       "path": "gallery/architecture/9d5b449e-cd1f-40bb-a375-837e71b76921.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/ff9d359d-5afc-429f-ada7-8f0161deedc1.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -802,6 +821,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/38fd60de-a5b0-4c76-9806-51bb8e608e98.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/60e677f7-1f88-4718-8748-04ea2db86d11.jpg",
       "width": 1024,
       "height": 1024,
@@ -819,6 +846,14 @@
     },
     {
       "path": "gallery/architecture/9d95d17e-ceea-420f-8a7e-d4025608c60b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/fc983a0e-f336-47af-a306-e0f7c3ecebfe.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -866,6 +901,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/eab22d1a-dcad-4374-a3d4-8bf765507ff4.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/8caf4983-085d-49c4-96ab-6859f17db7a8.jpg",
       "width": 1024,
       "height": 1024,
@@ -883,6 +926,14 @@
     },
     {
       "path": "gallery/architecture/1961d153-53d6-40d1-be31-ed61ac39acef.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/25b00a09-bd8d-4407-a042-1f45108d3826.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -970,6 +1021,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/d5f84d45-c62f-459f-9613-04151c20650e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/88b28619-f491-4a08-a96e-defe293ddb99.jpg",
       "width": 1024,
       "height": 1024,
@@ -979,6 +1038,14 @@
     },
     {
       "path": "gallery/architecture/fdce7cab-b63c-4c14-aaa2-e86bb5e4862b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/930bad46-c872-4b57-ae3f-a6cb306792a3.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -1026,6 +1093,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/e93d9648-0646-4e95-af85-dbb32d76c680.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/26e8fffc-47a2-49ae-86fe-0aa8ec8c8c92.jpg",
       "width": 1024,
       "height": 1024,
@@ -1043,6 +1118,22 @@
     },
     {
       "path": "gallery/architecture/844ebee4-67ac-4173-afb5-28a7029a6a62.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/047e2d70-521d-44ab-addb-b9d083b7f7b9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/1e566ce7-a574-4ca4-bdee-b7744d821c2d.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -1098,6 +1189,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/2d8507df-04dc-49fd-8d22-051c1efb7458.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/ac644c19-6875-43f4-a299-5809ef40a074.jpg",
       "width": 1024,
       "height": 1024,
@@ -1114,6 +1213,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/f3ca93e6-0d4c-4645-97b6-37697a1a9cb0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/09536cb8-a7b7-4e6d-ab4c-695ebcc0d47f.jpg",
       "width": 1024,
       "height": 1024,
@@ -1123,6 +1230,14 @@
     },
     {
       "path": "gallery/architecture/3e552a7b-bd2b-4c1f-acca-b712770df74e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/e74c20f7-71e5-4e2d-88ad-9f14ebe251d8.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -1170,6 +1285,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/cfa0a0c3-ed85-4cce-bac8-e76c364479ff.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/a02c0afa-2db4-4fcc-baf0-f74b23e67653.jpg",
       "width": 1024,
       "height": 1024,
@@ -1202,6 +1325,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/593e655e-7199-4f22-b481-987790f1b7d5.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/cfa1b838-e430-4436-823a-188ea798281e.jpg",
       "width": 1024,
       "height": 1024,
@@ -1211,6 +1342,14 @@
     },
     {
       "path": "gallery/architecture/fcdc1c07-8666-4580-8fd3-71892048ebad.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/e238c05e-acc4-4f22-bc95-2a21047ca958.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -1250,6 +1389,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/d949e16e-dbdc-44d0-a286-e587207d3f3c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/7dba6e69-1c92-493a-a90e-a3f4532488c1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/a6da1250-1787-4a0c-96f3-9e45dfa72b93.jpg",
       "width": 1024,
       "height": 1024,
@@ -1282,6 +1437,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/cba8e551-af8f-4034-a2e4-75deb419d4f1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/d5b371e8-68d7-45ae-875c-e11a82f94dc5.jpg",
       "width": 1024,
       "height": 1024,
@@ -1299,6 +1462,14 @@
     },
     {
       "path": "gallery/architecture/4abc84ca-76ca-41de-a4c2-6167bee81dd9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/0870b319-6069-438f-a0e4-ee190962eb56.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -1418,6 +1589,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/b03feba8-cc58-41f7-8c50-8a3c80fab19d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/92862e6e-ff81-4a7b-af63-b97a99ff3ef0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/3e0e4056-0edb-42e9-9670-d1514f60b669.jpg",
       "width": 1024,
       "height": 1024,
@@ -1530,6 +1717,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/8e948b64-da96-456b-ab30-d17f44984827.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/8581e6e0-9efb-401e-8424-63112b06383d.jpg",
       "width": 1024,
       "height": 1024,
@@ -1562,6 +1757,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ef170eaa-1d3a-4f1f-a27d-d3be44ad67a1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/e2be908b-8157-4abb-9822-447024849a52.jpg",
       "width": 1024,
       "height": 1024,
@@ -1578,7 +1781,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/6b270b5a-af0f-4f29-a4c3-b7b90a16f45a.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/019cc884-9523-4bd3-95d6-893fcb4108ab.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/fa05afbd-358f-4078-bc63-607ba772d9d4.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -1618,7 +1837,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/1a68994e-bcf3-44fd-ba7d-497b27b50c10.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/734078a9-756e-4ca5-95bf-21980621ee81.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/7d13da12-1e95-45db-9b37-72c1572fb909.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -1666,6 +1901,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/8aa960eb-cc2b-4797-822a-518603b29cbd.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/ba77fcb3-75e0-476e-a015-474649b62108.jpg",
       "width": 1024,
       "height": 1024,
@@ -1675,6 +1918,14 @@
     },
     {
       "path": "gallery/architecture/bcdcf0d0-26f4-4902-8639-232a42ecd98c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/8405857f-c401-45e0-b9a5-7cf7a0139554.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -1739,6 +1990,14 @@
     },
     {
       "path": "gallery/architecture/fbd37f39-8ac4-4867-98f0-891ca6a1866e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/526bf298-3b02-4266-80aa-71909f077563.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -1826,6 +2085,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/d9055730-e531-477f-ac92-b650a7e6a652.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/67aa5a4a-550a-4104-8652-33b096afd15d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/0307e531-41f6-491b-8b92-5919efbbe4a7.jpg",
       "width": 1024,
       "height": 1024,
@@ -1840,25 +2115,6 @@
       "detections": [],
       "count": 0,
       "has_detections": false
-    },
-    {
-      "path": "gallery/architecture/2e4cf1b9-7259-41c7-a358-37bd867a5739.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            901,
-            689,
-            1023,
-            822
-          ],
-          "confidence": 0.5263102650642395,
-          "class": 0
-        }
-      ],
-      "count": 1,
-      "has_detections": true
     },
     {
       "path": "gallery/architecture/32dcfa99-9a20-4647-bb93-f494d6833d46.jpg",
@@ -1902,6 +2158,38 @@
     },
     {
       "path": "gallery/architecture/d9ee0421-7b88-424e-b1c5-cdec48890705.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/6be6afbc-d12f-4cc4-8086-465658190064.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/e778c69d-a883-42d2-a369-c9304b353b7c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/2e5fbea5-299d-4437-8b6d-877092ca20fe.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/6bef3e0a-00c2-4094-88f9-33ca4325299c.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -1957,6 +2245,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/55283cca-cf3b-4a05-bc83-c4fae470db89.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/7eeac376-a359-4fd6-9e6b-52a06da280b9.jpg",
       "width": 1024,
       "height": 1024,
@@ -1997,6 +2293,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/67064ab9-6c03-40b6-bb64-56268e9348d7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/e36cbc7c-e0e9-44b6-9164-05000e357ba1.jpg",
       "width": 1024,
       "height": 1024,
@@ -2006,6 +2310,14 @@
     },
     {
       "path": "gallery/architecture/1724c9e5-e2ff-4a06-9b0b-56637c60a0ae.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/a26f21d2-94a3-48bd-b11f-095e04ff9bcd.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -2037,6 +2349,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/c4782881-98f2-47bc-a5cb-da5fbdbcaa36.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/b7fc9e12-0f1f-485a-b458-a84f17ee8aff.jpg",
       "width": 1024,
       "height": 1024,
@@ -2054,6 +2374,14 @@
     },
     {
       "path": "gallery/architecture/4dcdeece-9234-4131-882e-0cde705a25fc.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/40d469cf-d24b-4740-960d-5d9ffe872652.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -2125,6 +2453,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/38f15ef3-066e-4496-95c9-f31f54a0b28d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/ef866cee-be6a-4035-a325-7b5b9ab75cc2.jpg",
       "width": 1024,
       "height": 1024,
@@ -2149,7 +2485,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/87185e25-448a-4f68-b33b-8633fc13e033.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/d940a2b3-4412-48a5-9b83-32e3fdc22bf0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/9f3439f6-d773-454e-a87c-8f467339fd1e.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -2221,6 +2573,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/26cbab1e-3268-4e15-98e1-4a6d06a7c8a9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/b9b2a458-acc0-4bd7-b33e-6c67055ec5a8.jpg",
       "width": 1024,
       "height": 1024,
@@ -2230,6 +2590,14 @@
     },
     {
       "path": "gallery/architecture/d77f0e34-89bf-427a-b105-c37596d6b395.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/44a66795-748a-4950-a7bd-7cd99888c718.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -2262,6 +2630,14 @@
     },
     {
       "path": "gallery/architecture/1ff1a5cc-deb4-4896-9647-1041d9910936.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/c8a1086c-26fd-440b-be8d-83957493e171.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -2326,6 +2702,22 @@
     },
     {
       "path": "gallery/architecture/9a127070-bc5d-414a-bd9b-cd6a1b9fe600.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/3a68320f-c9e0-4704-874a-f9c81c15cbfc.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/1201f223-a01c-407f-9ef4-0211c12bffe9.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -2453,6 +2845,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/f7c4bd25-7009-42b8-aa7a-110ca53229ee.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/887b8d46-d01a-41f5-befa-5e6440b3c79f.jpg",
       "width": 1024,
       "height": 1024,
@@ -2469,7 +2869,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/bd927b05-9300-4e47-b5e6-f516decc8f2e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/fdb21453-95e5-4e8b-92b4-5b69328a51e7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/363794e5-6ede-4f66-a48d-b76c733194e3.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -2493,6 +2909,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/3bddf297-0a1f-4349-9746-4adbf3097726.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/aea1e9fb-87a3-4f8b-8ea7-7da381754ad9.jpg",
       "width": 1024,
       "height": 1024,
@@ -2509,6 +2933,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/604c8f60-73d9-41ee-885a-25207da54660.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/f9fb0650-022c-4dbd-bdd7-f04d0500eb56.jpg",
       "width": 1024,
       "height": 1024,
@@ -2518,6 +2950,14 @@
     },
     {
       "path": "gallery/architecture/f7ef6f69-8508-4e7a-b4a7-1b35a121b56c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/b99523ff-3659-4ccf-b4d1-8a997acc0586.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -2621,6 +3061,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/6c1db99a-1644-40f2-aeba-d04ce6958956.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/f212c13c-a70d-49b0-ad29-6de3362f0433.jpg",
       "width": 1024,
       "height": 1024,
@@ -2661,6 +3109,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/db70dae2-d70b-4e1c-9093-6695185b9861.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/5a82b3d5-a163-4589-b19c-7087042cf77c.jpg",
       "width": 1024,
       "height": 1024,
@@ -2678,6 +3134,14 @@
     },
     {
       "path": "gallery/architecture/b0a57069-c222-42c0-991f-3932f0cd4768.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/afe2ca91-4681-4cfe-a780-cf9e706bc41e.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -2725,6 +3189,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/4220a286-a795-44d4-b043-cebebab713d7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/d8afa5fe-ca9c-416b-9eaa-39c071c9546e.jpg",
       "width": 1024,
       "height": 1024,
@@ -2757,6 +3229,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ea0faca1-325f-4f0e-9ffc-cb9e17fdfe29.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/80b53187-c60f-49ef-8ddc-de73f4b43d63.jpg",
       "width": 1024,
       "height": 1024,
@@ -2766,6 +3246,14 @@
     },
     {
       "path": "gallery/architecture/bd75ddfb-1d56-42e0-922b-68f9f6b84ecd.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/1fb6e0d8-40f2-4e09-851f-72e85658ac6d.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -2829,6 +3317,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/58782775-1434-4fde-82e3-82c6e71d0c99.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/3d1126f2-5eb0-4fae-bff6-a8f83fe34a91.jpg",
       "width": 1024,
       "height": 1024,
@@ -2845,6 +3341,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/08d66ab8-3015-40dd-a085-ca1d14116dc5.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/ed6945eb-4acf-4dac-b148-ee78cfb819b1.jpg",
       "width": 1024,
       "height": 1024,
@@ -2854,6 +3358,22 @@
     },
     {
       "path": "gallery/architecture/1b77d978-ccad-4ee4-b2db-de7d8cabb2be.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/dba3aaeb-fa84-45da-90eb-7604f36cf826.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d339dac1-2b33-44a6-a3f8-ddd261b77dee.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -2917,6 +3437,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/64b6010d-12e9-4f7a-9cc7-a3da56af671b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/7ebf8551-1889-4e66-926b-de88ed912a7c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/9701af49-544d-4b7a-9564-38bc2fcb0e06.jpg",
       "width": 1024,
       "height": 1024,
@@ -2934,6 +3470,14 @@
     },
     {
       "path": "gallery/architecture/90d267e6-a6b1-4452-8d91-cbaeef6fbfd3.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/5c3c7b9d-50af-4140-9345-cc015ddc2237.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -3093,6 +3637,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/a830b37b-cfb6-4395-ad77-95088a72cd92.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/9ce219c7-7c0a-42b1-aa41-dc4187340ff4.jpg",
       "width": 1024,
       "height": 1024,
@@ -3157,6 +3709,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/1ef1ec74-b71f-4efc-8224-8c2cab057989.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/2434aad8-ab61-40c5-a0ea-edaea418cc6c.jpg",
       "width": 1024,
       "height": 1024,
@@ -3197,6 +3757,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/36e4ab28-6a0e-41c2-8967-22786a4cb0ea.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/5f894cd7-6d8d-4b2a-a055-2f2fcd2bd51b.jpg",
       "width": 1024,
       "height": 1024,
@@ -3222,6 +3790,30 @@
     },
     {
       "path": "gallery/architecture/367d1647-0a7d-4b8d-ac6c-0de2ce97e43e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/c8d745b4-b4cb-482a-ad90-09a4852df550.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/a31ca454-63d6-4767-b781-fd9d00cef48d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d3b8baf4-2a2f-4bd9-863b-3e59c232dcaf.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -3277,6 +3869,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/72d5984b-5a37-4151-a3f6-4cc5b115a668.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/25509e93-1329-48d1-a1ff-cef0de3b8942.jpg",
       "width": 1024,
       "height": 1024,
@@ -3293,7 +3893,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/819dfc82-7d12-4cf4-8679-7a7dfbba7648.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/90852a4c-8d2b-4488-8c32-d9fd00004fcb.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d314597b-df51-4650-a806-f2ead8f00200.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -3325,6 +3941,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/4753494a-a47a-47bf-a78c-e62e1e4923a4.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/ab5fca3d-fe85-4896-86e9-8cc72cf9f57c.jpg",
       "width": 1024,
       "height": 1024,
@@ -3334,6 +3958,14 @@
     },
     {
       "path": "gallery/architecture/d04a6bc0-928e-4a22-bce3-678e0d8d0b84.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/c2c1a6e4-fa99-4768-a3da-e63232a59b5f.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -3397,6 +4029,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ee9391db-7212-4bd6-a254-bcb4c5470de6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/5831458d-2466-4220-93dd-de12258f5ae8.jpg",
       "width": 1024,
       "height": 1024,
@@ -3446,6 +4086,14 @@
     },
     {
       "path": "gallery/architecture/5c877597-32d4-4c97-882d-5775175de2db.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/b3c697dd-0b5f-418e-b0d4-95758c236ecb.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -3565,7 +4213,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/fc4d25f1-ae41-4e03-9912-58eb894ac562.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/526808a0-aaf0-4f99-81cb-dfd858758ed5.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d69e3e6c-8aaa-413d-a423-4bdebdeb9735.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -3709,7 +4373,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/5d615506-e54c-43bf-9875-307406bfe950.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/7d3c09d2-d4f3-4b6b-ba7f-1a002be23cb1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/bdd0ecce-3acd-4452-9ec9-e92af8cecd41.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -3766,6 +4446,14 @@
     },
     {
       "path": "gallery/architecture/58e92b36-3725-44e7-8957-33acd6992198.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/ffa02bfd-5e93-4d9b-8ad2-80899229e864.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -3853,6 +4541,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/d68d1a95-8cad-47c1-bcf1-012fc37ec3d5.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/e79ef2fc-18c3-4c91-8f25-58e9b8786084.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/19827f0c-c819-4c8c-9a99-61faf6392be7.jpg",
       "width": 1024,
       "height": 1024,
@@ -3870,6 +4574,14 @@
     },
     {
       "path": "gallery/architecture/fc72071e-7dbe-4bca-8d92-476f99b396eb.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/73cb5d63-96a1-4772-ba8d-9662129d9aef.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -3949,6 +4661,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/2aa7e2c5-77c0-4b5b-a6b1-e3efe3970d79.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/4cbc5a51-dc56-4861-ae35-2b6cbc892604.jpg",
       "width": 1024,
       "height": 1024,
@@ -3997,6 +4717,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/39495411-c8ea-4aaa-8999-23387be2c2bf.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/037468d6-9f46-4311-b2a9-43e9e6916849.jpg",
       "width": 1024,
       "height": 1024,
@@ -4014,6 +4742,22 @@
     },
     {
       "path": "gallery/architecture/69628b35-f40f-4e1f-a547-92fc95ec62f9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d23e186c-9c1a-488b-8f19-a7f6d7de4ee9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/c74da484-65df-4780-9798-c6df418d7f6c.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -4085,6 +4829,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/2656008a-de0c-4271-8df3-a10f7fec60ff.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/39524e23-37a6-47a2-937b-4d5bba12981f.jpg",
       "width": 1024,
       "height": 1024,
@@ -4134,6 +4886,14 @@
     },
     {
       "path": "gallery/architecture/047afbe7-2e00-4607-896a-d0a86fa14414.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/ac80cecc-51b6-4f8c-be22-6dafb426ec9a.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -4213,6 +4973,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/4b033867-17c0-44e7-bf93-096c194d790c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/84c7127f-96b8-499e-ad91-f7d68a00d376.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/8c6086fc-3e58-4c55-9c06-b2b64201b3a5.jpg",
       "width": 1024,
       "height": 1024,
@@ -4222,6 +4998,14 @@
     },
     {
       "path": "gallery/architecture/69702dcf-b8f2-49f5-8ba4-6b0e6bc7b76c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/cbee3ed1-1090-42d3-a31b-b5ef05ae7815.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -4254,6 +5038,14 @@
     },
     {
       "path": "gallery/architecture/28c65c4e-e6af-48c1-a8f3-4a6440394cfb.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/aa031d75-317b-4b18-876c-939b69d64b84.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -4365,7 +5157,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/67ca6c7e-d92b-4f6c-ab9c-a5a41d426458.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/164d23e9-86a2-4db7-8348-024b164280fb.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/c61c9fd7-3e23-41de-88bd-2a223aeaef3a.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -4501,6 +5309,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/f15caf60-9e44-46c4-8dee-f4204b7ac566.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/cd1d5a1c-8869-4c77-947b-4d735e473c88.jpg",
       "width": 1024,
       "height": 1024,
@@ -4573,6 +5389,30 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/f8e0c47f-0d47-4912-a7ac-ed607ecea8e6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/46dc2e1b-fe44-4503-a3aa-adaa480b1d7c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/27a88057-f15d-44c9-b7ed-9897305831e3.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/fee8da3b-ec64-425c-8aeb-50e7228529b0.jpg",
       "width": 1024,
       "height": 1024,
@@ -4582,6 +5422,14 @@
     },
     {
       "path": "gallery/architecture/7d6cea64-f7fe-4e08-8ff3-eb8912e7f426.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/8f549559-ff31-4197-8cdb-5824e0d903e8.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -4606,6 +5454,14 @@
     },
     {
       "path": "gallery/architecture/914efe90-86cf-4617-8f39-d157bc54589d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/f9d65a8e-a259-4df1-ab0e-8ccef51bd8ee.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -4693,6 +5549,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/84bf0db1-a790-43cb-be4b-d359d0c2dd50.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/164ad395-62bd-4138-864b-8f8c7c28a35c.jpg",
       "width": 1024,
       "height": 1024,
@@ -4734,6 +5598,22 @@
     },
     {
       "path": "gallery/architecture/3e5d3c5c-5e02-4d3b-ad09-4f80c772d8dc.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/482b5fb3-48de-42eb-81d7-108c898691e8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/831b55d3-5580-480e-9697-8c618552d0ab.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -4790,6 +5670,14 @@
     },
     {
       "path": "gallery/architecture/add3c686-54a7-492d-9e1c-e3a7766f6fc1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/93b7d5c8-e1ea-4c5d-bda7-c5cea56411f2.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -4909,6 +5797,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ef369a93-6969-486e-acfd-29d7e22b6823.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/a0e85ab7-80bc-4f39-b48d-94a414f39be8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/a1f8242c-55b2-4b3d-8be1-c840243f1a0e.jpg",
       "width": 1024,
       "height": 1024,
@@ -4990,6 +5894,14 @@
     },
     {
       "path": "gallery/architecture/0eb2e804-44c9-490c-a2e9-3b4cee1d8ad1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/1ed975dd-b006-419c-b96e-9ac98d7a3728.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -5085,6 +5997,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ccd20728-4587-4cf7-91fa-2c2988d8f10e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/5db38bd6-e50a-4ba7-8fdb-b2bf364d9555.jpg",
       "width": 1024,
       "height": 1024,
@@ -5094,6 +6014,14 @@
     },
     {
       "path": "gallery/architecture/bff77550-e2e8-41a7-a583-b593dec2c0b2.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/77a33730-2a79-4ded-93a1-1d1aa916af0a.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -5149,6 +6077,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/62e32b1d-bff3-4b92-a5f5-e3e7520f7f8d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/240351a9-2dd6-4947-8a80-5ec758694f4e.jpg",
       "width": 1024,
       "height": 1024,
@@ -5166,6 +6102,14 @@
     },
     {
       "path": "gallery/architecture/3b6d87f6-f6c3-4dff-8314-9323a77df6fa.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/ce91b87d-2532-4a5e-9b46-130ffd18da31.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -5229,6 +6173,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/a91db048-b1f8-49be-8f58-78ed03f158fa.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/42b3f3b6-58f3-49e5-9c2d-7520acd7e55c.jpg",
       "width": 1024,
       "height": 1024,
@@ -5238,6 +6190,14 @@
     },
     {
       "path": "gallery/architecture/281eabc9-9bb8-4ea3-8525-854e60a39ba4.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/fa841f49-179c-4626-bda9-5bbb071447dd.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -5334,6 +6294,14 @@
     },
     {
       "path": "gallery/architecture/842c27cb-f035-41a4-a3b1-d835513a9cd7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/fd371a97-4aeb-4c3e-a7a9-015a203cdb0e.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -5453,6 +6421,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/c7226c71-99de-4bb0-8054-4375d4fc7d8d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/b48faf34-d20b-4485-aee0-117ab98cc0de.jpg",
       "width": 1024,
       "height": 1024,
@@ -5493,6 +6469,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/0eb74088-4d1a-4b00-a93c-aeba1b4dd022.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/2d24c1e6-c705-4445-81ab-750b057230c7.jpg",
       "width": 1024,
       "height": 1024,
@@ -5502,6 +6486,14 @@
     },
     {
       "path": "gallery/architecture/76f55bb7-3533-464a-a214-bbcc355dd6f2.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/989c1574-5ba9-47a9-84d1-cd08247b7963.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -5573,6 +6565,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ca55901c-a8b8-4576-98ac-9cd8480eefa3.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/48add0be-78d0-4183-ba98-3888ab72ba41.jpg",
       "width": 1024,
       "height": 1024,
@@ -5582,6 +6582,14 @@
     },
     {
       "path": "gallery/architecture/a24678e5-59a0-4ee1-b1dd-5c3d1b206eda.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/4f6cb901-44c6-4816-86fe-cbead0e37fcb.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -5646,6 +6654,14 @@
     },
     {
       "path": "gallery/architecture/6e459b93-940e-43ab-9af6-772d8af948fd.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/dbefebaf-08c6-41fe-96cb-e1241cf9a994.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -5733,6 +6749,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/7fa3adfe-0cb4-49e5-86cd-8d0b5e143171.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/ecfbb6fa-f8ee-438c-b098-77e736f9ccc0.jpg",
       "width": 1024,
       "height": 1024,
@@ -5781,6 +6805,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/8a35fb4d-ed77-4da4-b643-2325eacd9034.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/f53b6a04-bac5-468b-8aad-db5b44421cc0.jpg",
       "width": 1024,
       "height": 1024,
@@ -5813,6 +6845,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/bef7fd27-6e49-4bc4-8094-64034abd4ce8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/82c26927-90d5-40f7-848d-f3b8d4b3119a.jpg",
       "width": 1024,
       "height": 1024,
@@ -5822,6 +6862,14 @@
     },
     {
       "path": "gallery/architecture/5e8db468-c09f-4521-a1b7-ae349883157e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/9d4221c4-b706-4332-9980-1d4c0a38b734.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -5846,6 +6894,14 @@
     },
     {
       "path": "gallery/architecture/c04488dd-c97d-437e-861a-a8e1ff0fbef1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/c28ea6be-497e-4be3-9a5d-d14a19071f22.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -5989,6 +7045,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ecb2b9e6-6884-4e44-9d0c-a34807e58a4a.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/af65769b-903f-4012-a983-5f9b406b0ab4.jpg",
       "width": 1024,
       "height": 1024,
@@ -6085,6 +7149,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ecb5a262-796d-47b8-bd05-7298ff2e9255.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/a10d58a1-e0a8-45b9-bce7-6849ab8e6c1d.jpg",
       "width": 1024,
       "height": 1024,
@@ -6101,7 +7173,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/7332da20-5384-4eec-b0ff-c16906df4a3d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/dc3065d8-d980-4d00-af63-a1324b867114.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/87b1916f-e824-4d8d-ba27-9aabdc128597.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/601fbcd0-9625-4441-83fe-317e5de456c0.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -6142,6 +7238,14 @@
     },
     {
       "path": "gallery/architecture/5ab759b5-2a1a-4580-868b-b58c5c35b7f4.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/ac2e116e-c47b-481c-9f61-53e8d94b6b4f.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -6221,6 +7325,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/f6f15d08-d077-4ae5-85b6-4e3842aa5c4f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/ad1a9463-a5ac-489a-97c0-487ce3fcea8a.jpg",
       "width": 1024,
       "height": 1024,
@@ -6230,6 +7342,14 @@
     },
     {
       "path": "gallery/architecture/cebdad21-cca0-400b-9ec0-90ac48288857.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/ee3957ed-58a4-4364-8803-d8593fc3d83c.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -6301,6 +7421,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/42f9d494-7e92-4dbb-a413-408f0c916f05.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/92f331ee-e364-402d-b670-f283728b587b.jpg",
       "width": 1024,
       "height": 1024,
@@ -6341,7 +7469,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/083b23f9-98fb-4df0-b7a4-873e4619f8c2.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/cc243b22-b026-48cf-bbae-959bcfe05805.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/ad046d5b-1c8f-45aa-963a-c750fbae0205.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/259b108e-1e29-4e83-a07a-59349b829eaa.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -6358,6 +7510,14 @@
     },
     {
       "path": "gallery/architecture/38878ec1-f5f0-42a3-9ba5-ad3ce2d9715a.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/3f573730-8d79-4303-bd72-ef333cf4ff90.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -6389,7 +7549,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/dfc36138-e962-475c-bda8-5bc747caafcc.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/347d0a5d-0fc5-46cd-8f20-e26ff27de90f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/90668d5a-e02f-4a5d-a70e-ee69fb6caf2b.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -6406,6 +7582,14 @@
     },
     {
       "path": "gallery/architecture/27ec9c1e-aec3-4128-ac17-4197b8cf0fa6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/0261fd68-4caf-4246-9b1a-28fe5aa953a6.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -6517,6 +7701,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/99b3da75-5d81-4a9a-8c99-cce63d859b80.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/4c29532b-6c31-41b9-be1a-854e64116a70.jpg",
       "width": 1024,
       "height": 1024,
@@ -6550,6 +7742,14 @@
     },
     {
       "path": "gallery/architecture/32e62515-096d-4832-b367-fdcdc064ba54.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/efb85866-b2de-49f8-b622-7ce7c5bdaf95.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -6685,6 +7885,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/a879634d-5a6d-4640-9b79-b7ffa7f298dd.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/8d5c3024-b198-44e3-b748-2cb9a8837a66.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/bdef75f8-e5ef-4404-b1c4-36ce3eb79ca9.jpg",
       "width": 1024,
       "height": 1024,
@@ -6699,25 +7915,6 @@
       "detections": [],
       "count": 0,
       "has_detections": false
-    },
-    {
-      "path": "gallery/architecture/43eb8395-2062-42eb-91e4-b9eec9e0e00d.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            305,
-            689,
-            346,
-            740
-          ],
-          "confidence": 0.5344796180725098,
-          "class": 0
-        }
-      ],
-      "count": 1,
-      "has_detections": true
     },
     {
       "path": "gallery/architecture/aedd0f66-7e59-452c-9bc8-52c6a79e2356.jpg",
@@ -6761,6 +7958,14 @@
     },
     {
       "path": "gallery/architecture/3650cbb6-bf73-4c77-b852-04a08d681f27.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/0fa54f18-8341-489a-9408-59a377578555.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -6824,6 +8029,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/e8918a95-7f05-4f43-bc57-32608c5ee5c7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/1984b253-c982-4823-abf5-144221415974.jpg",
       "width": 1024,
       "height": 1024,
@@ -6849,6 +8062,14 @@
     },
     {
       "path": "gallery/architecture/ff533b7d-c6a3-48b4-a927-65913bbafd97.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/a4c3b2f0-1f28-435a-82d3-60cea128cb07.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -6896,7 +8117,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/0707c06a-61f0-47b2-9014-25c8aa680949.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/8d3c64e5-590a-457f-8361-aa5f966ae808.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/5201608b-11f3-4842-b4b1-5a8ac18e7a9f.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -6913,6 +8150,14 @@
     },
     {
       "path": "gallery/architecture/1fa7d0a1-05d9-4616-88ef-9da69f8afd7b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/ffa10b5f-76e9-45ea-8fca-177afca5a563.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -6968,6 +8213,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/465179f7-18b7-482c-b274-170e6593091f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/bc5d83fd-0bb7-4e57-aa58-139f6adfef43.jpg",
       "width": 1024,
       "height": 1024,
@@ -6992,6 +8245,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/2236d30d-c751-48c1-b596-658405b36e39.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/cc5173f0-3c9d-41f9-b5b1-5459b9379250.jpg",
       "width": 1024,
       "height": 1024,
@@ -7000,7 +8261,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/55a9cb32-cc9d-4faf-b0a4-2cc08c8155cf.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/0782cbb3-4ef4-4c7c-8e37-f62d41df3c7d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/802df9a3-3787-4adf-9c14-2c231e3a5227.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/de703648-f6ad-42cf-844d-a0d28187b306.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -7064,6 +8349,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/d9da6676-722a-4f78-8cee-fc42cb73223c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/60733a18-5ea2-42a7-a923-c9ccce0e2f7d.jpg",
       "width": 1024,
       "height": 1024,
@@ -7096,6 +8389,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/4637d569-839b-4fa9-98f3-182881ae9df9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/d521ca4a-5e04-4093-9e5c-dc8217d75c3e.jpg",
       "width": 1024,
       "height": 1024,
@@ -7113,6 +8414,14 @@
     },
     {
       "path": "gallery/architecture/0ac74a44-7b6c-4036-aede-f4b430380f7a.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/f45c360c-b64f-4cc5-b8e8-4f756fc18c70.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -7160,7 +8469,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/d5469a63-4e3c-42a4-9020-c7cf9ec66202.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/225397c7-5769-4cba-a76f-33e9aa090f1b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/e8ce69a9-484c-47b7-93c2-7ad49d67f6d2.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -7192,6 +8517,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/3d5d440b-68c8-4214-9e99-408afee51bbe.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/8f1a5004-5b2b-4a82-8b17-0010ebf1bd14.jpg",
       "width": 1024,
       "height": 1024,
@@ -7201,6 +8534,14 @@
     },
     {
       "path": "gallery/architecture/0a4066dc-d363-4d65-8f75-4c808f56d2c7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/e8c97594-f3f4-4f80-8dc6-d18776b02077.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -7288,7 +8629,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ad144aa6-bab4-449b-9b60-a4f80d58888e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/579e1593-76a5-4727-9ee5-e5846ae4ad35.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/58fc5b04-550c-4c69-9e8f-6cbb74eb0454.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/398dfe14-7bea-454c-a261-72c53eca07bd.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -7424,6 +8789,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ab87ed3c-5722-49f7-9d5e-1adfcf1c9cfd.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/e9d8350c-e7f4-4c64-9106-b356f1369973.jpg",
       "width": 1024,
       "height": 1024,
@@ -7440,7 +8813,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/084c0ce1-ea1b-4794-ad5b-076066965781.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/602c6e2e-27f9-4f8f-8dca-26cb7f2a9677.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/4e8c1bad-2fe5-4aa1-8dcd-03a9616d4629.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -7456,7 +8845,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/74985795-ae2b-42ef-8db4-02a99c85547d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/c8d2255a-2c51-4d07-93bc-6eb8badf0002.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/bf905ba0-7717-4af8-aa89-94a67b4cb490.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -7504,6 +8909,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/1e2f1bb1-1eef-4faa-9d7d-87ee85418b5e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/f7ecb88e-d09a-4669-8ba6-fe109b4f50c3.jpg",
       "width": 1024,
       "height": 1024,
@@ -7536,6 +8949,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ed0f6559-8464-4776-b458-2eb9728b74b7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/02d081d2-f86c-4372-b00a-dbe9e32131dc.jpg",
       "width": 1024,
       "height": 1024,
@@ -7560,6 +8981,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/da17e2e9-6f5e-461d-8f7e-af21a301f6c7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/789f9705-35f9-422c-afda-bd4ffa76c008.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/23f501a2-fb3f-4c4c-a3b9-ff96fb6471c4.jpg",
       "width": 1024,
       "height": 1024,
@@ -7569,6 +9006,14 @@
     },
     {
       "path": "gallery/architecture/4b3f9a08-839f-4b3c-84fd-046e5996e520.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/94182296-da45-4e3f-922c-6addcda90d31.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -7664,7 +9109,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ea79ecd8-0d72-4187-8cc7-7bb7d284efc8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/86f0a4aa-bf3c-4374-97f0-57489b492f88.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/bf98a0ae-2c2a-4216-93d7-d8f06ffbb7ec.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -7736,6 +9197,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/59a60826-b8a6-4a39-b2fc-bc34e8d49c5e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/e4ceb271-8621-436a-bb0b-9cda679db3f3.jpg",
       "width": 1024,
       "height": 1024,
@@ -7776,6 +9245,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/e7a3311b-4d1d-485f-98d2-46d4fc4907b7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/a712bc1d-0dca-4123-a5c1-b3e86232480c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/4f01afba-32f3-46de-b0d9-8f9cfea36bc4.jpg",
       "width": 1024,
       "height": 1024,
@@ -7785,6 +9270,14 @@
     },
     {
       "path": "gallery/architecture/e0f2943a-aab0-4c8c-b145-339f646558ad.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/53cdd2e9-0bb3-41e6-9b3a-57ee5843998b.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -7809,6 +9302,14 @@
     },
     {
       "path": "gallery/architecture/9de796c1-117b-4f82-85ca-6722c56f55a4.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/c62cb59d-3679-480f-a0c7-36642fe658fc.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -7849,6 +9350,14 @@
     },
     {
       "path": "gallery/architecture/311e407f-97f0-48b0-9e87-88e65b587c51.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/5b64c802-30fb-4664-9669-629136c624a5.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -7905,6 +9414,14 @@
     },
     {
       "path": "gallery/architecture/6886e74e-4f7a-44eb-90ab-a831f59e736f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d976ef5b-ec4f-41cb-9c48-1ace9c321fcd.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -8016,6 +9533,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/f584e9fa-cacc-4aa7-b1e4-8478f64197b1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/54fc1d2a-166c-41d4-a548-4792af5fd752.jpg",
       "width": 1024,
       "height": 1024,
@@ -8048,6 +9573,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/d6301682-3d5f-4b46-928f-000aa8ad020e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/e2ec5d94-91c8-4658-90ac-67453be11194.jpg",
       "width": 1024,
       "height": 1024,
@@ -8057,6 +9590,14 @@
     },
     {
       "path": "gallery/architecture/012712ba-3e67-4dda-ae89-e9648f5af023.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/f582a559-1bf3-41aa-8eee-d9c7aebaa2b1.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -8097,6 +9638,22 @@
     },
     {
       "path": "gallery/architecture/9933adc8-f59b-474b-b9cd-c23fc9e07c4f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/4890a723-8981-4124-aee0-d5ce62c2619d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/9fbaee7a-e159-4dc6-9ca2-87434ab47ca4.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -8360,6 +9917,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/8dee1ed9-d8ef-4c54-b300-7ac8181d9a3a.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/b3df1c11-9510-433d-8611-6d19dfb39453.jpg",
       "width": 1024,
       "height": 1024,
@@ -8448,6 +10013,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/2b8abcac-c3d1-4f46-8e92-cce077e31b43.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/6c8622ff-86fc-4749-bacf-45c9f71ff1b1.jpg",
       "width": 1024,
       "height": 1024,
@@ -8472,7 +10045,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/75daf4c3-75c1-49ec-99de-30c811194427.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/3d66b9e6-21fe-44d5-8ba0-388e59c6c098.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/8be85996-dfb6-4e71-a3bd-235470a8f0c1.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -8497,6 +10086,14 @@
     },
     {
       "path": "gallery/architecture/7db0de9b-a9b8-4779-9b81-dcc935659fb0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/1b90192b-efa3-4350-9b97-a2308a2589cc.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -8592,6 +10189,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/7e431834-f56b-4f92-a49e-c86acd63346f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/faec68da-4e90-4bff-ad41-d9b33ee9eda1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/3efee5c3-3262-4ecb-834e-9eba263dcf38.jpg",
       "width": 1024,
       "height": 1024,
@@ -8616,7 +10229,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/241e11c0-786c-4e28-9b74-c25b32c0693e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/0376ae85-e3b4-48c8-b65a-83d5d707167c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/22e83a9c-cdbe-453d-a13b-6cd72a5ef829.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -8640,6 +10269,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/76b59e18-a83d-4a98-a23f-13d760ff7b00.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/9bb99eae-87b9-4a72-bfc8-4e8df43047af.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/d7448f46-df8d-4af6-a1f4-e02b023e9771.jpg",
       "width": 1024,
       "height": 1024,
@@ -8649,6 +10294,14 @@
     },
     {
       "path": "gallery/architecture/38ed7660-5a2f-4231-9c57-12fd76bec8ff.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/1891b2e6-7c34-4ee8-a2c2-fa4920b6e206.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -8744,6 +10397,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/5d7855e3-564e-4d98-aee3-81fcd3f14a51.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/bcd80dc8-54db-40e5-9eb6-b0530df455d6.jpg",
       "width": 1024,
       "height": 1024,
@@ -8808,7 +10469,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/a29c59b9-0064-4e8f-8548-b60224a76fe3.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/d042042f-7a12-4b06-addc-13b5e0590b01.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/9eb449b7-4b80-445d-a29a-81b5557d2109.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -8830,25 +10507,6 @@
       "detections": [],
       "count": 0,
       "has_detections": false
-    },
-    {
-      "path": "gallery/architecture/bf9c64f1-852c-415c-a710-227f4aafa013.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            19,
-            0,
-            186,
-            132
-          ],
-          "confidence": 0.5144142508506775,
-          "class": 0
-        }
-      ],
-      "count": 1,
-      "has_detections": true
     },
     {
       "path": "gallery/architecture/c7f4757a-7cdc-4d6b-bf35-ab7b3faae1b0.jpg",
@@ -8916,6 +10574,22 @@
     },
     {
       "path": "gallery/architecture/c50e4f97-e389-4f88-af75-a7dfb6965f16.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/6c4402cf-59f6-4664-9fcf-375fb278078e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/5c3a9f58-1a3c-4f5d-ace0-803548189811.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -9027,6 +10701,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/d4ecdff5-eb88-42e3-9131-5fd20334f1b8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/2db4682e-4844-4841-848b-60adbccf4e32.jpg",
       "width": 1024,
       "height": 1024,
@@ -9036,6 +10718,22 @@
     },
     {
       "path": "gallery/architecture/7a35c565-ca46-429b-b59f-d6077e364912.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/a44f403d-7c4c-4dff-8623-14ed9db8c966.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/84bf979c-4f59-450d-a2eb-05391f20f5fa.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -9091,6 +10789,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/065f935c-2af2-4626-8a15-967860f6b8c0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/76dd467f-8bad-4ec8-8ee5-cc1046a36924.jpg",
       "width": 1024,
       "height": 1024,
@@ -9116,6 +10822,22 @@
     },
     {
       "path": "gallery/architecture/1ee51de6-5ab2-44da-a663-41a9b6892c98.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/6b9db065-9499-4565-a037-6994411ab14f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/627cf551-cefa-4005-a48b-752667b0ca36.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -9171,6 +10893,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/4ec02922-f6ed-44e4-a947-33d9286da106.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/4f7a5e22-299e-449a-b513-baed3bcd1150.jpg",
       "width": 1024,
       "height": 1024,
@@ -9187,7 +10917,39 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/bfdd72b8-02ff-4a79-ac23-ac64e0566929.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/38330f14-b014-43c8-a792-622a40c0daf5.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/576bf373-51f4-41cc-9dba-a84994ab4e49.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/a117758e-25cf-44cf-b08a-4da6d4599c82.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/58f61faf-c322-45bc-9001-131ca0a662c0.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -9251,6 +11013,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/fd030cff-60ee-4864-9944-2f65573e0bc8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/e8b98a81-fa4d-49ad-ba17-304ce11aacfa.jpg",
       "width": 1024,
       "height": 1024,
@@ -9291,23 +11061,12 @@
       "has_detections": false
     },
     {
-      "path": "gallery/architecture/f603f750-fc92-470a-a6e7-82f90453bcc0.jpg",
+      "path": "gallery/architecture/89d16708-a28a-4d95-9b66-1b3f3774a93d.jpg",
       "width": 1024,
       "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            0,
-            900,
-            14,
-            922
-          ],
-          "confidence": 0.508143424987793,
-          "class": 0
-        }
-      ],
-      "count": 1,
-      "has_detections": true
+      "detections": [],
+      "count": 0,
+      "has_detections": false
     },
     {
       "path": "gallery/architecture/16248029-a3b1-4881-b755-c499264a39f9.jpg",
@@ -9350,6 +11109,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/9e5e15b4-3583-4c3d-8953-771f6b11e80b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/399700c5-2cc5-4f1f-bc0a-9c4fe5336a4f.jpg",
       "width": 1024,
       "height": 1024,
@@ -9383,6 +11150,14 @@
     },
     {
       "path": "gallery/architecture/704befbc-e0c0-4d2e-a79b-8d962725ba9c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/08b8b9c4-b200-4867-aea2-e13d15115092.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -9542,6 +11317,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/abd9d239-98ca-47f0-b2aa-f20b60a05c2e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/7a3aa2b7-0773-43aa-b6c9-f92d83a345fe.jpg",
       "width": 1024,
       "height": 1024,
@@ -9662,6 +11445,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/c9e0d6b6-d5d3-4cd1-9508-60977cae3420.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/a68dac7a-643e-424b-859c-297063914a92.jpg",
       "width": 1024,
       "height": 1024,
@@ -9734,6 +11525,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/b4da8870-9d4a-4ffa-a615-ea9a72e4a6e2.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/a2be6de0-8797-4d64-a46f-9896ea6276b8.jpg",
       "width": 1024,
       "height": 1024,
@@ -9758,6 +11557,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/2e6ee386-938c-4f8b-a7c1-47480143c216.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/39a6e172-be1d-42a3-84f2-46ee7aa9b5aa.jpg",
       "width": 1024,
       "height": 1024,
@@ -9775,6 +11582,14 @@
     },
     {
       "path": "gallery/architecture/8a648daf-3f16-45d3-bf4b-ba95783a9272.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/75d9ca87-d33e-4635-a501-eacb44f6a7dd.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -9830,6 +11645,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/92120461-ecc8-49fd-ba83-3d6e3fdf1041.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/b03a0641-4993-48e2-b361-6889675ddfea.jpg",
       "width": 1024,
       "height": 1024,
@@ -9863,6 +11686,14 @@
     },
     {
       "path": "gallery/architecture/e626daa9-405a-4b57-9721-cd6b4a5793f3.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/4b3b337f-80ab-4ab1-9c58-67894e3211d7.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -9926,6 +11757,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/e0bc29d2-a9a6-4db7-990e-e67fd89e8556.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/3378e32a-c3f4-495f-9e3c-d61e24aa08d3.jpg",
       "width": 1024,
       "height": 1024,
@@ -9982,7 +11821,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/1e7e24c1-ef89-480b-83bc-31e6f3c2034c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/7212f8a0-e45b-4d45-992b-71dfd4ab5ce0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/c0a53668-b69c-40eb-a7f3-e6da778f74d8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/e519b922-62c3-4728-aa11-b2d1e5213b28.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -10023,6 +11886,22 @@
     },
     {
       "path": "gallery/architecture/a0df8137-1202-4c62-ab5f-d0356d295a97.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/8d178fc9-5fe1-4676-aec5-a481e164bb90.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/f892407f-eaed-4e1f-b692-f02a064dd52e.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -10071,6 +11950,14 @@
     },
     {
       "path": "gallery/architecture/3afe0498-d9e3-4838-9327-0979e4101f3d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/9dfdbb87-1b03-41a6-9d7d-41c41b46acf3.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -10270,6 +12157,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/6be1a63b-d3cd-43b1-bb1e-b9eb987df530.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/2cfdcbfd-4d65-4664-8244-18f5d5ec6534.jpg",
       "width": 1024,
       "height": 1024,
@@ -10382,6 +12277,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/c77a2eef-dad9-426f-9391-0bc60dc501b1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/abd261bc-1425-4866-809e-acfae88a1d17.jpg",
       "width": 1024,
       "height": 1024,
@@ -10446,6 +12349,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/0688e6c8-9d26-4e90-bb47-b8244bcde49d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/9ea4391e-f5cd-42dc-99bc-adbaead42e55.jpg",
       "width": 1024,
       "height": 1024,
@@ -10463,6 +12374,14 @@
     },
     {
       "path": "gallery/architecture/ade99c40-926c-4ec1-af1e-470b94eb7f1d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/14b5146c-4b89-4df3-abe9-3b9bc4301512.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -10582,6 +12501,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/90f47b1e-b5dd-4345-8447-88b2c1f7190d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/774e7b48-14fa-4de8-9a79-122f17645582.jpg",
       "width": 1024,
       "height": 1024,
@@ -10639,6 +12566,14 @@
     },
     {
       "path": "gallery/architecture/b81fd1e0-64ae-42a0-9f76-59830ef47eb5.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/72618719-6743-4556-a568-aabf1b42493b.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -10726,6 +12661,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ba9f1b20-2d77-43ff-9050-6f4c78c95824.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/450c00ae-d890-475e-9a9b-3881dba72cc9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/60257650-8def-4462-9789-809da66310a4.jpg",
       "width": 1024,
       "height": 1024,
@@ -10742,7 +12693,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/196bf2f4-6e22-4ea8-88e8-5bfa796d858b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/758548f9-bed3-4c52-8156-c58057487188.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/2a51bf32-2c9f-4d4d-83ac-1b74ac7d3f47.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/071940ca-4e0e-4523-9f14-878a30022d59.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -10774,7 +12749,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/c6b35bf4-ccae-49c5-a1bb-5167d48bc446.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/457e820f-ff36-4e03-ba01-8968ac8422c0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/79c82813-dbcd-4421-b68a-5d8823533c4c.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -10847,6 +12838,14 @@
     },
     {
       "path": "gallery/architecture/361f4dd5-7054-426c-bed4-b7f529512020.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/134f2e17-9026-4982-a18e-407b33a47092.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -10934,6 +12933,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/d3ff4c1b-fc31-4066-aa75-fc48381bd82e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/be2b748b-f22c-49fb-b4a1-eb844fa28523.jpg",
       "width": 1024,
       "height": 1024,
@@ -10974,7 +12981,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/c5012e7e-931f-499c-939f-42ee91d99cd7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/6cce7f2d-d856-47c2-baee-66f41d18d54b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d688deaa-cb00-46b0-95b6-4e20e353492a.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -11062,6 +13085,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/24c63f17-5163-4eaf-b832-26a4c8edd454.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/7a4bfaca-3b6b-41fb-814b-8cf1fddfb6a6.jpg",
       "width": 1024,
       "height": 1024,
@@ -11110,6 +13141,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/04a7b6f6-7d9a-41dc-9285-7a66cb37f223.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/72ad3c7a-1b0e-489d-92e6-9079c4ed6b9e.jpg",
       "width": 1024,
       "height": 1024,
@@ -11151,6 +13190,22 @@
     },
     {
       "path": "gallery/architecture/c18f9908-9be4-4fda-957c-f145b0704bd6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d317b6f3-ffe9-411c-b0b2-1e1e098c19c2.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/19e0a943-42e1-439b-8aee-67b1a4e6f640.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -11246,7 +13301,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/efaf858f-51fd-4327-bfbb-f5bb2ca16aa3.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/2be250ec-95dc-4ee9-b5bf-1215158984e6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/04c39c5b-4070-47a6-a904-a1d45198d3c0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/bc3c556a-4448-4fd4-802a-20dc62012efb.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -11271,6 +13350,14 @@
     },
     {
       "path": "gallery/architecture/0186ab6f-39df-4cf1-b7bb-03af4bf9502f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/cf5d55d2-98d8-4244-a5c2-cd9109db6ec4.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -11303,6 +13390,14 @@
     },
     {
       "path": "gallery/architecture/d2f0eeed-be23-4b8d-8f14-2bde6667e699.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/58525c73-81e4-4084-a64b-a90e97b202a4.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -11478,6 +13573,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/392ae10f-b9ea-4559-9309-2612172bf0e9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/cbfe5fce-7714-4a46-9f64-9194739871d6.jpg",
       "width": 1024,
       "height": 1024,
@@ -11494,7 +13597,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/6f3ce51e-2f30-4e98-a5ec-d937f6f5db75.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/647646e5-1231-4466-b9d7-5c1b8459ebff.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/e1572cd4-c365-4e8f-98c1-b3486c9c41e1.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -11535,6 +13654,14 @@
     },
     {
       "path": "gallery/architecture/cc500519-15e6-4a7e-966d-f41b7dad0889.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/a9b6885f-9637-483e-bc66-ab6154818b70.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -11862,6 +13989,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/9a98c13a-7a48-4f1a-8d3e-4e66198741ac.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/e73c33bd-bb75-4a65-94df-a7c3833257e8.jpg",
       "width": 1024,
       "height": 1024,
@@ -11871,6 +14006,14 @@
     },
     {
       "path": "gallery/architecture/68948544-5b34-4c40-8d28-3392e942fe38.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/717c7bc4-db1f-4569-8323-bcf52c65baaf.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -11895,6 +14038,14 @@
     },
     {
       "path": "gallery/architecture/3b98b900-9fc9-4da8-91d8-d91fa5a01ab6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/5edccf53-1fc0-4dba-aafb-9070325ec118.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -12022,6 +14173,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/be8754b2-9392-42ab-8929-9366693f207f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/08921a8a-3f98-4e07-b176-8eaec4ecf615.jpg",
       "width": 1024,
       "height": 1024,
@@ -12103,6 +14262,14 @@
     },
     {
       "path": "gallery/architecture/bc55860d-381e-40d6-b80c-e76a02bb6dd0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/14f2e24e-0546-4b3d-9128-ea997ef0e201.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -12422,6 +14589,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/3dd4b068-5a38-4dbf-82c0-b2274c10bcf8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/768bd821-3286-4ca6-a5fe-75c378ed1a18.jpg",
       "width": 1024,
       "height": 1024,
@@ -12494,7 +14669,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/296586a9-4347-4f3e-bc93-fc892baac559.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/0d848a86-d155-41cb-8cac-7ae9dcc6e8c9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/af6f0ad7-665c-4d6f-895c-30dfe96fd64b.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -12566,7 +14757,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/9890c40e-e3d8-4da6-b5e0-174a98463eff.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/e20c5a8a-05f3-48a9-a879-af5b690a41ab.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/efe9d797-93a1-47ac-9fcd-e24609581c7b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/e8aa5490-60de-41c7-a394-379b86a8ceba.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -12647,6 +14862,14 @@
     },
     {
       "path": "gallery/architecture/52ad6d9a-602d-40d7-9a84-3c36476dac11.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/16614f5a-d0a7-428f-ac06-6f8dcd3ac65a.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -12742,7 +14965,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/84d8658a-3575-415d-b418-7984161f2222.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/0fcb79f5-11e8-4130-8859-11776dd8ff4e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/46732d5e-eecf-4818-ae82-d07af48ad2b1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/63b6814a-ffd4-4a81-ada1-c658d48022d5.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -12774,6 +15021,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/22565528-9352-45a2-8a0d-c36b6a368ae8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/8cef3a51-8d4a-4381-b0a6-f216aa1c3389.jpg",
       "width": 1024,
       "height": 1024,
@@ -12798,6 +15053,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/c68ac3f3-ea19-4e70-ae3d-0dca30f50501.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/8149a4c0-c4a8-495e-984d-e3b4480616f2.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/8b56c522-b21d-40fa-b5d7-c6d4c3efe379.jpg",
       "width": 1024,
       "height": 1024,
@@ -12806,7 +15077,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/98510aa4-a455-4605-b7c4-849dfcea0bd5.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/8f27524c-b0d4-4eb4-98e4-56a39f5a6128.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/e1910392-9dbb-4d49-82f2-d2115088ba1a.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -12910,6 +15197,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/982fb96c-1de1-49a3-ae5f-7ce1c0aa143d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/de930eac-6687-4a57-bee1-b58844ae0fc7.jpg",
       "width": 1024,
       "height": 1024,
@@ -12950,7 +15245,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/a6f4cbd9-bcb5-4395-a2c2-3cbcca5f7316.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/a5fe3e0c-6632-4626-9597-3c86d56dc592.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/3425e804-f968-4d26-9442-c3674ce16c85.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -12975,6 +15286,14 @@
     },
     {
       "path": "gallery/architecture/4ca588a8-9a0a-4a1f-ba15-dfbb597c9180.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/dc4797eb-1208-4ffd-a9c9-7fb881354e48.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -13046,6 +15365,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/f810d528-f5be-47ec-8e28-2d88bf68211c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/d8ec5840-6b0b-4a02-a93b-abdcc8241409.jpg",
       "width": 1024,
       "height": 1024,
@@ -13063,6 +15390,14 @@
     },
     {
       "path": "gallery/architecture/0dfb001b-2368-4c3d-bedc-919b044b6ba2.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/0b604962-e522-4173-bc17-cf92c8e7d2e9.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -13094,7 +15429,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/0c19586b-a4cd-44ba-868c-3f24a0fdb8d4.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/ae64059f-500e-4083-9c5c-b9744635aaee.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/4830f301-9f75-4984-87fc-ad075a1aec8a.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -13119,6 +15470,14 @@
     },
     {
       "path": "gallery/architecture/944d3628-ee12-4976-b76d-d91a64392324.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/27bf8035-2a55-4e93-8c08-1c117a9627fa.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -13174,6 +15533,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/d13c192f-d3e9-4994-bbd8-32e0d221c400.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/7698a796-b728-4dda-b4d1-3785f92725b3.jpg",
       "width": 1024,
       "height": 1024,
@@ -13198,6 +15565,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ab3de3ff-4d33-4157-aef5-e561fdc2b55a.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/5ce779f3-3233-4d4b-8d79-3847ab06357e.jpg",
       "width": 1024,
       "height": 1024,
@@ -13207,6 +15582,14 @@
     },
     {
       "path": "gallery/architecture/1f0e3367-e1ad-4e7f-8900-e341f4d75460.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/c1e7ec36-eb50-4b8f-b88a-d1b62906192b.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -13279,6 +15662,14 @@
     },
     {
       "path": "gallery/architecture/9e15ec07-add7-4f56-af1f-74c3a90bad0b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/10f2060f-9c18-496e-9a38-c49e6637dced.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -13462,6 +15853,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/5b188656-5a03-4ef0-a1d6-ba5f82351cbb.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/3b9f7860-3cb3-4efb-8ecc-c0bc602f77e9.jpg",
       "width": 1024,
       "height": 1024,
@@ -13534,6 +15933,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/b01e9161-fbf2-4af3-ad29-21aff4a53453.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d00234b4-7dbf-4744-bcec-be446bc9842b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/81b6fefc-eac6-479f-84ed-2fa65a7d2dd5.jpg",
       "width": 1024,
       "height": 1024,
@@ -13582,6 +15997,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/056efb60-cdad-463c-9a19-4803b5bf8d97.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/aca2606c-87cd-436e-a0c7-a2885e18b647.jpg",
       "width": 1024,
       "height": 1024,
@@ -13599,6 +16022,22 @@
     },
     {
       "path": "gallery/architecture/6d2ce510-5b01-49e8-992e-0785b1a27068.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/9c0265d3-09d0-4868-966e-439245c62b5e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/e66529e4-f25b-4c81-b94c-04b8f485692a.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -13686,6 +16125,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/f5fc7394-6077-458f-8ae9-6bbd4cc304c7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/aa6a2a77-a06d-40ed-8765-fb85a944b047.jpg",
       "width": 1024,
       "height": 1024,
@@ -13727,6 +16174,14 @@
     },
     {
       "path": "gallery/architecture/8f597618-a9ad-4fa0-b8ab-756828c286cd.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/3f4aa2dd-c884-4569-b6d2-03a5018a5bad.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -13830,6 +16285,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/3fd4760b-8e0c-4969-a4d3-5a147d870f3b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/5312d644-4c58-441a-b25a-bfae1faa732e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/67df472c-8cf9-47f3-a2fa-38543aa0ae48.jpg",
       "width": 1024,
       "height": 1024,
@@ -13870,6 +16341,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/33a06c00-35a3-4869-8ce6-e84060439214.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/2cbce2b1-8d4f-4b1d-b282-fa7fc5fab159.jpg",
       "width": 1024,
       "height": 1024,
@@ -13894,7 +16373,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/796a5cbd-a476-4218-9ed0-b7af5253e1fb.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/a77f89cc-9974-4edf-847b-f7630283d5a9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/2b25ea55-f8f0-4731-a1bd-ed6071b70719.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -13935,6 +16430,14 @@
     },
     {
       "path": "gallery/architecture/461ebb68-6965-43ab-80db-8fa3c01eefbb.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/1ad02b22-b3dd-4f1e-a9ad-c820e2f618a3.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -14014,6 +16517,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/6a2f2cc3-6376-46f0-9d86-83b27f3bce1e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/746556c6-3084-4427-91c3-08b34f92bb27.jpg",
       "width": 1024,
       "height": 1024,
@@ -14063,6 +16574,14 @@
     },
     {
       "path": "gallery/architecture/ddfe7f25-bdab-499f-8a03-5cef4b3c57cc.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/5301829f-9015-4de3-824e-40e88c4a23bf.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -14134,6 +16653,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/4e1c5b59-d507-4968-97ed-0b10abd3d573.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/0f86dff2-2305-4ad6-b735-1ad64e255771.jpg",
       "width": 1024,
       "height": 1024,
@@ -14174,6 +16701,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/fe2e7665-e43b-4c75-b849-35fde3f6b097.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/92e48de7-69dd-4eda-be71-ce9be2ab7baa.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/6ace8437-41d5-44d7-b307-ff08f1c1c5fe.jpg",
       "width": 1024,
       "height": 1024,
@@ -14191,6 +16734,14 @@
     },
     {
       "path": "gallery/architecture/03cfcd55-b60c-4c98-aa40-ae07402332b5.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/709646ca-1b26-4257-918a-0dcc494fc39e.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -14246,6 +16797,30 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/557f9d07-5e29-4fa6-b036-e4b0f284c23c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/9d6d2839-3e3e-428a-81b7-0e54e81fdd0e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/f686062f-dff7-42b5-9eba-d265036f6c79.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/5e2383c5-e3c0-43a1-bc2e-37ad63b92973.jpg",
       "width": 1024,
       "height": 1024,
@@ -14294,7 +16869,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/45b5b13b-fd01-47d8-8cad-dd609d71dd9b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/db9d3d2a-cb27-4c6f-b9a2-ebaae50215f8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/72ec534a-c2f8-49c2-93ec-342a7c815981.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -14358,6 +16949,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/dbc5f357-2675-4c35-be51-fed832316748.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/f820b4cb-a4f5-4995-b0d9-413a2fed9ac0.jpg",
       "width": 1024,
       "height": 1024,
@@ -14382,6 +16981,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/dbd2392c-6ba1-49e8-ba4a-055086e7da75.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/ff127337-3f14-41a7-af6f-7bd037adba94.jpg",
       "width": 1024,
       "height": 1024,
@@ -14399,6 +17006,14 @@
     },
     {
       "path": "gallery/architecture/f219fcf5-9ebc-48c8-a1a3-94382608e8a2.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/cd3291ee-25db-467c-8edc-554e7c570056.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -14462,7 +17077,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/4b580fb0-862c-4c03-923b-c480292c12df.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/1e2656e1-a831-4675-bf7f-c8c5ee84db85.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/8e9a2f55-64dc-4289-ba94-db961b089523.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -14558,6 +17189,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/28718a06-1c7e-4f79-a912-c012c74f7c32.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/9aef3686-c404-4adb-9c13-b91112cecdd6.jpg",
       "width": 1024,
       "height": 1024,
@@ -14567,6 +17206,22 @@
     },
     {
       "path": "gallery/architecture/3dab6b57-bf04-425f-9bb7-3a6d995b196f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/dc2078d9-67f1-4589-abcb-79af61dc2f4c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/30f8a0ac-8095-41bd-afe0-08c3c805a057.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -14654,6 +17309,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/c561d851-f1ae-45c3-b71d-ecbb60b3c7a9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/3e1e5659-8677-486d-a016-29403d216eb2.jpg",
       "width": 1024,
       "height": 1024,
@@ -14711,6 +17374,22 @@
     },
     {
       "path": "gallery/architecture/c3487b78-2535-444e-b12b-ae2bb03a0d16.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/98c2411e-dd3f-4a45-a89b-a4a0d9932f5f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/ce852818-54b5-487d-98a0-f988fa1a8f30.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -14830,7 +17509,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/23bffaee-6261-46b0-b8f5-b0aa9eb2e759.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/4083f849-4054-4ded-adfd-396a45358579.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/a1203a91-b284-45a6-a905-3ce458fec810.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -14855,6 +17550,14 @@
     },
     {
       "path": "gallery/architecture/72aa9c6c-b2a7-4bd4-94b4-5eda3caf4564.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/82d9032a-90df-425d-86a1-ee8ef753dc06.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -14958,6 +17661,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/bed7fca6-14fc-4667-af95-303c04980e29.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/935a2db9-512e-4ccf-9e9f-1394a06df601.jpg",
       "width": 1024,
       "height": 1024,
@@ -14974,7 +17685,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ff0f2866-1d4e-4063-a717-75f3d9f264a7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/5c9134d0-0779-453a-b7a5-f7dc78a43922.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/8840fa74-1fdc-4e17-ba94-3b605b53eb7c.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -14999,6 +17726,14 @@
     },
     {
       "path": "gallery/architecture/60b0aa6f-85ee-4e8f-8782-1f2f415f78c1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/63639ab9-a725-439b-a64c-aeea1fb31c8f.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -15078,7 +17813,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/18a004c1-9e24-408c-9a57-0a8c29875c66.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/38bf86dc-9f45-4f93-8ea9-5c18f33f0bb8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/6b753924-7c34-4d69-9ae4-fd0715156084.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -15110,7 +17861,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/efd2fef2-d6f2-4d0b-b811-c683e1bdef8f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/3e2948e4-b71e-48df-b018-79833f70dc56.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/82147233-771d-49e4-ac2f-68d5dc92ba0f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/a02b1540-0cd5-48db-8f4f-34d643214b11.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -15166,6 +17941,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/50399e5f-3c5e-4950-8d5a-cac921a4b080.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/aa571d8d-467a-4510-9997-d3a6187a7a1d.jpg",
       "width": 1024,
       "height": 1024,
@@ -15175,6 +17958,14 @@
     },
     {
       "path": "gallery/architecture/c73ce3d1-c97f-4f5c-924c-528c84e72298.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/92da9ccf-a073-42c2-bf57-df8397ac9845.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -15214,6 +18005,38 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/a6ee9094-8e21-4c44-a1ad-7b5b8dc44d09.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/05b06094-5dc9-46d1-82b2-a1c13a61b74a.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/2ca62aad-68a5-4b4e-8df0-1e8aa072fd20.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/1c266aef-5f25-45e4-b942-2293a36c4c42.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/be437fa4-228c-4770-b538-b602b52d66ae.jpg",
       "width": 1024,
       "height": 1024,
@@ -15223,6 +18046,14 @@
     },
     {
       "path": "gallery/architecture/3c7d187a-a327-4560-9176-d5cb741b7a07.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d430b2af-209a-4e1d-b163-10ab34fda1dc.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -15334,6 +18165,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/a5b1ca29-de72-456a-a062-a5a6d9e840ca.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/9dba87cb-6568-4dd4-a45c-ddfdee012731.jpg",
       "width": 1024,
       "height": 1024,
@@ -15342,7 +18181,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/58bfe99f-019e-4723-9bd9-42a8a2690212.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/1b3e16d9-fd40-48b6-ace5-bf61f7672360.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/58417f1f-6e2e-4f97-9985-6d20d65114a0.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -15382,7 +18237,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/78052f62-e2fd-4082-a939-aef046eeac9d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/f6465860-f629-4d54-a4c7-25d09e37ca65.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/b99b25d8-637a-4219-bc3a-0f9545a626f1.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -15446,6 +18317,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/79d71f9c-f92d-4b53-9361-2c08f91a696c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/eff48629-09b0-4de3-9ca5-fe1ddb9ba095.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/114d78ec-0e52-457a-9f10-4c88c5bf9cb5.jpg",
       "width": 1024,
       "height": 1024,
@@ -15463,6 +18350,22 @@
     },
     {
       "path": "gallery/architecture/71154bed-5e1d-4000-b768-a47ef7459e30.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/03275d88-dfe3-4fcd-9a3a-50b0cd4faa47.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/3fc921e9-dd23-4c80-9e44-bc891b61fa3a.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -15574,6 +18477,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/03f86cd4-b487-4ffe-8dbd-c0d2efc5e348.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/b1ce6500-7b2a-4eeb-9bb0-16d0d9022755.jpg",
       "width": 1024,
       "height": 1024,
@@ -15583,6 +18494,14 @@
     },
     {
       "path": "gallery/architecture/9a677bca-d503-4817-b918-3c784967c4e6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/43fbe94f-8508-4476-8820-5d302c113b32.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -15646,6 +18565,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/2ddf5969-5bcd-4ab4-82dd-06c02eb94c39.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/1dddb365-a578-4c39-a5c8-cd1fad9ac168.jpg",
       "width": 1024,
       "height": 1024,
@@ -15678,7 +18605,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/76d5efb6-e76a-44e6-865d-65b0358eb9b3.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/b63f89d2-3943-45ef-9f48-cf1460049ce9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/9cc81637-ea95-4457-a940-d1bbfbb64795.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -15862,6 +18805,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/b8ef1628-1cdd-46eb-8cc1-79434139c220.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/2ee11d4b-1ce1-4b34-8fd9-1e6c86d38806.jpg",
       "width": 1024,
       "height": 1024,
@@ -15902,6 +18853,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/42c05413-b78c-4fa3-b663-5f6e9f091d56.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/224ddf4f-e603-4c1b-84a1-2889fa4d12f3.jpg",
       "width": 1024,
       "height": 1024,
@@ -15919,6 +18878,14 @@
     },
     {
       "path": "gallery/architecture/da1ade5c-e3cb-4254-9a62-8de1df95286e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d3bd2811-eaa8-441b-a1b1-711a565344ae.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -15975,6 +18942,14 @@
     },
     {
       "path": "gallery/architecture/a023df45-a354-4e6b-8d43-f3c39c5613d6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/edd09327-7433-4d55-a5f9-6cad7a41828c.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -16062,6 +19037,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/66a1cc35-ba59-42b6-8c27-29e55a030996.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/178e65fd-ae4b-4c19-b400-d92a86d83c03.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/0509ede9-08cc-446c-b20c-05e9fea67f40.jpg",
       "width": 1024,
       "height": 1024,
@@ -16103,6 +19094,14 @@
     },
     {
       "path": "gallery/architecture/2d024b76-f5f9-4e11-a933-2727dff60bcf.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/5e9d101f-1f4a-43cf-8934-191d65600ae8.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -16166,6 +19165,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/51521c89-8776-4039-b2e1-2019fc48c2dc.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/93963195-7451-4498-94f6-f018d7c4bfaa.jpg",
       "width": 1024,
       "height": 1024,
@@ -16207,6 +19214,14 @@
     },
     {
       "path": "gallery/architecture/a53d2041-857f-4f15-b4fa-77ed38844053.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d75186d9-f9b1-463c-85dc-8db7b4e21d84.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -16342,6 +19357,30 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/e7fb5db4-4134-44ac-a286-9cea7eb65265.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/f6e22244-f517-47e8-878b-3a26ca209432.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/fc8907d3-2bbf-4fdc-82c9-51362092da10.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/36f2b187-6401-4b99-8719-962d9eaabf4f.jpg",
       "width": 1024,
       "height": 1024,
@@ -16446,6 +19485,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/7579069e-1449-4e24-a97c-c60dc42e167d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/5d0cf3a0-f2a1-4749-9ece-f50c42aa1085.jpg",
       "width": 1024,
       "height": 1024,
@@ -16463,6 +19510,14 @@
     },
     {
       "path": "gallery/architecture/e19a38ef-6238-4fbb-b18e-76a00fd6ace0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/7da4d898-932f-4f53-a2f0-96acbc1f8211.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -16534,6 +19589,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/2698c24b-cd13-4991-a1c2-2fc0b9d70857.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/b1b5177e-96a3-4cf1-88f9-014cf702e236.jpg",
       "width": 1024,
       "height": 1024,
@@ -16575,6 +19638,22 @@
     },
     {
       "path": "gallery/architecture/4abd1eb7-2f12-4afc-bfec-1281c8fe02ed.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/4ffcfeea-88ea-4d58-b5f1-7961a9d0dfdf.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/fa9af8d9-aa98-4518-b07a-b413e00e551f.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -16638,6 +19717,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/c7db0792-c488-4c80-ba1d-3dd5565ea3ca.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/bffe6591-71dc-4116-a97d-a984078f8ebf.jpg",
       "width": 1024,
       "height": 1024,
@@ -16654,6 +19741,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/8bbc0e5f-5891-4657-a365-fc22c3d17e3c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/000c1fa5-e94a-44e9-ba1d-810288642cc9.jpg",
       "width": 1024,
       "height": 1024,
@@ -16663,6 +19758,14 @@
     },
     {
       "path": "gallery/architecture/0dddad91-30d4-4edc-9871-dad09b30a35c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d3948f4b-70f8-436f-a6f7-8e67a03954c4.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -16702,7 +19805,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/14dabf63-8c3f-4d27-8445-63b676283c11.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/c3b5d7c1-2410-4b5f-bc71-ecbe394bac63.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/5aae6253-addc-4c61-add7-e47f13e0cbcb.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/68fc098c-6e2f-469e-b64f-ffb1878f0e96.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -16751,6 +19878,14 @@
     },
     {
       "path": "gallery/architecture/54749fc8-701c-49f0-9e1c-dff605c0fc29.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/b4bd550d-fd40-439f-b8ee-f9fbc0c3f267.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -16838,6 +19973,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/1075fb42-27c7-4e18-8047-d3faa7982a01.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/7c3159fd-09da-40b4-89fe-43a16388c12b.jpg",
       "width": 1024,
       "height": 1024,
@@ -16910,6 +20053,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/1c0d1727-793d-4e67-984b-f520697f706b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/1369e7c6-21ea-4c39-8acd-388f00d5b314.jpg",
       "width": 1024,
       "height": 1024,
@@ -16935,6 +20086,30 @@
     },
     {
       "path": "gallery/architecture/37c3d67d-d261-4aeb-811d-c81294386f48.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/779c979f-19a8-4f3c-8136-c44a923b496c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/6afa6ae4-07ef-4758-b31d-766fcc00221b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/edd83ab9-3922-44b6-bec1-05c1f9d21ec6.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -16990,6 +20165,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ebf27305-b4cd-4e72-a6de-3d180cb3eb06.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/c1dbb9c6-5204-424b-ae81-75abaa396d97.jpg",
       "width": 1024,
       "height": 1024,
@@ -16998,7 +20181,39 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/06367c78-f793-47b0-bfd5-532302466897.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/a5c01973-2e68-4e92-bbef-01ec610ce3f1.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/b0f4e50f-1087-41f4-ab8e-1953e6ccba57.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/4bcf3c4c-1a16-403a-a06d-81ec311d4658.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/3146dfab-bf7a-4bd4-9adc-2d9f8796e6db.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17030,6 +20245,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/b2469f25-e9dc-442c-962f-916f551cf2cf.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/7059e58b-3328-4718-8606-6db9fd6b0ade.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/244ec7dd-4652-4c76-a9b0-1c79c04651af.jpg",
       "width": 1024,
       "height": 1024,
@@ -17047,6 +20278,14 @@
     },
     {
       "path": "gallery/architecture/e6b15524-ddc7-42c9-92c7-da2f6c20db16.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/1a6bbe00-bb9b-4ef9-9522-4ed2e2417f5a.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17086,7 +20325,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/9f3a865f-0582-4a40-8f81-94a4840819ef.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/197bc040-e5cc-411f-9c02-035eb92ba3b3.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/eec1e865-5791-4e72-9db7-8c5a7ac1141d.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17150,6 +20405,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/19dcee26-d235-4131-abb4-0b91e2a6ada6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/1ef4c599-8111-4fd4-8287-073283813aac.jpg",
       "width": 1024,
       "height": 1024,
@@ -17166,6 +20429,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/7584c52b-c751-4bac-8e1e-2f245f7c646a.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d8f22251-29ab-421c-83fb-4169d2af0dab.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/fffbb809-40be-493d-aef4-d1adc5ae601f.jpg",
       "width": 1024,
       "height": 1024,
@@ -17175,6 +20454,14 @@
     },
     {
       "path": "gallery/architecture/3a6f0723-53ab-4adb-87ad-26106ae45153.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/0b64237a-f2ec-4b0f-9573-cc35c6af832e.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17206,7 +20493,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/03f0d4ff-4920-471a-80cf-081c29784e1a.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/4f8379f5-5552-46c8-89c3-19107794637f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/b4b42fad-b8b9-4b7b-98af-a64312f30f9d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/ae010d40-62bc-439e-b908-d9e276174786.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17254,6 +20565,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/79266f53-f548-4bcb-99a7-b0efdd87266a.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/88437480-d209-42b6-af68-1530ea2de7ad.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/701f4713-293f-483d-80cf-eff9499baac9.jpg",
       "width": 1024,
       "height": 1024,
@@ -17263,6 +20590,14 @@
     },
     {
       "path": "gallery/architecture/6b71d9c6-6611-4949-ad99-9943b62d8015.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/bb5fd9b2-e7c8-4ceb-9628-743d0d040475.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17318,6 +20653,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/ab5cd692-069c-46bc-aaee-2c9be73ed126.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/fccacb99-3420-427d-afe5-31a2084fb296.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/06fa00d4-347c-475b-98dc-6c636730ac2a.jpg",
       "width": 1024,
       "height": 1024,
@@ -17327,6 +20678,14 @@
     },
     {
       "path": "gallery/architecture/72dabb02-3f83-4380-8dda-e34aefde89d5.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/a6db0ce3-119e-4ea0-843e-82cee9aac07b.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17406,7 +20765,31 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/7e228cbb-1ad1-4c21-9f7e-d7b6c14d3f61.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/eae9eead-04bf-4775-9f02-fd68ddb735d8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/c1d68ae8-16d4-4438-bd6b-6c5aa3c57ecd.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/4ab05ad5-ebfd-4565-920d-b64d6c1d0634.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17446,6 +20829,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/4285e56c-f599-417a-902e-3d5bdf4440d5.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/f9f4eefc-4a29-4b4c-ada3-37c2f8245680.jpg",
       "width": 1024,
       "height": 1024,
@@ -17471,6 +20862,14 @@
     },
     {
       "path": "gallery/architecture/91bc7d4f-ca1d-40d1-84af-b407b09534fc.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/090bf484-ab6c-4d2d-b6b6-7f33dbc613fb.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17566,6 +20965,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/6abc9b18-9ac9-4ae1-b319-bcc55004ca2f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/0bc1c90c-3393-45d1-9584-0e3711a7aad4.jpg",
       "width": 1024,
       "height": 1024,
@@ -17575,6 +20982,22 @@
     },
     {
       "path": "gallery/architecture/061588ca-c007-412e-bbce-0425fcd1cd35.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/815d6e34-7288-4051-9679-d71864f79140.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/571c49ee-49d1-43a5-b3d1-8329e09268b0.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17606,6 +21029,22 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/f0e29e35-b8af-406c-bcd3-a2be022ed10f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/b5fa3ed5-5a38-4162-9dc7-28776dfafdbb.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/e729bf8a-0add-49bd-ae20-bc858870b62c.jpg",
       "width": 1024,
       "height": 1024,
@@ -17615,6 +21054,14 @@
     },
     {
       "path": "gallery/architecture/e7edfb37-51b9-4fbb-8e37-f378845317ac.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/d6a9f637-2f30-4b83-9cac-358ef1193119.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17639,6 +21086,14 @@
     },
     {
       "path": "gallery/architecture/4920ffe1-f804-4948-abaa-1ad5dfb399fa.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/bc68191a-d90e-476a-b32c-bee60b6c8d2e.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17702,7 +21157,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/6f6952a5-d8ba-4041-ac8b-2fd51bb553c6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/5b2de47f-bec7-4ee2-98dd-3ce2a1450472.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/08f18486-5f48-4a7e-b6c9-70ba8f6c0d19.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17742,7 +21213,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/73baad79-5ca1-4086-b681-8cb772839b03.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/10f21d28-208a-475d-8c9c-5b902e82dd97.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/ddb35f92-c1ab-4736-9efd-09407c7e213a.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -17790,7 +21277,23 @@
       "has_detections": false
     },
     {
+      "path": "gallery/architecture/858d0ea0-d152-4e16-b30e-feda6d545efb.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/architecture/1290a456-743a-47bc-9762-66a902ff755d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/architecture/52cba7b5-6fdb-4903-9df8-aadc2afad664.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],

@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-07-25T23:55:00.981549",
+  "dry_run": false,
+  "use_symlinks": false,
+  "total_candidates": 2,
+  "high_confidence": 0,
+  "medium_confidence": 2,
+  "low_confidence": 0,
+  "errors": 0,
+  "movements": {
+    "high": [],
+    "medium": [
+      {
+        "source": "gallery/architecture/19184ea4-d8ba-4bd7-b948-91375cf7f4eb.jpg",
+        "target": "review_faces/medium_confidence/architecture/19184ea4-d8ba-4bd7-b948-91375cf7f4eb.jpg",
+        "confidence": 0.5398510694503784,
+        "detections": 1
+      },
+      {
+        "source": "gallery/architecture/54a92d02-7e09-4798-ae04-32a8ce3ef9da.jpg",
+        "target": "review_faces/medium_confidence/architecture/54a92d02-7e09-4798-ae04-32a8ce3ef9da.jpg",
+        "confidence": 0.5748473405838013,
+        "detections": 1
+      }
+    ],
+    "low": [],
+    "errors": []
+  }
+}
