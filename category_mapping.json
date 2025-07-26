@@ -14,7 +14,7 @@
     },
     "things": {
       "directory": "things",
-      "keywords": ["object"]
+      "keywords": ["object", "atmosphere"]
     }
   },
   "skip_unmatched": true,
