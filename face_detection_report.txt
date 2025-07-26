@@ -1,10 +1,10 @@
 Detection Report
-Generated: 2025-07-26T08:31:57.482241
+Generated: 2025-07-26T21:49:44.697510
 Detector Type: face
 ============================================================
 
 SUMMARY:
-- Total images scanned: 12119
+- Total images scanned: 14270
 - Images with detections: 0
 - Total detections: 0
 - Average per image: 0.00
@@ -32,7 +32,7 @@ gallery/landscape:
   - Total detections: 0
 
 gallery/things:
-  - Total images: 4854
+  - Total images: 7005
   - With detections: 0
   - Total detections: 0
 
