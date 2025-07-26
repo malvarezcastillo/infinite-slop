@@ -1,446 +1,1022 @@
 {
-  "timestamp": "2025-07-26T00:11:09.658661",
+  "timestamp": "2025-07-26T08:31:56.001525",
   "dry_run": false,
   "use_symlinks": false,
-  "total_candidates": 72,
-  "high_confidence": 48,
-  "medium_confidence": 24,
+  "total_candidates": 168,
+  "high_confidence": 133,
+  "medium_confidence": 35,
   "low_confidence": 0,
   "errors": 0,
   "movements": {
     "high": [
       {
-        "source": "gallery/architecture/2a6aecc6-e366-4cd7-af1c-cfaab62499c9.jpg",
-        "target": "review_faces/high_confidence/architecture/2a6aecc6-e366-4cd7-af1c-cfaab62499c9.jpg",
-        "confidence": 0.8217807412147522,
+        "source": "gallery/architecture/26a087d6-fb51-4510-994e-7851449c0320.jpg",
+        "target": "review_faces/high_confidence/architecture/26a087d6-fb51-4510-994e-7851449c0320.jpg",
+        "confidence": 0.8542624115943909,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/9693a2f7-8df3-4249-a343-66a35125d581.jpg",
+        "target": "review_faces/high_confidence/things/9693a2f7-8df3-4249-a343-66a35125d581.jpg",
+        "confidence": 0.8926506638526917,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/184033e4-d0b0-4d0f-b9ab-145b809336e0.jpg",
+        "target": "review_faces/high_confidence/things/184033e4-d0b0-4d0f-b9ab-145b809336e0.jpg",
+        "confidence": 0.8510210514068604,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/6f973800-8a06-4818-b296-72d30bd860af.jpg",
+        "target": "review_faces/high_confidence/things/6f973800-8a06-4818-b296-72d30bd860af.jpg",
+        "confidence": 0.8332162499427795,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/594b50fd-5bbb-4909-bc46-876ef294a2a8.jpg",
+        "target": "review_faces/high_confidence/things/594b50fd-5bbb-4909-bc46-876ef294a2a8.jpg",
+        "confidence": 0.8176401257514954,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/c806cbf2-9388-4cdf-87d0-ba170e189d38.jpg",
+        "target": "review_faces/high_confidence/things/c806cbf2-9388-4cdf-87d0-ba170e189d38.jpg",
+        "confidence": 0.8659242391586304,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/3d02e397-1568-4105-a428-7203ef35805b.jpg",
+        "target": "review_faces/high_confidence/things/3d02e397-1568-4105-a428-7203ef35805b.jpg",
+        "confidence": 0.8988490104675293,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/27256a4a-b734-4971-b532-2378bfcac6f9.jpg",
+        "target": "review_faces/high_confidence/things/27256a4a-b734-4971-b532-2378bfcac6f9.jpg",
+        "confidence": 0.8816983699798584,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/0d4e123e-18cd-4555-93e1-759a770e9b2e.jpg",
+        "target": "review_faces/high_confidence/things/0d4e123e-18cd-4555-93e1-759a770e9b2e.jpg",
+        "confidence": 0.8416008949279785,
         "detections": 2
       },
       {
-        "source": "gallery/architecture/a1b869a0-e4c5-4eba-bfa0-26f1e8241229.jpg",
-        "target": "review_faces/high_confidence/architecture/a1b869a0-e4c5-4eba-bfa0-26f1e8241229.jpg",
-        "confidence": 0.8061995506286621,
+        "source": "gallery/things/c62c9351-eead-488e-b7b3-76808d7b02ed.jpg",
+        "target": "review_faces/high_confidence/things/c62c9351-eead-488e-b7b3-76808d7b02ed.jpg",
+        "confidence": 0.8696858882904053,
         "detections": 1
       },
       {
-        "source": "gallery/things/37c1270b-2b31-498b-b63e-22f24dba0cd8.jpg",
-        "target": "review_faces/high_confidence/things/37c1270b-2b31-498b-b63e-22f24dba0cd8.jpg",
-        "confidence": 0.8816445469856262,
+        "source": "gallery/things/5f884b57-7127-4f8d-a059-6c5ab0ae4374.jpg",
+        "target": "review_faces/high_confidence/things/5f884b57-7127-4f8d-a059-6c5ab0ae4374.jpg",
+        "confidence": 0.8802340030670166,
         "detections": 1
       },
       {
-        "source": "gallery/things/01c30c39-e3e5-4995-8b03-26908c963885.jpg",
-        "target": "review_faces/high_confidence/things/01c30c39-e3e5-4995-8b03-26908c963885.jpg",
-        "confidence": 0.8674477338790894,
+        "source": "gallery/things/aea530fa-5c52-4139-8ddd-db39d94b3ddc.jpg",
+        "target": "review_faces/high_confidence/things/aea530fa-5c52-4139-8ddd-db39d94b3ddc.jpg",
+        "confidence": 0.8635504245758057,
         "detections": 1
       },
       {
-        "source": "gallery/things/e621ee94-aa02-4df4-be8e-dbbe54f781e7.jpg",
-        "target": "review_faces/high_confidence/things/e621ee94-aa02-4df4-be8e-dbbe54f781e7.jpg",
-        "confidence": 0.8788422346115112,
+        "source": "gallery/things/e291934b-50cc-4f12-b43d-ace6ce1e6707.jpg",
+        "target": "review_faces/high_confidence/things/e291934b-50cc-4f12-b43d-ace6ce1e6707.jpg",
+        "confidence": 0.807486891746521,
         "detections": 1
       },
       {
-        "source": "gallery/things/91cf11a6-0863-4ad7-ac68-7fdd04172d3a.jpg",
-        "target": "review_faces/high_confidence/things/91cf11a6-0863-4ad7-ac68-7fdd04172d3a.jpg",
-        "confidence": 0.8135941624641418,
+        "source": "gallery/things/34aea3f6-3153-41ec-916b-0d9262bd85ab.jpg",
+        "target": "review_faces/high_confidence/things/34aea3f6-3153-41ec-916b-0d9262bd85ab.jpg",
+        "confidence": 0.8815245628356934,
         "detections": 1
       },
       {
-        "source": "gallery/things/e8ce03d5-bbcd-4cba-a8ad-f2d7102c4000.jpg",
-        "target": "review_faces/high_confidence/things/e8ce03d5-bbcd-4cba-a8ad-f2d7102c4000.jpg",
-        "confidence": 0.8943443894386292,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/64f25adc-8263-4b5c-831a-d05c53500ddf.jpg",
-        "target": "review_faces/high_confidence/things/64f25adc-8263-4b5c-831a-d05c53500ddf.jpg",
-        "confidence": 0.8310136795043945,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/5afda683-3f99-4007-820e-44b9ccbc6ef1.jpg",
-        "target": "review_faces/high_confidence/things/5afda683-3f99-4007-820e-44b9ccbc6ef1.jpg",
-        "confidence": 0.8844588994979858,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/6f6a09da-cdd2-4541-8b0a-48eea4853f78.jpg",
-        "target": "review_faces/high_confidence/things/6f6a09da-cdd2-4541-8b0a-48eea4853f78.jpg",
-        "confidence": 0.8334695100784302,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/57af1293-30a6-4047-8c13-009c31a07107.jpg",
-        "target": "review_faces/high_confidence/things/57af1293-30a6-4047-8c13-009c31a07107.jpg",
-        "confidence": 0.8130617737770081,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/0e16dc91-dbab-4c0b-a997-ec37e4138fab.jpg",
-        "target": "review_faces/high_confidence/things/0e16dc91-dbab-4c0b-a997-ec37e4138fab.jpg",
-        "confidence": 0.8699044585227966,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/3c33898a-4fb6-46c7-ae1c-bbf0df6167e1.jpg",
-        "target": "review_faces/high_confidence/things/3c33898a-4fb6-46c7-ae1c-bbf0df6167e1.jpg",
-        "confidence": 0.8862709999084473,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/bbab8862-ce09-4b8c-9d74-5005eb1de2cc.jpg",
-        "target": "review_faces/high_confidence/things/bbab8862-ce09-4b8c-9d74-5005eb1de2cc.jpg",
-        "confidence": 0.8243014216423035,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/30aeaab1-2082-4f63-ba8a-53df982679aa.jpg",
-        "target": "review_faces/high_confidence/things/30aeaab1-2082-4f63-ba8a-53df982679aa.jpg",
-        "confidence": 0.8373557329177856,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/b9a15b26-1181-4a20-9903-89a55e3768ce.jpg",
-        "target": "review_faces/high_confidence/things/b9a15b26-1181-4a20-9903-89a55e3768ce.jpg",
-        "confidence": 0.8650560975074768,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/7f33425f-2396-4bf8-a5f2-546aeefb29d0.jpg",
-        "target": "review_faces/high_confidence/things/7f33425f-2396-4bf8-a5f2-546aeefb29d0.jpg",
-        "confidence": 0.8199114799499512,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/b4420033-85b4-4809-9e4f-79ee8fc5942a.jpg",
-        "target": "review_faces/high_confidence/things/b4420033-85b4-4809-9e4f-79ee8fc5942a.jpg",
-        "confidence": 0.8203675746917725,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/2ecc435e-8792-4735-ba15-51f6fc97a16e.jpg",
-        "target": "review_faces/high_confidence/things/2ecc435e-8792-4735-ba15-51f6fc97a16e.jpg",
-        "confidence": 0.8924669027328491,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/5d37124c-3a5b-49cb-93eb-beb9887ac9e1.jpg",
-        "target": "review_faces/high_confidence/things/5d37124c-3a5b-49cb-93eb-beb9887ac9e1.jpg",
-        "confidence": 0.8459396958351135,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/f9547f06-0413-4c89-83b2-a49d637d6068.jpg",
-        "target": "review_faces/high_confidence/things/f9547f06-0413-4c89-83b2-a49d637d6068.jpg",
-        "confidence": 0.8885397911071777,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/2ce8fa5a-b221-409e-bd28-87d656a33b33.jpg",
-        "target": "review_faces/high_confidence/things/2ce8fa5a-b221-409e-bd28-87d656a33b33.jpg",
-        "confidence": 0.8837409019470215,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/3532b6ab-42a3-4ef6-8ecd-b44bc56cd6dc.jpg",
-        "target": "review_faces/high_confidence/things/3532b6ab-42a3-4ef6-8ecd-b44bc56cd6dc.jpg",
-        "confidence": 0.8576169013977051,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/532218a8-f312-41bc-b77f-130e182f0909.jpg",
-        "target": "review_faces/high_confidence/things/532218a8-f312-41bc-b77f-130e182f0909.jpg",
-        "confidence": 0.9043604731559753,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/b41f5001-2299-4689-bfbb-d04d86a716d7.jpg",
-        "target": "review_faces/high_confidence/things/b41f5001-2299-4689-bfbb-d04d86a716d7.jpg",
-        "confidence": 0.8636403679847717,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/fbaf2c16-d88a-49b0-975e-bae279a41b5b.jpg",
-        "target": "review_faces/high_confidence/things/fbaf2c16-d88a-49b0-975e-bae279a41b5b.jpg",
-        "confidence": 0.8378157019615173,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/19031590-beb7-4b71-82a8-25408838c161.jpg",
-        "target": "review_faces/high_confidence/things/19031590-beb7-4b71-82a8-25408838c161.jpg",
-        "confidence": 0.8241701126098633,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/2cb4debb-8d18-4f4c-80be-9c618a10b780.jpg",
-        "target": "review_faces/high_confidence/things/2cb4debb-8d18-4f4c-80be-9c618a10b780.jpg",
-        "confidence": 0.8294544816017151,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/5e9870b3-8555-4b5a-b2bd-e1612e03eded.jpg",
-        "target": "review_faces/high_confidence/things/5e9870b3-8555-4b5a-b2bd-e1612e03eded.jpg",
-        "confidence": 0.8884258270263672,
-        "detections": 1
-      },
-      {
-        "source": "gallery/things/034d6449-28f3-489d-837e-066695ea30f2.jpg",
-        "target": "review_faces/high_confidence/things/034d6449-28f3-489d-837e-066695ea30f2.jpg",
-        "confidence": 0.8011494874954224,
+        "source": "gallery/things/fa4eddb7-2e7a-4fff-8ef2-cf47ca7aa1c9.jpg",
+        "target": "review_faces/high_confidence/things/fa4eddb7-2e7a-4fff-8ef2-cf47ca7aa1c9.jpg",
+        "confidence": 0.8069407939910889,
         "detections": 2
       },
       {
-        "source": "gallery/things/2a682754-58e7-40fe-8e08-557ceec87957.jpg",
-        "target": "review_faces/high_confidence/things/2a682754-58e7-40fe-8e08-557ceec87957.jpg",
-        "confidence": 0.9014374017715454,
+        "source": "gallery/things/5dd488f0-cecf-4320-9510-6b86d8c970ca.jpg",
+        "target": "review_faces/high_confidence/things/5dd488f0-cecf-4320-9510-6b86d8c970ca.jpg",
+        "confidence": 0.8539274334907532,
         "detections": 1
       },
       {
-        "source": "gallery/things/3791389c-1388-4e34-a024-70585277f6e6.jpg",
-        "target": "review_faces/high_confidence/things/3791389c-1388-4e34-a024-70585277f6e6.jpg",
-        "confidence": 0.8734802007675171,
+        "source": "gallery/things/7ffdd2b9-e131-47fe-9783-301dfbb0084e.jpg",
+        "target": "review_faces/high_confidence/things/7ffdd2b9-e131-47fe-9783-301dfbb0084e.jpg",
+        "confidence": 0.8758012056350708,
         "detections": 1
       },
       {
-        "source": "gallery/things/0d9989ac-8357-4010-b30a-146da03a226c.jpg",
-        "target": "review_faces/high_confidence/things/0d9989ac-8357-4010-b30a-146da03a226c.jpg",
-        "confidence": 0.8160094618797302,
+        "source": "gallery/things/2a8aed7a-e284-4758-bdcc-fa184ce4a7a6.jpg",
+        "target": "review_faces/high_confidence/things/2a8aed7a-e284-4758-bdcc-fa184ce4a7a6.jpg",
+        "confidence": 0.8401078581809998,
         "detections": 1
       },
       {
-        "source": "gallery/things/0e1e77bc-5d1c-42f3-97e7-774fd4bcf738.jpg",
-        "target": "review_faces/high_confidence/things/0e1e77bc-5d1c-42f3-97e7-774fd4bcf738.jpg",
-        "confidence": 0.8580827713012695,
+        "source": "gallery/things/34f776a8-2049-4362-be35-f6fcebd0a501.jpg",
+        "target": "review_faces/high_confidence/things/34f776a8-2049-4362-be35-f6fcebd0a501.jpg",
+        "confidence": 0.8292545676231384,
         "detections": 1
       },
       {
-        "source": "gallery/things/428066a2-c1e0-4eae-8b5e-ac767dfca630.jpg",
-        "target": "review_faces/high_confidence/things/428066a2-c1e0-4eae-8b5e-ac767dfca630.jpg",
-        "confidence": 0.8168420791625977,
+        "source": "gallery/things/81fad23e-0cab-4080-a52c-1bed9bbf16b9.jpg",
+        "target": "review_faces/high_confidence/things/81fad23e-0cab-4080-a52c-1bed9bbf16b9.jpg",
+        "confidence": 0.872983992099762,
         "detections": 1
       },
       {
-        "source": "gallery/things/0038694f-2e51-4b1c-9cf0-97f573e29f01.jpg",
-        "target": "review_faces/high_confidence/things/0038694f-2e51-4b1c-9cf0-97f573e29f01.jpg",
-        "confidence": 0.8093647360801697,
+        "source": "gallery/things/2fd33029-013c-4532-ae00-1dc88625a61d.jpg",
+        "target": "review_faces/high_confidence/things/2fd33029-013c-4532-ae00-1dc88625a61d.jpg",
+        "confidence": 0.8567079305648804,
         "detections": 1
       },
       {
-        "source": "gallery/things/0ece112f-e4c0-4b48-914b-22101717e5b3.jpg",
-        "target": "review_faces/high_confidence/things/0ece112f-e4c0-4b48-914b-22101717e5b3.jpg",
-        "confidence": 0.857440173625946,
+        "source": "gallery/things/52b790ee-8788-487a-9f75-6b4559d49f5f.jpg",
+        "target": "review_faces/high_confidence/things/52b790ee-8788-487a-9f75-6b4559d49f5f.jpg",
+        "confidence": 0.8529713153839111,
         "detections": 1
       },
       {
-        "source": "gallery/things/089247c3-fc17-40be-be2e-a108e0d5419a.jpg",
-        "target": "review_faces/high_confidence/things/089247c3-fc17-40be-be2e-a108e0d5419a.jpg",
-        "confidence": 0.8705081939697266,
+        "source": "gallery/things/14e5a371-1e44-4343-8442-6370e258787e.jpg",
+        "target": "review_faces/high_confidence/things/14e5a371-1e44-4343-8442-6370e258787e.jpg",
+        "confidence": 0.8960539698600769,
         "detections": 1
       },
       {
-        "source": "gallery/things/23f913c5-a19d-445b-a49d-028972af6633.jpg",
-        "target": "review_faces/high_confidence/things/23f913c5-a19d-445b-a49d-028972af6633.jpg",
-        "confidence": 0.8061541318893433,
+        "source": "gallery/things/33c0f28c-4c58-4cb1-ad02-6d1e3a91c511.jpg",
+        "target": "review_faces/high_confidence/things/33c0f28c-4c58-4cb1-ad02-6d1e3a91c511.jpg",
+        "confidence": 0.8509186506271362,
         "detections": 1
       },
       {
-        "source": "gallery/things/1985115f-92a3-4dbc-8123-47fb3346bf1b.jpg",
-        "target": "review_faces/high_confidence/things/1985115f-92a3-4dbc-8123-47fb3346bf1b.jpg",
-        "confidence": 0.9037413001060486,
+        "source": "gallery/things/db2ecd23-019b-4159-9181-c43a29ae031b.jpg",
+        "target": "review_faces/high_confidence/things/db2ecd23-019b-4159-9181-c43a29ae031b.jpg",
+        "confidence": 0.9087867736816406,
         "detections": 1
       },
       {
-        "source": "gallery/things/47ced776-999f-4df5-9f00-9e2fdf852387.jpg",
-        "target": "review_faces/high_confidence/things/47ced776-999f-4df5-9f00-9e2fdf852387.jpg",
-        "confidence": 0.8737514615058899,
+        "source": "gallery/things/031d1c69-a6a0-49d7-9f0a-68d7c39de21f.jpg",
+        "target": "review_faces/high_confidence/things/031d1c69-a6a0-49d7-9f0a-68d7c39de21f.jpg",
+        "confidence": 0.8244975805282593,
         "detections": 1
       },
       {
-        "source": "gallery/things/a7b6d041-8ef2-4bd1-958d-c2dd3d043738.jpg",
-        "target": "review_faces/high_confidence/things/a7b6d041-8ef2-4bd1-958d-c2dd3d043738.jpg",
-        "confidence": 0.861733615398407,
+        "source": "gallery/things/aa599482-9cbb-4217-a353-12256bc9b56f.jpg",
+        "target": "review_faces/high_confidence/things/aa599482-9cbb-4217-a353-12256bc9b56f.jpg",
+        "confidence": 0.8203476071357727,
         "detections": 1
       },
       {
-        "source": "gallery/things/26cf2e03-51fc-4d26-9b03-a4a311ed758c.jpg",
-        "target": "review_faces/high_confidence/things/26cf2e03-51fc-4d26-9b03-a4a311ed758c.jpg",
-        "confidence": 0.8136826157569885,
+        "source": "gallery/things/49250409-7232-4e10-8a64-f41d86077561.jpg",
+        "target": "review_faces/high_confidence/things/49250409-7232-4e10-8a64-f41d86077561.jpg",
+        "confidence": 0.8830630779266357,
         "detections": 1
       },
       {
-        "source": "gallery/things/eae0528f-2693-4c27-9d56-559b336230db.jpg",
-        "target": "review_faces/high_confidence/things/eae0528f-2693-4c27-9d56-559b336230db.jpg",
-        "confidence": 0.8363367915153503,
+        "source": "gallery/things/0fb7e282-fcd4-412e-bc1d-f9808ec0886d.jpg",
+        "target": "review_faces/high_confidence/things/0fb7e282-fcd4-412e-bc1d-f9808ec0886d.jpg",
+        "confidence": 0.8821269869804382,
         "detections": 1
       },
       {
-        "source": "gallery/things/fad7f08b-7d04-422e-b75b-36640dc88a43.jpg",
-        "target": "review_faces/high_confidence/things/fad7f08b-7d04-422e-b75b-36640dc88a43.jpg",
-        "confidence": 0.8819092512130737,
+        "source": "gallery/things/562701ca-b779-4949-b787-18df85122de9.jpg",
+        "target": "review_faces/high_confidence/things/562701ca-b779-4949-b787-18df85122de9.jpg",
+        "confidence": 0.8496477603912354,
         "detections": 1
       },
       {
-        "source": "gallery/things/dcc29b22-7b2b-42c3-9947-22c49cfcf84b.jpg",
-        "target": "review_faces/high_confidence/things/dcc29b22-7b2b-42c3-9947-22c49cfcf84b.jpg",
-        "confidence": 0.8503060936927795,
+        "source": "gallery/things/a76627e8-84e8-4407-8a9e-1bf312fb0e70.jpg",
+        "target": "review_faces/high_confidence/things/a76627e8-84e8-4407-8a9e-1bf312fb0e70.jpg",
+        "confidence": 0.8300254344940186,
         "detections": 1
       },
       {
-        "source": "gallery/things/491465ff-e3eb-4efa-81be-644c9ee7a831.jpg",
-        "target": "review_faces/high_confidence/things/491465ff-e3eb-4efa-81be-644c9ee7a831.jpg",
-        "confidence": 0.8685211539268494,
+        "source": "gallery/things/47d6230b-598c-4af2-8c9a-bbcefb7bd464.jpg",
+        "target": "review_faces/high_confidence/things/47d6230b-598c-4af2-8c9a-bbcefb7bd464.jpg",
+        "confidence": 0.8183746933937073,
         "detections": 1
       },
       {
-        "source": "gallery/things/9f8d28c0-0b7a-4721-abd6-2c42dcbda823.jpg",
-        "target": "review_faces/high_confidence/things/9f8d28c0-0b7a-4721-abd6-2c42dcbda823.jpg",
-        "confidence": 0.8451698422431946,
+        "source": "gallery/things/3483aede-3558-4bd8-9415-a50025f62b76.jpg",
+        "target": "review_faces/high_confidence/things/3483aede-3558-4bd8-9415-a50025f62b76.jpg",
+        "confidence": 0.8602885007858276,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/f1805792-5b36-4628-9fea-64e8002009eb.jpg",
+        "target": "review_faces/high_confidence/things/f1805792-5b36-4628-9fea-64e8002009eb.jpg",
+        "confidence": 0.8543781042098999,
+        "detections": 2
+      },
+      {
+        "source": "gallery/things/fc7c36e8-2eb8-4daa-a785-892e69ae367a.jpg",
+        "target": "review_faces/high_confidence/things/fc7c36e8-2eb8-4daa-a785-892e69ae367a.jpg",
+        "confidence": 0.8028443455696106,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/60ac78b2-c3e3-4a2c-9e54-1f59f5501acc.jpg",
+        "target": "review_faces/high_confidence/things/60ac78b2-c3e3-4a2c-9e54-1f59f5501acc.jpg",
+        "confidence": 0.8165134191513062,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/785e9f61-19c7-48b8-be16-7fb976f82e33.jpg",
+        "target": "review_faces/high_confidence/things/785e9f61-19c7-48b8-be16-7fb976f82e33.jpg",
+        "confidence": 0.9051269292831421,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/17f5fae3-1257-45e5-a17f-76ad1477ba2c.jpg",
+        "target": "review_faces/high_confidence/things/17f5fae3-1257-45e5-a17f-76ad1477ba2c.jpg",
+        "confidence": 0.8205246329307556,
+        "detections": 3
+      },
+      {
+        "source": "gallery/things/8cc24d15-0bab-443d-8bc5-b6bfebdfadba.jpg",
+        "target": "review_faces/high_confidence/things/8cc24d15-0bab-443d-8bc5-b6bfebdfadba.jpg",
+        "confidence": 0.8699511289596558,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/54d0db9a-a9fb-467a-ab3a-85d471063818.jpg",
+        "target": "review_faces/high_confidence/things/54d0db9a-a9fb-467a-ab3a-85d471063818.jpg",
+        "confidence": 0.8668963313102722,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/09561508-eba5-4497-9176-a4fa1f163ede.jpg",
+        "target": "review_faces/high_confidence/things/09561508-eba5-4497-9176-a4fa1f163ede.jpg",
+        "confidence": 0.8696366548538208,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/b156dd94-c8f8-415b-ab4e-10d953dc9894.jpg",
+        "target": "review_faces/high_confidence/things/b156dd94-c8f8-415b-ab4e-10d953dc9894.jpg",
+        "confidence": 0.8414080739021301,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/854acf60-4848-42e4-8fca-16b803042833.jpg",
+        "target": "review_faces/high_confidence/things/854acf60-4848-42e4-8fca-16b803042833.jpg",
+        "confidence": 0.8636868000030518,
+        "detections": 2
+      },
+      {
+        "source": "gallery/things/2e6685ef-2284-44cf-b5ab-623e57c6fd0f.jpg",
+        "target": "review_faces/high_confidence/things/2e6685ef-2284-44cf-b5ab-623e57c6fd0f.jpg",
+        "confidence": 0.8758424520492554,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/4409bc6f-7756-4854-b1f1-71897a26e48b.jpg",
+        "target": "review_faces/high_confidence/things/4409bc6f-7756-4854-b1f1-71897a26e48b.jpg",
+        "confidence": 0.8539193272590637,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/e7474349-bd90-4546-944b-0ab50e27deea.jpg",
+        "target": "review_faces/high_confidence/things/e7474349-bd90-4546-944b-0ab50e27deea.jpg",
+        "confidence": 0.8402621746063232,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/0aa066bb-ff60-4a13-873d-a4ee5d7bf5a6.jpg",
+        "target": "review_faces/high_confidence/things/0aa066bb-ff60-4a13-873d-a4ee5d7bf5a6.jpg",
+        "confidence": 0.8606385588645935,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/9539d466-6771-4a63-b758-77fb379c2fd9.jpg",
+        "target": "review_faces/high_confidence/things/9539d466-6771-4a63-b758-77fb379c2fd9.jpg",
+        "confidence": 0.8350079655647278,
+        "detections": 2
+      },
+      {
+        "source": "gallery/things/70989993-4b14-4699-a8d1-9e7a777d5a73.jpg",
+        "target": "review_faces/high_confidence/things/70989993-4b14-4699-a8d1-9e7a777d5a73.jpg",
+        "confidence": 0.8812726736068726,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/1c656b2f-bf7a-41ab-9e52-bec7a1b00fa4.jpg",
+        "target": "review_faces/high_confidence/things/1c656b2f-bf7a-41ab-9e52-bec7a1b00fa4.jpg",
+        "confidence": 0.8442269563674927,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/c578c50a-2f30-4b65-a33a-e0356ba5a534.jpg",
+        "target": "review_faces/high_confidence/things/c578c50a-2f30-4b65-a33a-e0356ba5a534.jpg",
+        "confidence": 0.8947779536247253,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/30054ece-4da5-4546-981e-ca872ecaa54e.jpg",
+        "target": "review_faces/high_confidence/things/30054ece-4da5-4546-981e-ca872ecaa54e.jpg",
+        "confidence": 0.8926178812980652,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/bcb6dfb9-9254-44e3-b8aa-69253dadf4b6.jpg",
+        "target": "review_faces/high_confidence/things/bcb6dfb9-9254-44e3-b8aa-69253dadf4b6.jpg",
+        "confidence": 0.8962604403495789,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/9e816dc2-b713-4ec5-b66a-1c2f9f08bfcf.jpg",
+        "target": "review_faces/high_confidence/things/9e816dc2-b713-4ec5-b66a-1c2f9f08bfcf.jpg",
+        "confidence": 0.8850072026252747,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/5681b7ee-1c9a-45a4-8a95-9e37650de0bd.jpg",
+        "target": "review_faces/high_confidence/things/5681b7ee-1c9a-45a4-8a95-9e37650de0bd.jpg",
+        "confidence": 0.8911448121070862,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/28cdc105-aaed-44a2-b14e-fa1056812d7e.jpg",
+        "target": "review_faces/high_confidence/things/28cdc105-aaed-44a2-b14e-fa1056812d7e.jpg",
+        "confidence": 0.8996763229370117,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/c0ef8fdb-70c1-4e83-864d-50c0d66b3083.jpg",
+        "target": "review_faces/high_confidence/things/c0ef8fdb-70c1-4e83-864d-50c0d66b3083.jpg",
+        "confidence": 0.804936945438385,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/55fc7ecc-b6f2-421e-bc39-68d006cfe857.jpg",
+        "target": "review_faces/high_confidence/things/55fc7ecc-b6f2-421e-bc39-68d006cfe857.jpg",
+        "confidence": 0.864313006401062,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/fb76eff3-6df1-4978-9d37-49b837d0c8e5.jpg",
+        "target": "review_faces/high_confidence/things/fb76eff3-6df1-4978-9d37-49b837d0c8e5.jpg",
+        "confidence": 0.84780353307724,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/c5198aae-7b79-4043-a2af-90cca3f6a061.jpg",
+        "target": "review_faces/high_confidence/things/c5198aae-7b79-4043-a2af-90cca3f6a061.jpg",
+        "confidence": 0.8777766823768616,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/fdbed21e-630f-4ac1-9c37-9a0e63c98963.jpg",
+        "target": "review_faces/high_confidence/things/fdbed21e-630f-4ac1-9c37-9a0e63c98963.jpg",
+        "confidence": 0.8135347366333008,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/bd11c820-6e31-469a-b41c-ce8fd710e3d3.jpg",
+        "target": "review_faces/high_confidence/things/bd11c820-6e31-469a-b41c-ce8fd710e3d3.jpg",
+        "confidence": 0.8383239507675171,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/2271df08-3c1b-4f7f-91aa-41b883395445.jpg",
+        "target": "review_faces/high_confidence/things/2271df08-3c1b-4f7f-91aa-41b883395445.jpg",
+        "confidence": 0.8627777695655823,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/3d483d56-8f71-4a4b-910c-5bf52a1b1086.jpg",
+        "target": "review_faces/high_confidence/things/3d483d56-8f71-4a4b-910c-5bf52a1b1086.jpg",
+        "confidence": 0.8876749277114868,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/ffebb8d3-921d-448c-a150-acfd2540fda6.jpg",
+        "target": "review_faces/high_confidence/things/ffebb8d3-921d-448c-a150-acfd2540fda6.jpg",
+        "confidence": 0.8654471039772034,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/040e5fa0-3fb6-4bb1-8e12-6d7f1c829b6f.jpg",
+        "target": "review_faces/high_confidence/things/040e5fa0-3fb6-4bb1-8e12-6d7f1c829b6f.jpg",
+        "confidence": 0.8791501522064209,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/f534de56-3d8c-460f-8316-26b6b930f189.jpg",
+        "target": "review_faces/high_confidence/things/f534de56-3d8c-460f-8316-26b6b930f189.jpg",
+        "confidence": 0.8708925843238831,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/f7f61bf1-4112-4d0f-8831-cf97e9011e72.jpg",
+        "target": "review_faces/high_confidence/things/f7f61bf1-4112-4d0f-8831-cf97e9011e72.jpg",
+        "confidence": 0.9025624990463257,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/c72e3481-722d-4321-a521-0ac27e463347.jpg",
+        "target": "review_faces/high_confidence/things/c72e3481-722d-4321-a521-0ac27e463347.jpg",
+        "confidence": 0.8434405326843262,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/23f8f61d-9e0a-46c0-9d5e-272762275a1c.jpg",
+        "target": "review_faces/high_confidence/things/23f8f61d-9e0a-46c0-9d5e-272762275a1c.jpg",
+        "confidence": 0.8224813938140869,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/e41bad54-e768-48ed-81ca-b6e3d0b0e62c.jpg",
+        "target": "review_faces/high_confidence/things/e41bad54-e768-48ed-81ca-b6e3d0b0e62c.jpg",
+        "confidence": 0.8481833338737488,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/6824e096-dbb7-46b4-81af-d80dbb4a54bf.jpg",
+        "target": "review_faces/high_confidence/things/6824e096-dbb7-46b4-81af-d80dbb4a54bf.jpg",
+        "confidence": 0.8092594742774963,
+        "detections": 2
+      },
+      {
+        "source": "gallery/things/2744bacb-8519-4767-a08f-63c18273209a.jpg",
+        "target": "review_faces/high_confidence/things/2744bacb-8519-4767-a08f-63c18273209a.jpg",
+        "confidence": 0.8690124154090881,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/05bc1410-8ea5-458b-b61a-274b580d0f45.jpg",
+        "target": "review_faces/high_confidence/things/05bc1410-8ea5-458b-b61a-274b580d0f45.jpg",
+        "confidence": 0.8188068270683289,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/164076aa-7d5e-4d29-95bc-5d0424056812.jpg",
+        "target": "review_faces/high_confidence/things/164076aa-7d5e-4d29-95bc-5d0424056812.jpg",
+        "confidence": 0.8721498250961304,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/17779caf-b0ca-47d0-ad02-8ce998f20a8a.jpg",
+        "target": "review_faces/high_confidence/things/17779caf-b0ca-47d0-ad02-8ce998f20a8a.jpg",
+        "confidence": 0.8579170107841492,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/4f00e1eb-b411-4372-b7d2-9dd2387b3643.jpg",
+        "target": "review_faces/high_confidence/things/4f00e1eb-b411-4372-b7d2-9dd2387b3643.jpg",
+        "confidence": 0.8629673719406128,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/571040ad-7908-4cab-a504-cc4f7723d756.jpg",
+        "target": "review_faces/high_confidence/things/571040ad-7908-4cab-a504-cc4f7723d756.jpg",
+        "confidence": 0.8160346150398254,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/82775964-e108-4abc-8f36-35916ef1a0f3.jpg",
+        "target": "review_faces/high_confidence/things/82775964-e108-4abc-8f36-35916ef1a0f3.jpg",
+        "confidence": 0.8858281373977661,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/2ea97b3d-2ecc-4308-b71d-ee0426c2cd6e.jpg",
+        "target": "review_faces/high_confidence/things/2ea97b3d-2ecc-4308-b71d-ee0426c2cd6e.jpg",
+        "confidence": 0.8328084349632263,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/1811d2db-8f81-4bd1-8e43-8316dca90755.jpg",
+        "target": "review_faces/high_confidence/things/1811d2db-8f81-4bd1-8e43-8316dca90755.jpg",
+        "confidence": 0.8727965354919434,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/ea48b5c8-24cf-4aa1-a37b-f26f8c37013c.jpg",
+        "target": "review_faces/high_confidence/things/ea48b5c8-24cf-4aa1-a37b-f26f8c37013c.jpg",
+        "confidence": 0.8412224650382996,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/a9520238-5d51-4e5a-977c-21d383f4d7e6.jpg",
+        "target": "review_faces/high_confidence/things/a9520238-5d51-4e5a-977c-21d383f4d7e6.jpg",
+        "confidence": 0.8158230185508728,
+        "detections": 3
+      },
+      {
+        "source": "gallery/things/68744bba-c81a-4571-95ca-7cedbf6e084f.jpg",
+        "target": "review_faces/high_confidence/things/68744bba-c81a-4571-95ca-7cedbf6e084f.jpg",
+        "confidence": 0.8530088663101196,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/42494a64-a2fe-4058-8568-895047ea094e.jpg",
+        "target": "review_faces/high_confidence/things/42494a64-a2fe-4058-8568-895047ea094e.jpg",
+        "confidence": 0.8106713891029358,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/39b216f2-0762-4e2f-bae6-fc2da3595e8c.jpg",
+        "target": "review_faces/high_confidence/things/39b216f2-0762-4e2f-bae6-fc2da3595e8c.jpg",
+        "confidence": 0.8359838724136353,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/7584be12-5222-44e1-936e-efc2c5a801cb.jpg",
+        "target": "review_faces/high_confidence/things/7584be12-5222-44e1-936e-efc2c5a801cb.jpg",
+        "confidence": 0.9008793830871582,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/39225cb6-fc1c-4f5f-8be8-cac6f22fcf38.jpg",
+        "target": "review_faces/high_confidence/things/39225cb6-fc1c-4f5f-8be8-cac6f22fcf38.jpg",
+        "confidence": 0.8181841969490051,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/41fdb118-6afb-415b-892d-8597b29b8541.jpg",
+        "target": "review_faces/high_confidence/things/41fdb118-6afb-415b-892d-8597b29b8541.jpg",
+        "confidence": 0.8684541583061218,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/c29bccea-26a6-47aa-9ea3-f4167bd45236.jpg",
+        "target": "review_faces/high_confidence/things/c29bccea-26a6-47aa-9ea3-f4167bd45236.jpg",
+        "confidence": 0.8813061118125916,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/a565b89b-e1ad-4b19-b8a7-4348f2e46bd3.jpg",
+        "target": "review_faces/high_confidence/things/a565b89b-e1ad-4b19-b8a7-4348f2e46bd3.jpg",
+        "confidence": 0.876934289932251,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/ae367bcc-4bf1-400f-91c9-202ad9552d92.jpg",
+        "target": "review_faces/high_confidence/things/ae367bcc-4bf1-400f-91c9-202ad9552d92.jpg",
+        "confidence": 0.8772708773612976,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/a575e81a-bbd9-4676-a92e-3e445fbed35a.jpg",
+        "target": "review_faces/high_confidence/things/a575e81a-bbd9-4676-a92e-3e445fbed35a.jpg",
+        "confidence": 0.8837846517562866,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/4c25e3b2-9c20-404e-8774-cb360d4f9124.jpg",
+        "target": "review_faces/high_confidence/things/4c25e3b2-9c20-404e-8774-cb360d4f9124.jpg",
+        "confidence": 0.8622398972511292,
+        "detections": 2
+      },
+      {
+        "source": "gallery/things/c645e122-88ba-4783-833f-d223d5457150.jpg",
+        "target": "review_faces/high_confidence/things/c645e122-88ba-4783-833f-d223d5457150.jpg",
+        "confidence": 0.8821784257888794,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/cebc21ed-780d-431c-acf1-94b5c5a5c43c.jpg",
+        "target": "review_faces/high_confidence/things/cebc21ed-780d-431c-acf1-94b5c5a5c43c.jpg",
+        "confidence": 0.8106651902198792,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/843434ab-bbc8-4078-8232-bd84982d0483.jpg",
+        "target": "review_faces/high_confidence/things/843434ab-bbc8-4078-8232-bd84982d0483.jpg",
+        "confidence": 0.8572410941123962,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/d8d48619-15d3-4f8b-a9ac-814d220bcc59.jpg",
+        "target": "review_faces/high_confidence/things/d8d48619-15d3-4f8b-a9ac-814d220bcc59.jpg",
+        "confidence": 0.8695911169052124,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/bb9d2499-00f3-4d7a-8681-021abffe759a.jpg",
+        "target": "review_faces/high_confidence/things/bb9d2499-00f3-4d7a-8681-021abffe759a.jpg",
+        "confidence": 0.801033616065979,
+        "detections": 4
+      },
+      {
+        "source": "gallery/things/30071594-f987-4af3-be03-05a823dc71d8.jpg",
+        "target": "review_faces/high_confidence/things/30071594-f987-4af3-be03-05a823dc71d8.jpg",
+        "confidence": 0.8580107688903809,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/da264a03-f6a3-4594-83bb-d2288a6d2098.jpg",
+        "target": "review_faces/high_confidence/things/da264a03-f6a3-4594-83bb-d2288a6d2098.jpg",
+        "confidence": 0.8271242380142212,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/89b662cd-b5ed-40d5-84a7-97f5411d3b08.jpg",
+        "target": "review_faces/high_confidence/things/89b662cd-b5ed-40d5-84a7-97f5411d3b08.jpg",
+        "confidence": 0.8537027835845947,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/ab1bb768-b9b8-4856-b586-aad04f43f883.jpg",
+        "target": "review_faces/high_confidence/things/ab1bb768-b9b8-4856-b586-aad04f43f883.jpg",
+        "confidence": 0.8578053712844849,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/d9e12724-23e7-437a-ad63-605a0abf9b17.jpg",
+        "target": "review_faces/high_confidence/things/d9e12724-23e7-437a-ad63-605a0abf9b17.jpg",
+        "confidence": 0.8316138386726379,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/690c979a-9c93-4434-87c3-4e3e47b2e751.jpg",
+        "target": "review_faces/high_confidence/things/690c979a-9c93-4434-87c3-4e3e47b2e751.jpg",
+        "confidence": 0.8655012845993042,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/68d83dbc-92df-43d0-9842-f671c2185e4c.jpg",
+        "target": "review_faces/high_confidence/things/68d83dbc-92df-43d0-9842-f671c2185e4c.jpg",
+        "confidence": 0.8943001627922058,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/62160dc7-fb7d-4e35-9a87-9c02f2897521.jpg",
+        "target": "review_faces/high_confidence/things/62160dc7-fb7d-4e35-9a87-9c02f2897521.jpg",
+        "confidence": 0.8961302638053894,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/ccd199f6-6a4f-42b6-b09c-ac17067b9fa2.jpg",
+        "target": "review_faces/high_confidence/things/ccd199f6-6a4f-42b6-b09c-ac17067b9fa2.jpg",
+        "confidence": 0.8708033561706543,
+        "detections": 2
+      },
+      {
+        "source": "gallery/things/3fc04054-e10b-42ab-90a2-d4ebff08136a.jpg",
+        "target": "review_faces/high_confidence/things/3fc04054-e10b-42ab-90a2-d4ebff08136a.jpg",
+        "confidence": 0.8637291789054871,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/91c52c7f-e707-44ec-a087-c7f977f88f01.jpg",
+        "target": "review_faces/high_confidence/things/91c52c7f-e707-44ec-a087-c7f977f88f01.jpg",
+        "confidence": 0.8443459868431091,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/65d7a195-8470-4673-97d8-044b4a3b2d93.jpg",
+        "target": "review_faces/high_confidence/things/65d7a195-8470-4673-97d8-044b4a3b2d93.jpg",
+        "confidence": 0.8072031140327454,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/7c66c42f-7c22-457c-9a18-be7a263b9917.jpg",
+        "target": "review_faces/high_confidence/things/7c66c42f-7c22-457c-9a18-be7a263b9917.jpg",
+        "confidence": 0.8382548093795776,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/28ec1158-dfc2-41f5-aa48-788feb012491.jpg",
+        "target": "review_faces/high_confidence/things/28ec1158-dfc2-41f5-aa48-788feb012491.jpg",
+        "confidence": 0.8194336891174316,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/bf891508-b670-4373-85f8-7715c98fca4a.jpg",
+        "target": "review_faces/high_confidence/things/bf891508-b670-4373-85f8-7715c98fca4a.jpg",
+        "confidence": 0.8632726073265076,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/50fcd53e-34a9-4596-b68a-eb79ddc02d7c.jpg",
+        "target": "review_faces/high_confidence/things/50fcd53e-34a9-4596-b68a-eb79ddc02d7c.jpg",
+        "confidence": 0.8692141175270081,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/ddbde59a-ab1b-4cde-87d3-a0e168840a8e.jpg",
+        "target": "review_faces/high_confidence/things/ddbde59a-ab1b-4cde-87d3-a0e168840a8e.jpg",
+        "confidence": 0.9015576243400574,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/6134f9d3-7a38-44f5-96ad-bdb81044611d.jpg",
+        "target": "review_faces/high_confidence/things/6134f9d3-7a38-44f5-96ad-bdb81044611d.jpg",
+        "confidence": 0.8764896392822266,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/848989df-d1ec-4e35-af2c-786532bb84be.jpg",
+        "target": "review_faces/high_confidence/things/848989df-d1ec-4e35-af2c-786532bb84be.jpg",
+        "confidence": 0.9147103428840637,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/149b0b52-d90a-49df-b3a3-23d3f84ade84.jpg",
+        "target": "review_faces/high_confidence/things/149b0b52-d90a-49df-b3a3-23d3f84ade84.jpg",
+        "confidence": 0.8886217474937439,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/a1df0930-32cf-4d03-8570-cfca108e33ab.jpg",
+        "target": "review_faces/high_confidence/things/a1df0930-32cf-4d03-8570-cfca108e33ab.jpg",
+        "confidence": 0.8079814314842224,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/d47011c6-c67f-40e4-9d76-41426a307e9c.jpg",
+        "target": "review_faces/high_confidence/things/d47011c6-c67f-40e4-9d76-41426a307e9c.jpg",
+        "confidence": 0.8612633943557739,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/2784f82c-f91c-47b9-8cbe-29b2df77aee7.jpg",
+        "target": "review_faces/high_confidence/things/2784f82c-f91c-47b9-8cbe-29b2df77aee7.jpg",
+        "confidence": 0.8117697834968567,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/0efb409a-a295-4892-be2d-912505cd2916.jpg",
+        "target": "review_faces/high_confidence/things/0efb409a-a295-4892-be2d-912505cd2916.jpg",
+        "confidence": 0.8314766883850098,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/033ef74e-993e-431e-8a4d-9367d2941c72.jpg",
+        "target": "review_faces/high_confidence/things/033ef74e-993e-431e-8a4d-9367d2941c72.jpg",
+        "confidence": 0.8879637718200684,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/1ab88dbc-1f3b-49f4-8fc4-ee121096e0c2.jpg",
+        "target": "review_faces/high_confidence/things/1ab88dbc-1f3b-49f4-8fc4-ee121096e0c2.jpg",
+        "confidence": 0.8484256267547607,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/40d374dd-8fb2-4f1a-8f7b-49f4dad4a608.jpg",
+        "target": "review_faces/high_confidence/things/40d374dd-8fb2-4f1a-8f7b-49f4dad4a608.jpg",
+        "confidence": 0.8867170810699463,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/6fc6c1f1-06b7-49ae-bb4d-aed768bf1f8e.jpg",
+        "target": "review_faces/high_confidence/things/6fc6c1f1-06b7-49ae-bb4d-aed768bf1f8e.jpg",
+        "confidence": 0.876630425453186,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/26a53db1-ac71-493e-9cf0-50a9712cab49.jpg",
+        "target": "review_faces/high_confidence/things/26a53db1-ac71-493e-9cf0-50a9712cab49.jpg",
+        "confidence": 0.8676444888114929,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/47447cf4-bfc0-4209-90b5-de9351de6f82.jpg",
+        "target": "review_faces/high_confidence/things/47447cf4-bfc0-4209-90b5-de9351de6f82.jpg",
+        "confidence": 0.8698901534080505,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/6b7a5ac6-c54a-416a-8ec2-1a2f21304d9e.jpg",
+        "target": "review_faces/high_confidence/things/6b7a5ac6-c54a-416a-8ec2-1a2f21304d9e.jpg",
+        "confidence": 0.8029512166976929,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/c64450e7-8a25-4d11-bad7-0a356d766967.jpg",
+        "target": "review_faces/high_confidence/things/c64450e7-8a25-4d11-bad7-0a356d766967.jpg",
+        "confidence": 0.8565676808357239,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/762060ff-231a-4bc7-9eba-177f07d974c2.jpg",
+        "target": "review_faces/high_confidence/things/762060ff-231a-4bc7-9eba-177f07d974c2.jpg",
+        "confidence": 0.8759747743606567,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/e09c6fc5-0acb-42af-a379-881591c6c6e7.jpg",
+        "target": "review_faces/high_confidence/things/e09c6fc5-0acb-42af-a379-881591c6c6e7.jpg",
+        "confidence": 0.8897547721862793,
         "detections": 1
       }
     ],
     "medium": [
       {
-        "source": "gallery/architecture/46721dd7-bd17-448e-b5fe-c39ef6f43c37.jpg",
-        "target": "review_faces/medium_confidence/architecture/46721dd7-bd17-448e-b5fe-c39ef6f43c37.jpg",
-        "confidence": 0.5144142508506775,
+        "source": "gallery/things/5ac6263e-a806-4c98-b234-9452d0ab4bf4.jpg",
+        "target": "review_faces/medium_confidence/things/5ac6263e-a806-4c98-b234-9452d0ab4bf4.jpg",
+        "confidence": 0.7627794742584229,
         "detections": 1
       },
       {
-        "source": "gallery/architecture/1d755b6f-bc82-42a9-b228-380d016c83c3.jpg",
-        "target": "review_faces/medium_confidence/architecture/1d755b6f-bc82-42a9-b228-380d016c83c3.jpg",
-        "confidence": 0.508143424987793,
+        "source": "gallery/things/c1715d25-9c60-401e-a0c6-11c71aa63e4a.jpg",
+        "target": "review_faces/medium_confidence/things/c1715d25-9c60-401e-a0c6-11c71aa63e4a.jpg",
+        "confidence": 0.666597843170166,
         "detections": 1
       },
       {
-        "source": "gallery/architecture/8e7c0f20-0501-4790-9305-e2dd9e0ec88b.jpg",
-        "target": "review_faces/medium_confidence/architecture/8e7c0f20-0501-4790-9305-e2dd9e0ec88b.jpg",
-        "confidence": 0.5263102650642395,
+        "source": "gallery/things/3539a2a9-5a24-4c84-8669-94137e657bdf.jpg",
+        "target": "review_faces/medium_confidence/things/3539a2a9-5a24-4c84-8669-94137e657bdf.jpg",
+        "confidence": 0.7482053637504578,
         "detections": 1
       },
       {
-        "source": "gallery/architecture/ad3312b0-0c1e-4b60-8d77-8bf02be7a4d1.jpg",
-        "target": "review_faces/medium_confidence/architecture/ad3312b0-0c1e-4b60-8d77-8bf02be7a4d1.jpg",
-        "confidence": 0.5344796180725098,
+        "source": "gallery/things/8eb28190-305b-4cc7-b843-80bd66d49e29.jpg",
+        "target": "review_faces/medium_confidence/things/8eb28190-305b-4cc7-b843-80bd66d49e29.jpg",
+        "confidence": 0.7256317734718323,
         "detections": 1
       },
       {
-        "source": "gallery/architecture/1d2f0cd4-3e4c-4ca9-8f73-8c6050edd98c.jpg",
-        "target": "review_faces/medium_confidence/architecture/1d2f0cd4-3e4c-4ca9-8f73-8c6050edd98c.jpg",
-        "confidence": 0.5318712592124939,
+        "source": "gallery/things/bd9993e2-0cf0-40ba-bfa1-3599ce14e4f8.jpg",
+        "target": "review_faces/medium_confidence/things/bd9993e2-0cf0-40ba-bfa1-3599ce14e4f8.jpg",
+        "confidence": 0.7124982476234436,
         "detections": 1
       },
       {
-        "source": "gallery/architecture/e26c3ca9-3726-4caa-923a-0dfd171ddc29.jpg",
-        "target": "review_faces/medium_confidence/architecture/e26c3ca9-3726-4caa-923a-0dfd171ddc29.jpg",
-        "confidence": 0.5398510694503784,
+        "source": "gallery/things/dcdf3ea8-c365-45a8-a11a-e0b01c5e655e.jpg",
+        "target": "review_faces/medium_confidence/things/dcdf3ea8-c365-45a8-a11a-e0b01c5e655e.jpg",
+        "confidence": 0.7126822471618652,
         "detections": 1
       },
       {
-        "source": "gallery/architecture/3fb1de19-4a46-49ef-9dd7-2bf77d06b61e.jpg",
-        "target": "review_faces/medium_confidence/architecture/3fb1de19-4a46-49ef-9dd7-2bf77d06b61e.jpg",
-        "confidence": 0.5748473405838013,
+        "source": "gallery/things/51a33b3c-eb61-47a9-99a5-28f66bcba3aa.jpg",
+        "target": "review_faces/medium_confidence/things/51a33b3c-eb61-47a9-99a5-28f66bcba3aa.jpg",
+        "confidence": 0.7804781198501587,
         "detections": 1
       },
       {
-        "source": "gallery/things/803c3991-b84f-4485-b586-4ea93ebe50de.jpg",
-        "target": "review_faces/medium_confidence/things/803c3991-b84f-4485-b586-4ea93ebe50de.jpg",
-        "confidence": 0.6794235706329346,
+        "source": "gallery/things/8105151d-6854-42ad-9d5a-21227fc1575d.jpg",
+        "target": "review_faces/medium_confidence/things/8105151d-6854-42ad-9d5a-21227fc1575d.jpg",
+        "confidence": 0.7672474384307861,
+        "detections": 3
+      },
+      {
+        "source": "gallery/things/a8ec1b46-9906-4139-a5ae-276d66b0a445.jpg",
+        "target": "review_faces/medium_confidence/things/a8ec1b46-9906-4139-a5ae-276d66b0a445.jpg",
+        "confidence": 0.7817174196243286,
         "detections": 1
       },
       {
-        "source": "gallery/things/dc242618-8d8f-4e2b-ba9e-ef650214e5d2.jpg",
-        "target": "review_faces/medium_confidence/things/dc242618-8d8f-4e2b-ba9e-ef650214e5d2.jpg",
-        "confidence": 0.6504868865013123,
+        "source": "gallery/things/7f843caa-e19e-44cb-b731-93c00056cdb4.jpg",
+        "target": "review_faces/medium_confidence/things/7f843caa-e19e-44cb-b731-93c00056cdb4.jpg",
+        "confidence": 0.5098819732666016,
         "detections": 1
       },
       {
-        "source": "gallery/things/2539f02d-a77e-4f91-bc62-7c8ba789960d.jpg",
-        "target": "review_faces/medium_confidence/things/2539f02d-a77e-4f91-bc62-7c8ba789960d.jpg",
-        "confidence": 0.7783808708190918,
-        "detections": 2
-      },
-      {
-        "source": "gallery/things/7ed2a59d-3c68-4c44-9ea7-295d40ac4a51.jpg",
-        "target": "review_faces/medium_confidence/things/7ed2a59d-3c68-4c44-9ea7-295d40ac4a51.jpg",
-        "confidence": 0.7373472452163696,
+        "source": "gallery/things/02b4b46d-eee4-470d-8258-8f34ec8309d5.jpg",
+        "target": "review_faces/medium_confidence/things/02b4b46d-eee4-470d-8258-8f34ec8309d5.jpg",
+        "confidence": 0.7975060343742371,
         "detections": 1
       },
       {
-        "source": "gallery/things/522d99af-80f8-4d6e-9502-6fac1ddeb431.jpg",
-        "target": "review_faces/medium_confidence/things/522d99af-80f8-4d6e-9502-6fac1ddeb431.jpg",
-        "confidence": 0.7873674631118774,
+        "source": "gallery/things/a1549370-a05f-4b85-b3bf-d55ee45a85c1.jpg",
+        "target": "review_faces/medium_confidence/things/a1549370-a05f-4b85-b3bf-d55ee45a85c1.jpg",
+        "confidence": 0.7740889191627502,
         "detections": 1
       },
       {
-        "source": "gallery/things/41f32e37-0681-43be-bfed-b74ccc387d3f.jpg",
-        "target": "review_faces/medium_confidence/things/41f32e37-0681-43be-bfed-b74ccc387d3f.jpg",
-        "confidence": 0.7507398724555969,
+        "source": "gallery/things/003a51c5-46ad-45c3-9a7d-d4eeef823674.jpg",
+        "target": "review_faces/medium_confidence/things/003a51c5-46ad-45c3-9a7d-d4eeef823674.jpg",
+        "confidence": 0.7309619188308716,
         "detections": 1
       },
       {
-        "source": "gallery/things/0320f41b-43f0-4e68-8de6-920e2948ad0d.jpg",
-        "target": "review_faces/medium_confidence/things/0320f41b-43f0-4e68-8de6-920e2948ad0d.jpg",
-        "confidence": 0.7843051552772522,
+        "source": "gallery/things/6b474848-f951-475a-90ba-96f06f04e81e.jpg",
+        "target": "review_faces/medium_confidence/things/6b474848-f951-475a-90ba-96f06f04e81e.jpg",
+        "confidence": 0.5982776880264282,
         "detections": 1
       },
       {
-        "source": "gallery/things/419215b3-a298-4207-977b-7c253bee96e7.jpg",
-        "target": "review_faces/medium_confidence/things/419215b3-a298-4207-977b-7c253bee96e7.jpg",
-        "confidence": 0.7961044907569885,
+        "source": "gallery/things/a002289a-023b-49e9-8b43-a1c08821b0ac.jpg",
+        "target": "review_faces/medium_confidence/things/a002289a-023b-49e9-8b43-a1c08821b0ac.jpg",
+        "confidence": 0.7577260732650757,
         "detections": 1
       },
       {
-        "source": "gallery/things/4aabe49d-98f1-43bc-ab1a-94b03a1b7c9b.jpg",
-        "target": "review_faces/medium_confidence/things/4aabe49d-98f1-43bc-ab1a-94b03a1b7c9b.jpg",
-        "confidence": 0.7652462124824524,
+        "source": "gallery/things/cf402376-4102-479d-ac65-364ba09e1d84.jpg",
+        "target": "review_faces/medium_confidence/things/cf402376-4102-479d-ac65-364ba09e1d84.jpg",
+        "confidence": 0.5750511288642883,
         "detections": 1
       },
       {
-        "source": "gallery/things/2cc3b783-dcaa-41b3-acb7-34bc4c261ef5.jpg",
-        "target": "review_faces/medium_confidence/things/2cc3b783-dcaa-41b3-acb7-34bc4c261ef5.jpg",
-        "confidence": 0.5940751433372498,
+        "source": "gallery/things/5bcd2042-ac89-4619-9815-713b3653b15e.jpg",
+        "target": "review_faces/medium_confidence/things/5bcd2042-ac89-4619-9815-713b3653b15e.jpg",
+        "confidence": 0.6800260543823242,
         "detections": 1
       },
       {
-        "source": "gallery/things/1f916780-fe58-4c0c-a89b-15724acec58a.jpg",
-        "target": "review_faces/medium_confidence/things/1f916780-fe58-4c0c-a89b-15724acec58a.jpg",
-        "confidence": 0.7866395711898804,
+        "source": "gallery/things/949eb5e5-0d00-42bd-98ed-9811b0a75e6c.jpg",
+        "target": "review_faces/medium_confidence/things/949eb5e5-0d00-42bd-98ed-9811b0a75e6c.jpg",
+        "confidence": 0.7990169525146484,
         "detections": 1
       },
       {
-        "source": "gallery/things/98d45484-18fd-4eac-bf2a-508eea98034d.jpg",
-        "target": "review_faces/medium_confidence/things/98d45484-18fd-4eac-bf2a-508eea98034d.jpg",
-        "confidence": 0.7972081303596497,
+        "source": "gallery/things/1583bb4d-0f17-49de-8db5-64a7eebb36d6.jpg",
+        "target": "review_faces/medium_confidence/things/1583bb4d-0f17-49de-8db5-64a7eebb36d6.jpg",
+        "confidence": 0.7976933121681213,
         "detections": 1
       },
       {
-        "source": "gallery/things/97a7a193-3ce7-49f3-8693-61dc09c2445a.jpg",
-        "target": "review_faces/medium_confidence/things/97a7a193-3ce7-49f3-8693-61dc09c2445a.jpg",
-        "confidence": 0.5201755166053772,
+        "source": "gallery/things/add98e3f-1cda-4385-bad4-9d78ecbf8267.jpg",
+        "target": "review_faces/medium_confidence/things/add98e3f-1cda-4385-bad4-9d78ecbf8267.jpg",
+        "confidence": 0.7751650810241699,
         "detections": 1
       },
       {
-        "source": "gallery/things/9ba7df9e-9e1c-4c7c-812a-a08e0a7b235e.jpg",
-        "target": "review_faces/medium_confidence/things/9ba7df9e-9e1c-4c7c-812a-a08e0a7b235e.jpg",
-        "confidence": 0.7339658141136169,
-        "detections": 2
-      },
-      {
-        "source": "gallery/things/15890a91-b508-434a-8554-983531b65ad4.jpg",
-        "target": "review_faces/medium_confidence/things/15890a91-b508-434a-8554-983531b65ad4.jpg",
-        "confidence": 0.559787929058075,
+        "source": "gallery/things/6c4a06bf-4ec1-446f-b605-fdd84577ee8c.jpg",
+        "target": "review_faces/medium_confidence/things/6c4a06bf-4ec1-446f-b605-fdd84577ee8c.jpg",
+        "confidence": 0.5808258652687073,
         "detections": 1
       },
       {
-        "source": "gallery/things/fc390d67-402e-4a22-be6b-478dfb20e4f9.jpg",
-        "target": "review_faces/medium_confidence/things/fc390d67-402e-4a22-be6b-478dfb20e4f9.jpg",
-        "confidence": 0.7247782349586487,
+        "source": "gallery/things/1aa8b958-db57-4d3c-9c4b-ca8c4bdb1141.jpg",
+        "target": "review_faces/medium_confidence/things/1aa8b958-db57-4d3c-9c4b-ca8c4bdb1141.jpg",
+        "confidence": 0.7762701511383057,
+        "detections": 3
+      },
+      {
+        "source": "gallery/things/baf7750d-43b5-49bc-bea5-ff982b5f9d4a.jpg",
+        "target": "review_faces/medium_confidence/things/baf7750d-43b5-49bc-bea5-ff982b5f9d4a.jpg",
+        "confidence": 0.6406034827232361,
         "detections": 1
       },
       {
-        "source": "gallery/things/32234e3c-cca6-48f0-af81-91647cfe1aef.jpg",
-        "target": "review_faces/medium_confidence/things/32234e3c-cca6-48f0-af81-91647cfe1aef.jpg",
-        "confidence": 0.7732309103012085,
+        "source": "gallery/things/1b2f6afe-9cc6-4523-a62f-7da33ea63adc.jpg",
+        "target": "review_faces/medium_confidence/things/1b2f6afe-9cc6-4523-a62f-7da33ea63adc.jpg",
+        "confidence": 0.7839436531066895,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/05d1917f-0d74-48dd-a399-55c0adf743b2.jpg",
+        "target": "review_faces/medium_confidence/things/05d1917f-0d74-48dd-a399-55c0adf743b2.jpg",
+        "confidence": 0.5500287413597107,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/42342228-572f-43fe-842c-8e9da27b065d.jpg",
+        "target": "review_faces/medium_confidence/things/42342228-572f-43fe-842c-8e9da27b065d.jpg",
+        "confidence": 0.6226083636283875,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/77ef14bb-c811-4151-9e1a-5655709ad532.jpg",
+        "target": "review_faces/medium_confidence/things/77ef14bb-c811-4151-9e1a-5655709ad532.jpg",
+        "confidence": 0.6663368940353394,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/fc89653d-8e7f-4837-900e-d030f86753ea.jpg",
+        "target": "review_faces/medium_confidence/things/fc89653d-8e7f-4837-900e-d030f86753ea.jpg",
+        "confidence": 0.5061532855033875,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/b830143d-4017-4fc9-978b-c00b38c4a176.jpg",
+        "target": "review_faces/medium_confidence/things/b830143d-4017-4fc9-978b-c00b38c4a176.jpg",
+        "confidence": 0.7554722428321838,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/1959d181-9b93-4fa0-a10f-7d5ca4d9817b.jpg",
+        "target": "review_faces/medium_confidence/things/1959d181-9b93-4fa0-a10f-7d5ca4d9817b.jpg",
+        "confidence": 0.7635207176208496,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/3de4cf03-dd86-42ad-94a0-33c2c24aa839.jpg",
+        "target": "review_faces/medium_confidence/things/3de4cf03-dd86-42ad-94a0-33c2c24aa839.jpg",
+        "confidence": 0.6794381141662598,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/a990fc04-b321-4146-8ed2-e3d179468845.jpg",
+        "target": "review_faces/medium_confidence/things/a990fc04-b321-4146-8ed2-e3d179468845.jpg",
+        "confidence": 0.7990037798881531,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/76415ab4-c0b6-4da2-bed9-101c44c83b49.jpg",
+        "target": "review_faces/medium_confidence/things/76415ab4-c0b6-4da2-bed9-101c44c83b49.jpg",
+        "confidence": 0.5409942865371704,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/44344f0b-8edb-4a93-a86c-5a2ac7046d31.jpg",
+        "target": "review_faces/medium_confidence/things/44344f0b-8edb-4a93-a86c-5a2ac7046d31.jpg",
+        "confidence": 0.7694789171218872,
+        "detections": 1
+      },
+      {
+        "source": "gallery/things/477071fe-e678-4662-81a4-6e99ea0f4207.jpg",
+        "target": "review_faces/medium_confidence/things/477071fe-e678-4662-81a4-6e99ea0f4207.jpg",
+        "confidence": 0.5196628570556641,
         "detections": 1
       }
     ],
