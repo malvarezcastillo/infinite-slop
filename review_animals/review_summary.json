@@ -1,90 +1,72 @@
 {
-  "timestamp": "2025-07-27T23:25:07.295751",
+  "timestamp": "2025-07-28T00:07:43.934213",
   "dry_run": false,
   "use_symlinks": false,
-  "total_candidates": 7,
+  "total_candidates": 6,
   "by_animal_type": {
-    "cat": 1,
-    "cow": 1,
-    "bird": 3,
-    "dog": 1,
-    "zebra": 1
+    "bird": 5,
+    "horse": 1
   },
   "mixed_animals": 0,
   "errors": 0,
   "movements": {
     "by_type": {
-      "cat": [
-        {
-          "source": "gallery/things/2cea0080-aacf-48bb-9c83-a2b50520c528.jpg",
-          "target": "review_animals/by_animal_type/cat/things/2cea0080-aacf-48bb-9c83-a2b50520c528.jpg",
-          "count": 1,
-          "types": [
-            "cat"
-          ],
-          "max_confidence": 0.7582279443740845
-        }
-      ],
-      "cow": [
-        {
-          "source": "gallery/things/3211d90e-f915-4d07-a8e2-5335250435f3.jpg",
-          "target": "review_animals/by_animal_type/cow/things/3211d90e-f915-4d07-a8e2-5335250435f3.jpg",
-          "count": 1,
-          "types": [
-            "cow"
-          ],
-          "max_confidence": 0.9603102803230286
-        }
-      ],
       "bird": [
         {
-          "source": "gallery/things/ead849e7-1f60-4186-8425-00673e59a16e.jpg",
-          "target": "review_animals/by_animal_type/bird/things/ead849e7-1f60-4186-8425-00673e59a16e.jpg",
+          "source": "gallery/things/107d26ec-39c0-4502-ae48-211b1b613896.jpg",
+          "target": "review_animals/by_animal_type/bird/things/107d26ec-39c0-4502-ae48-211b1b613896.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.5102277398109436
+          "max_confidence": 0.5435830950737
         },
         {
-          "source": "gallery/things/4a134863-6b4e-4c14-a45f-6e7203ac5643.jpg",
-          "target": "review_animals/by_animal_type/bird/things/4a134863-6b4e-4c14-a45f-6e7203ac5643.jpg",
+          "source": "gallery/things/1f363a67-71b2-4a86-9938-f4b46774db0a.jpg",
+          "target": "review_animals/by_animal_type/bird/things/1f363a67-71b2-4a86-9938-f4b46774db0a.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.6610921621322632
+          "max_confidence": 0.7817676663398743
         },
         {
-          "source": "gallery/things/291f08d6-a394-4a9c-b797-70abf4afecae.jpg",
-          "target": "review_animals/by_animal_type/bird/things/291f08d6-a394-4a9c-b797-70abf4afecae.jpg",
+          "source": "gallery/things/fc7e9870-6b66-45b9-ad44-63d7f7556b49.jpg",
+          "target": "review_animals/by_animal_type/bird/things/fc7e9870-6b66-45b9-ad44-63d7f7556b49.jpg",
+          "count": 6,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.9397686719894409
+        },
+        {
+          "source": "gallery/things/04860fd8-a03b-414f-a372-f2cf6919348f.jpg",
+          "target": "review_animals/by_animal_type/bird/things/04860fd8-a03b-414f-a372-f2cf6919348f.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.913600742816925
-        }
-      ],
-      "dog": [
+          "max_confidence": 0.5964037775993347
+        },
         {
-          "source": "gallery/things/60c21918-3853-4a1d-baf7-8567879d6574.jpg",
-          "target": "review_animals/by_animal_type/dog/things/60c21918-3853-4a1d-baf7-8567879d6574.jpg",
+          "source": "gallery/things/cf5ff836-35c4-47c1-9561-377d6f9b9df4.jpg",
+          "target": "review_animals/by_animal_type/bird/things/cf5ff836-35c4-47c1-9561-377d6f9b9df4.jpg",
           "count": 1,
           "types": [
-            "dog"
+            "bird"
           ],
-          "max_confidence": 0.9530189633369446
+          "max_confidence": 0.9618095755577087
         }
       ],
-      "zebra": [
+      "horse": [
         {
-          "source": "gallery/things/49e90705-9165-43cf-acd1-752096a8758c.jpg",
-          "target": "review_animals/by_animal_type/zebra/things/49e90705-9165-43cf-acd1-752096a8758c.jpg",
+          "source": "gallery/things/450b0de5-e10c-48d3-b173-7973d3a4fe5a.jpg",
+          "target": "review_animals/by_animal_type/horse/things/450b0de5-e10c-48d3-b173-7973d3a4fe5a.jpg",
           "count": 1,
           "types": [
-            "zebra"
+            "horse"
           ],
-          "max_confidence": 0.5354451537132263
+          "max_confidence": 0.7356590032577515
         }
       ]
     },
