@@ -20,6 +20,10 @@ jobs:
         uses:  actions/checkout@v4
         with:
           persist-credentials: false
+          sparse-checkout: |
+            /*
+            !/gallery/
+          sparse-checkout-cone-mode: false
       - name: Package and upload artifact 📦
         uses: actions/upload-pages-artifact@v3
         with:
