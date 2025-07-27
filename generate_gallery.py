@@ -114,6 +114,11 @@ def generate_single_page_gallery(enable_tooltips=False):
       <div class="layout-toggle">
         <button class="layout-btn" data-columns="2" title="2 columns">▦</button>
         <button class="layout-btn active" data-columns="fill" title="Fill width">▦▦</button>
+      </div>
+      
+      <div class="sort-toggle">
+        <button class="sort-btn active" data-sort="random" title="Random order">🔀</button>
+        <button class="sort-btn" data-sort="newest" title="Newest first">📅</button>
       </div>"""
     
     html_content += """
@@ -178,15 +183,79 @@ def generate_single_page_gallery(enable_tooltips=False):
     
     html_content += """
     <script>
-    // Filter functionality
+    // Filter and sort functionality
     document.addEventListener('DOMContentLoaded', function() {
         const filterButtons = document.querySelectorAll('.filter-btn');
+        const sortButtons = document.querySelectorAll('.sort-btn');
         const galleryItems = document.querySelectorAll('.gallery-item');
         const activeCategories = new Set();
+        const mediaGrid = document.getElementById('media');
+        let currentSort = 'random';
+        let originalOrder = [];
+        
+        // Store original order of items
+        galleryItems.forEach((item, index) => {
+            originalOrder.push({element: item, index: index});
+        });
         
         // Initialize all categories as active
         filterButtons.forEach(btn => {
             activeCategories.add(btn.dataset.category);
+        });
+        
+        // Sort functionality
+        function sortGallery(sortType) {
+            const items = Array.from(galleryItems);
+            let sortedItems;
+            
+            if (sortType === 'newest') {
+                // Sort by mtime (newest first)
+                sortedItems = items.sort((a, b) => {
+                    const timeA = parseFloat(a.dataset.mtime || 0);
+                    const timeB = parseFloat(b.dataset.mtime || 0);
+                    return timeB - timeA; // Descending order (newest first)
+                });
+            } else {
+                // Random order (restore original shuffled order)
+                sortedItems = originalOrder.map(item => item.element);
+            }
+            
+            // Clear and re-append items in new order
+            mediaGrid.innerHTML = '';
+            sortedItems.forEach(item => {
+                mediaGrid.appendChild(item);
+            });
+            
+            // Re-initialize lazy loading with new order
+            if (window.lazyLoadCleanup) {
+                window.lazyLoadCleanup();
+            }
+            // Trigger a resize event to re-initialize lazy loading
+            window.dispatchEvent(new Event('resize'));
+            
+            // Handle visibility for filtered items
+            galleryItems.forEach(item => {
+                if (activeCategories.has(item.dataset.category)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+        
+        // Handle sort button clicks
+        sortButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const sortType = this.dataset.sort;
+                
+                // Update active state
+                sortButtons.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Apply sort
+                currentSort = sortType;
+                sortGallery(sortType);
+            });
         });
         
         // Handle filter button clicks
@@ -220,7 +289,6 @@ def generate_single_page_gallery(enable_tooltips=False):
         
         // Layout toggle functionality
         const layoutButtons = document.querySelectorAll('.layout-btn');
-        const mediaGrid = document.getElementById('media');
         const container = document.getElementById('container');
         
         layoutButtons.forEach(btn => {
