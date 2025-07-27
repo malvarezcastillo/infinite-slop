@@ -1,8 +1,8 @@
 {
-  "timestamp": "2025-07-27T15:44:27.542512",
+  "timestamp": "2025-07-27T15:53:27.393022",
   "detector_type": "face",
   "summary": {
-    "total_images_scanned": 17899,
+    "total_images_scanned": 17935,
     "images_with_detections": 0,
     "total_detections": 0,
     "average_detections_per_image": 0.0
@@ -24,7 +24,7 @@
       "total_detections": 0
     },
     "gallery/things": {
-      "total_images": 10634,
+      "total_images": 10670,
       "with_detections": 0,
       "total_detections": 0
     }
@@ -61973,6 +61973,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/cff97091-178e-4e3c-9552-e2423100c4c2.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/470caa46-95a8-47bc-bf2f-a4a641aad4ea.jpg",
       "width": 1024,
       "height": 1024,
@@ -63030,6 +63038,14 @@
     },
     {
       "path": "gallery/things/6e7c9f9c-a283-450a-9bdc-ba93f6d94f23.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/942daa19-6ddc-4ece-80f3-e6d12888fdea.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -65886,6 +65902,14 @@
     },
     {
       "path": "gallery/things/5e90a379-352a-4d13-9193-70c097b2f8d9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/b90ba5cc-5ca3-4c40-bb4c-ac5b6726565d.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -69109,6 +69133,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/04753003-23d9-461c-aae1-b0e65157bf10.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/8c717e31-1ebf-45e5-a779-b711a51cec32.jpg",
       "width": 1024,
       "height": 1024,
@@ -71357,6 +71389,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/4264cd58-5184-4606-b894-e799556d97dc.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/baa870a2-cf5e-47a4-86ca-2400f5fcc4b9.jpg",
       "width": 1024,
       "height": 1024,
@@ -73053,6 +73093,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/216d340b-b276-407d-bade-15a9a4a1ea93.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/bf0fde5e-4b30-4956-8830-f87cfef29079.jpg",
       "width": 1024,
       "height": 1024,
@@ -74221,6 +74269,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/90e48f77-ab68-46ec-82bb-b7c812f572c3.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/912e62de-8523-4bd1-b541-c8eacc9139f2.jpg",
       "width": 1024,
       "height": 1024,
@@ -74542,6 +74598,14 @@
     },
     {
       "path": "gallery/things/2342ede3-d06d-4803-8a30-1f140c525c36.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/140070a6-f129-405d-a2da-1cb5a61ce9e1.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -75150,6 +75214,14 @@
     },
     {
       "path": "gallery/things/5e5e8559-668e-46f6-9438-14cb81a166a0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/3ce23b3e-327c-40d1-be67-8a237d104294.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -81773,6 +81845,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/a42e8d84-d0cb-48e0-8009-1163294d110e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/0bf64630-04a6-48e7-8e96-b9275a6b2118.jpg",
       "width": 1024,
       "height": 1024,
@@ -82245,6 +82325,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/d18b67fd-7d1c-4f57-962d-f5572189b0d3.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/58d2e392-8439-4a36-baf6-b1cccec1503b.jpg",
       "width": 1024,
       "height": 1024,
@@ -82310,6 +82398,14 @@
     },
     {
       "path": "gallery/things/8add91d7-bf44-462a-be7b-9cb0003cfea2.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/693ef946-d398-4b00-94ba-64facce36ea8.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -84110,6 +84206,14 @@
     },
     {
       "path": "gallery/things/5453704f-ff1d-4084-af4e-d48d88015eab.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/decd2684-d38b-415e-ad82-786fb19a6411.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -91205,6 +91309,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/360da242-de36-4f3b-ac4f-08d89a56161e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/ae167af3-8a66-4841-9ac4-fc91d9e512b4.jpg",
       "width": 1024,
       "height": 1024,
@@ -91613,6 +91725,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/7feb9396-9a60-4bf2-af75-667f9c332fc6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/7bc5d400-d867-4db1-a28a-e7b0b06f06c3.jpg",
       "width": 1024,
       "height": 1024,
@@ -91910,6 +92030,14 @@
     },
     {
       "path": "gallery/things/1e063453-3950-43bf-b962-81a7341a904b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/dcb22bc1-c4a7-40c3-9999-21224d5c569d.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -94645,6 +94773,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/dbe1abe3-68cd-41f7-b388-1c3cd50e939a.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/58f0b08a-a64c-4e99-9a74-1ba0851746b9.jpg",
       "width": 1024,
       "height": 1024,
@@ -96245,6 +96381,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/5980c11c-843d-4c50-9579-fd3be502db6b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/8b0992d4-b21a-43f4-bb09-6dfad14868b8.jpg",
       "width": 1024,
       "height": 1024,
@@ -96902,6 +97046,14 @@
     },
     {
       "path": "gallery/things/c89e42ff-8e0e-4955-946b-a5c9ecb5b3b0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/7f0b1438-aafa-41cc-ac36-1b4287e7a100.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -101149,6 +101301,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/1ff7cf23-5216-4472-b635-c0f2f3810b6b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/d8a03f5a-dfa1-4018-aa71-369e35877fbc.jpg",
       "width": 1024,
       "height": 1024,
@@ -101606,6 +101766,14 @@
     },
     {
       "path": "gallery/things/f87fcee9-4587-49de-8a8a-c4a2bedaa33f.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/e4f07d13-b377-47e1-9b9a-beac3ce7cc28.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -102398,6 +102566,14 @@
     },
     {
       "path": "gallery/things/00a9d6fa-3ae8-458d-aacd-3e46daa3c958.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/efd1340f-14cb-4171-897d-6a3c694575e0.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -104045,6 +104221,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/abdc70b4-8601-41e0-9d71-58f378035a87.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/7605a32f-1844-4b88-89a5-aa4484c6d6a8.jpg",
       "width": 1024,
       "height": 1024,
@@ -104382,6 +104566,14 @@
     },
     {
       "path": "gallery/things/03047e71-e80f-4622-acb3-2fc0e60855a7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/76a67ab1-e27d-492e-a328-25e58720af1e.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -105374,6 +105566,14 @@
     },
     {
       "path": "gallery/things/580485d1-6146-4269-9a77-b16605c4b641.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/361986f3-6c86-4c33-bd4a-9d78410e6290.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -115637,6 +115837,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/20c723d6-d5a7-4996-9f7e-9141efda3c86.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/461eefcc-3241-49e1-8784-9f28bfd2e72a.jpg",
       "width": 1024,
       "height": 1024,
@@ -118358,6 +118566,14 @@
     },
     {
       "path": "gallery/things/b3d9338b-ae51-428f-8a84-aeb7009fa8e2.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/b6bc6eae-36a8-4926-92cf-a6080461756f.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -122365,6 +122581,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/24ac0412-d582-4706-90d4-d06aa91a69c7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/7bc80183-4baf-4ba2-a7ad-382c12164d7d.jpg",
       "width": 1024,
       "height": 1024,
@@ -123862,6 +124086,14 @@
     },
     {
       "path": "gallery/things/1936111f-ec02-43a1-b604-6f18af02c4b9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/29f37830-fa18-477a-8d4f-38e9f1667e8b.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -126134,6 +126366,14 @@
     },
     {
       "path": "gallery/things/6bfc65bd-206b-4079-91fc-a8a5d1af5f0b.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/24fd72d4-c9a9-4d3f-a929-db899709b054.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -129589,6 +129829,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/52439a95-140b-47cc-b10f-208fe0b92953.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/18d9a745-1e0b-46d9-ae9a-0faa816429e7.jpg",
       "width": 1024,
       "height": 1024,
@@ -130366,6 +130614,14 @@
     },
     {
       "path": "gallery/things/485dc6a7-8f03-4b89-b094-1982c4ff4d10.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/f1ab3ad0-2dbf-454e-a748-6dd2d5e4db3b.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -131765,6 +132021,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/20ba28bd-d2e8-4416-a351-7eb2761902af.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/5bff300e-21b4-4cca-8988-039ea4958587.jpg",
       "width": 1024,
       "height": 1024,
@@ -132238,6 +132502,14 @@
     },
     {
       "path": "gallery/things/37650fb4-4c69-4c3d-9216-ff851d26bf64.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/0c3b2ff8-61ce-408e-a7a6-4521aedcb346.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -136213,6 +136485,14 @@
       "has_detections": false
     },
     {
+      "path": "gallery/things/07df8ca6-32ca-4bb7-8ba7-99a72329efa7.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
       "path": "gallery/things/a13bb00d-c920-482e-9d54-bfad8815c8e6.jpg",
       "width": 1024,
       "height": 1024,
@@ -137934,6 +138214,14 @@
     },
     {
       "path": "gallery/things/5489248c-aab1-4464-af66-6d6237689b62.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false
+    },
+    {
+      "path": "gallery/things/24b44390-4f53-4df1-8937-f584716fa7d7.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],

@@ -208,6 +208,19 @@ def generate_single_page_gallery(enable_tooltips=False):
             const items = Array.from(galleryItems);
             let sortedItems;
             
+            // Store current image states before sorting
+            const imageStates = new Map();
+            items.forEach(item => {
+                const img = item.querySelector('img');
+                if (img) {
+                    imageStates.set(item, {
+                        src: img.src,
+                        hasOriginalSrc: !img.classList.contains('lazy'),
+                        classes: [...img.classList]
+                    });
+                }
+            });
+            
             if (sortType === 'newest') {
                 // Sort by mtime (newest first)
                 sortedItems = items.sort((a, b) => {
@@ -220,18 +233,30 @@ def generate_single_page_gallery(enable_tooltips=False):
                 sortedItems = originalOrder.map(item => item.element);
             }
             
-            // Clear and re-append items in new order
-            mediaGrid.innerHTML = '';
+            // Reorder items without destroying them
             sortedItems.forEach(item => {
                 mediaGrid.appendChild(item);
             });
             
-            // Re-initialize lazy loading with new order
-            if (window.lazyLoadCleanup) {
-                window.lazyLoadCleanup();
-            }
-            // Trigger a resize event to re-initialize lazy loading
-            window.dispatchEvent(new Event('resize'));
+            // Restore image states
+            sortedItems.forEach((item, newIndex) => {
+                const img = item.querySelector('img');
+                const state = imageStates.get(item);
+                if (img && state) {
+                    // Keep loaded images loaded
+                    if (state.hasOriginalSrc) {
+                        img.src = state.src;
+                        state.classes.forEach(cls => img.classList.add(cls));
+                    }
+                }
+            });
+            
+            // Signal lazy loader to handle reordering
+            setTimeout(() => {
+                if (typeof lazyLoadHandleReorder === 'function') {
+                    lazyLoadHandleReorder();
+                }
+            }, 100);
             
             // Handle visibility for filtered items
             galleryItems.forEach(item => {
@@ -248,13 +273,28 @@ def generate_single_page_gallery(enable_tooltips=False):
             btn.addEventListener('click', function() {
                 const sortType = this.dataset.sort;
                 
+                // Don't do anything if already active
+                if (this.classList.contains('active')) return;
+                
                 // Update active state
                 sortButtons.forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
                 
-                // Apply sort
-                currentSort = sortType;
-                sortGallery(sortType);
+                // Add loading state
+                mediaGrid.style.opacity = '0.5';
+                mediaGrid.style.pointerEvents = 'none';
+                
+                // Apply sort with a small delay for visual feedback
+                setTimeout(() => {
+                    currentSort = sortType;
+                    sortGallery(sortType);
+                    
+                    // Remove loading state
+                    setTimeout(() => {
+                        mediaGrid.style.opacity = '1';
+                        mediaGrid.style.pointerEvents = '';
+                    }, 200);
+                }, 100);
             });
         });
         

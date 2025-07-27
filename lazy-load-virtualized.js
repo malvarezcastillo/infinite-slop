@@ -189,6 +189,40 @@
     checkVisibility();
   };
 
+  // Function to handle DOM reordering (for sorting)
+  window.lazyLoadHandleReorder = function() {
+    // Clear state
+    state.images = [];
+    state.loadedImages.clear();
+    
+    // Re-scan all images
+    const imageElements = document.querySelectorAll('#media img');
+    let visibleCount = 0;
+    
+    imageElements.forEach((img, index) => {
+      const container = img.closest('li');
+      const isVisible = container.style.display !== 'none';
+      const isAlreadyLoaded = !img.classList.contains('lazy') && img.src !== CONFIG.placeholderSrc;
+      
+      const imageData = {
+        element: img,
+        index: index,
+        originalSrc: img.dataset.src || img.src,
+        loaded: isAlreadyLoaded,
+        container: container
+      };
+      
+      state.images.push(imageData);
+      
+      if (isAlreadyLoaded) {
+        state.loadedImages.add(index);
+      }
+    });
+    
+    // Check visibility for any new images that need loading
+    checkVisibility();
+  };
+
   // Debug info
   window.lazyLoadDebug = function() {
     console.log({

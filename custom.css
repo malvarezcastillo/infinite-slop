@@ -238,7 +238,7 @@ header, .breadcrumbs, #albums {
     list-style: none;
     margin: 0 auto;
     max-width: 100%;
-    transition: max-width 0.3s ease;
+    transition: max-width 0.3s ease, opacity 0.2s ease;
 }
 
 /* Only apply fixed columns on larger screens */
