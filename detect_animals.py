@@ -1,7 +1,20 @@
 #!/usr/bin/env python3
 """
 Animal and insect detection script based on YOLOv8
-Detects living subjects (animals, insects, birds) in images
+
+This script uses the YOLOv8 model with COCO dataset classes to detect animals in images.
+It's designed to help identify and review images containing living subjects (animals, birds)
+in an image gallery, allowing for manual review and removal if needed.
+
+The script supports:
+- Detection of all animal classes in the COCO dataset (classes 14-23)
+- Caching of detection results for improved performance on repeated runs
+- Organization of detected images by animal type for easy review
+- Dry-run mode to preview actions before moving files
+- Multiple model sizes for accuracy vs speed tradeoffs
+
+Note: The standard COCO dataset only includes 10 animal classes. For detection of 
+insects or more animal species, a specialized model would be required.
 """
 
 import os
@@ -23,8 +36,12 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# COCO class indices for animals, insects, and birds
+# COCO dataset class indices
+# The COCO (Common Objects in Context) dataset defines 80 object classes.
+# Classes 14-23 are all the animal classes in the dataset.
+# Classes 24-28 are non-living objects, documented here for reference.
 ANIMAL_CLASSES = {
+    # Animal classes in COCO dataset (these are ALL the animals in standard COCO)
     14: 'bird',
     15: 'cat', 
     16: 'dog',
@@ -35,22 +52,38 @@ ANIMAL_CLASSES = {
     21: 'bear',
     22: 'zebra',
     23: 'giraffe',
-    # Additional living creatures that might appear
-    24: 'backpack',  # Skip non-living
-    25: 'umbrella',  # Skip non-living
-    26: 'handbag',   # Skip non-living
-    27: 'tie',       # Skip non-living
-    28: 'suitcase',  # Skip non-living
-    # More animals (custom models might have these)
-    # Standard COCO doesn't have many insects, but we'll catch what we can
+    
+    # Non-living objects (classes 24-28) - documented for reference
+    # These immediately follow the animal classes in COCO but are NOT animals
+    24: 'backpack',  # Non-living object - excluded from detection
+    25: 'umbrella',  # Non-living object - excluded from detection
+    26: 'handbag',   # Non-living object - excluded from detection
+    27: 'tie',       # Non-living object - excluded from detection
+    28: 'suitcase',  # Non-living object - excluded from detection
+    
+    # Note: COCO does not include insects or many other animal species.
+    # For broader animal/insect detection, consider using:
+    # - iNaturalist dataset models
+    # - Custom trained models
+    # - Specialized wildlife detection models
 }
 
 # Define which classes are actually living subjects we want to detect
-LIVING_SUBJECT_CLASSES = {14, 15, 16, 17, 18, 19, 20, 21, 22, 23}  # All animal classes
+# This set contains ONLY the animal classes from COCO (14-23)
+LIVING_SUBJECT_CLASSES = {14, 15, 16, 17, 18, 19, 20, 21, 22, 23}  # All animal classes in COCO
 
 
 class DetectionCache:
-    """Simple file-based cache for detection results"""
+    """Simple file-based cache for detection results
+    
+    This cache stores detection results to avoid re-processing images that haven't changed.
+    Cache keys are based on file path, modification time, and file size to ensure
+    cache invalidation when files are modified.
+    
+    Attributes:
+        cache_dir: Directory where cache files are stored
+        stats: Dictionary tracking cache hits, misses, and invalid entries
+    """
     def __init__(self, cache_dir: Path = Path('.animal_detection_cache')):
         self.cache_dir = cache_dir
         self.cache_dir.mkdir(exist_ok=True)
@@ -112,14 +145,28 @@ class DetectionCache:
 
 
 class AnimalDetector:
+    """Animal detection using YOLOv8 with COCO classes
+    
+    This detector uses the standard YOLOv8 model trained on the COCO dataset
+    to identify animals in images. It supports multiple model sizes for 
+    different speed/accuracy tradeoffs and includes caching for performance.
+    
+    The detector will identify these animal types:
+    - bird, cat, dog, horse, sheep, cow, elephant, bear, zebra, giraffe
+    
+    Note: This uses the standard COCO model which has limited animal classes.
+    For detecting insects or more animal species, a specialized model would
+    be needed.
+    """
     def __init__(self, confidence_threshold=0.5, use_cache=True, cache_dir=None, model_size='nano'):
         """Initialize animal detector with YOLOv8 model
         
         Args:
-            confidence_threshold: Minimum confidence for detection
-            use_cache: Whether to use caching
-            cache_dir: Custom cache directory
-            model_size: 'nano', 'small', 'medium', 'large', or 'xlarge'
+            confidence_threshold: Minimum confidence for detection (0.0-1.0)
+            use_cache: Whether to use caching for repeated detections
+            cache_dir: Custom cache directory (default: .animal_detection_cache)
+            model_size: Model size - 'nano' (fastest), 'small', 'medium', 
+                       'large', or 'xlarge' (most accurate)
         """
         logger.info("Initializing animal detector...")
         
@@ -159,7 +206,22 @@ class AnimalDetector:
         logger.info("Animal detector initialized successfully")
     
     def detect(self, image_path: str) -> Dict:
-        """Detect animals/insects in a single image"""
+        """Detect animals in a single image
+        
+        Args:
+            image_path: Path to the image file
+            
+        Returns:
+            Dict containing:
+                - path: Image file path
+                - width: Image width in pixels
+                - height: Image height in pixels
+                - detections: List of detected animals with bbox, confidence, class
+                - count: Number of animals detected
+                - has_detections: Boolean indicating if any animals were found
+                - animal_types: List of unique animal types detected
+                - error: Error message if detection failed (optional)
+        """
         image_path = Path(image_path)
         
         # Check cache first
@@ -225,7 +287,21 @@ class AnimalDetector:
 
 def scan_directory(directory: Path, detector: AnimalDetector, 
                   extensions: List[str] = ['.jpg', '.jpeg', '.png']) -> Tuple[List[Dict], Dict[str, int]]:
-    """Scan directory for images and detect animals"""
+    """Scan directory for images and detect animals
+    
+    Recursively scans the given directory for image files and runs animal
+    detection on each one. Results are cached for performance.
+    
+    Args:
+        directory: Path to directory to scan
+        detector: AnimalDetector instance to use
+        extensions: List of image file extensions to process
+        
+    Returns:
+        Tuple of:
+            - List of detection results for all images
+            - Cache statistics dictionary (hits, misses, invalid)
+    """
     results = []
     image_files = []
     
@@ -255,7 +331,23 @@ def scan_directory(directory: Path, detector: AnimalDetector,
 
 
 def move_to_review(results: List[Dict], review_dir: Path, dry_run: bool = True, use_symlinks: bool = False) -> Dict[str, int]:
-    """Move detected images to review directory organized by animal type"""
+    """Move detected images to review directory organized by animal type
+    
+    Organizes images containing animals into a review directory structure:
+    - by_animal_type/: Images with single animal type (subdirs for each type)
+    - mixed_animals/: Images containing multiple different animal types
+    
+    Creates a summary report and README in the review directory.
+    
+    Args:
+        results: List of detection results from scan_directory
+        review_dir: Path to create review directory structure
+        dry_run: If True, only simulate moves without actually moving files
+        use_symlinks: If True, create symlinks instead of moving files
+        
+    Returns:
+        Dictionary containing summary statistics and movement details
+    """
     # Create review directory structure
     by_type_dir = review_dir / "by_animal_type"
     mixed_dir = review_dir / "mixed_animals"
@@ -389,115 +481,6 @@ def move_to_review(results: List[Dict], review_dir: Path, dry_run: bool = True, 
     return summary
 
 
-def generate_report(results: List[Dict], output_path: str):
-    """Generate a detailed report of detection results"""
-    timestamp = datetime.now().isoformat()
-    
-    # Statistics
-    total_images = len(results)
-    images_with_detections = sum(1 for r in results if r.get('has_detections'))
-    total_detections = sum(r.get('count', 0) for r in results)
-    
-    # Count by animal type
-    animal_counts = {}
-    for result in results:
-        for animal_type in result.get('animal_types', []):
-            animal_counts[animal_type] = animal_counts.get(animal_type, 0) + 1
-    
-    # Group by directory
-    by_directory = {}
-    for result in results:
-        dir_path = str(Path(result['path']).parent)
-        if dir_path not in by_directory:
-            by_directory[dir_path] = []
-        by_directory[dir_path].append(result)
-    
-    report = {
-        'timestamp': timestamp,
-        'detector_type': 'animal',
-        'summary': {
-            'total_images_scanned': total_images,
-            'images_with_detections': images_with_detections,
-            'total_detections': total_detections,
-            'average_detections_per_image': total_detections / total_images if total_images > 0 else 0,
-            'animal_type_counts': animal_counts
-        },
-        'by_directory': {
-            dir_path: {
-                'total_images': len(images),
-                'with_detections': sum(1 for img in images if img.get('has_detections')),
-                'total_detections': sum(img.get('count', 0) for img in images)
-            }
-            for dir_path, images in by_directory.items()
-        },
-        'detections': [r for r in results if r.get('has_detections')],
-        'all_results': results
-    }
-    
-    # Save JSON report
-    with open(output_path, 'w') as f:
-        json.dump(report, f, indent=2)
-    
-    # Save human-readable report
-    txt_path = output_path.replace('.json', '.txt')
-    with open(txt_path, 'w') as f:
-        f.write(f"Animal/Insect Detection Report\n")
-        f.write(f"Generated: {timestamp}\n")
-        f.write(f"{'='*60}\n\n")
-        
-        f.write(f"SUMMARY:\n")
-        f.write(f"- Total images scanned: {total_images}\n")
-        f.write(f"- Images with animals/insects: {images_with_detections}\n")
-        f.write(f"- Total animals detected: {total_detections}\n")
-        f.write(f"- Average per image: {total_detections/total_images:.2f}\n\n")
-        
-        f.write(f"ANIMAL TYPES FOUND:\n")
-        for animal_type, count in sorted(animal_counts.items()):
-            f.write(f"- {animal_type}: {count} images\n")
-        f.write("\n")
-        
-        f.write(f"BY DIRECTORY:\n")
-        for dir_path, stats in sorted(report['by_directory'].items()):
-            f.write(f"\n{dir_path}:\n")
-            f.write(f"  - Total images: {stats['total_images']}\n")
-            f.write(f"  - With animals: {stats['with_detections']}\n")
-            f.write(f"  - Total detections: {stats['total_detections']}\n")
-        
-        f.write(f"\n{'='*60}\n")
-        f.write(f"IMAGES WITH ANIMALS (sorted by confidence):\n\n")
-        
-        # Sort by highest confidence detection
-        sorted_results = sorted(
-            [r for r in results if r.get('has_detections')],
-            key=lambda x: max(d['confidence'] for d in x.get('detections', [])),
-            reverse=True
-        )
-        
-        for result in sorted_results:
-            f.write(f"{result['path']}\n")
-            f.write(f"  - Animals: {', '.join(result['animal_types'])}\n")
-            f.write(f"  - Count: {result.get('count', 0)}\n")
-            for i, detection in enumerate(result.get('detections', []), 1):
-                conf = detection['confidence']
-                animal = detection['class_name']
-                f.write(f"    {i}. {animal} (confidence: {conf:.3f})\n")
-            f.write("\n")
-    
-    # Save list of files to delete
-    delete_list_path = output_path.replace('.json', '_delete_candidates.txt')
-    with open(delete_list_path, 'w') as f:
-        f.write("# Animal/insect detection candidates for deletion\n")
-        f.write("# Review carefully before deleting!\n\n")
-        
-        for result in sorted_results:
-            max_conf = max(d['confidence'] for d in result.get('detections', []))
-            animals = ', '.join(result['animal_types'])
-            f.write(f"{result['path']} # {animals} (confidence: {max_conf:.3f})\n")
-    
-    logger.info(f"Reports saved:")
-    logger.info(f"  - JSON: {output_path}")
-    logger.info(f"  - Human-readable: {txt_path}")
-    logger.info(f"  - Delete candidates: {delete_list_path}")
 
 
 def main():
@@ -519,8 +502,6 @@ def main():
                        help='Path to gallery directory')
     parser.add_argument('--confidence', type=float, default=0.5,
                        help='Confidence threshold for detection (0.0-1.0)')
-    parser.add_argument('--output', type=str, default='animal_detection_report.json',
-                       help='Output report file path')
     parser.add_argument('--subdirs', nargs='+', help='Specific subdirectories to scan')
     parser.add_argument('--review-dir', type=str, default='review_animals',
                        help='Directory to move detected images for review')
@@ -528,8 +509,6 @@ def main():
                        help='Actually move files (default is dry run)')
     parser.add_argument('--symlinks', action='store_true',
                        help='Create symlinks instead of moving files')
-    parser.add_argument('--report-only', action='store_true',
-                       help='Only generate report, do not move files')
     parser.add_argument('--no-cache', action='store_true',
                        help='Disable caching of detection results')
     parser.add_argument('--clear-cache', action='store_true',
@@ -592,8 +571,6 @@ def main():
         else:
             logger.warning(f"Directory not found: {directory}")
     
-    # Generate report
-    generate_report(all_results, args.output)
     
     # Move files to review directory if requested
     images_with_detections = [r for r in all_results if r.get('has_detections')]
@@ -621,33 +598,28 @@ def main():
             print(f"  - Cache misses: {total_cache_stats['misses']}")
             print(f"  - Invalid entries: {total_cache_stats['invalid']}")
         
-        if not args.report_only:
-            # Move to review directory
-            review_path = Path(args.review_dir)
-            dry_run = not args.move
-            
-            print(f"\n{'DRY RUN - ' if dry_run else ''}Moving images to review directory: {review_path}")
-            
-            summary = move_to_review(
-                all_results, 
-                review_path, 
-                dry_run=dry_run,
-                use_symlinks=args.symlinks
-            )
-            
-            print(f"\nReview directory organization:")
-            print(f"  - Images organized by animal type in: by_animal_type/")
-            print(f"  - Images with multiple animals in: mixed_animals/")
-            
-            if dry_run:
-                print(f"\nThis was a DRY RUN. To actually move files, add --move flag")
-            else:
-                print(f"\nFiles {'linked' if args.symlinks else 'moved'} to: {review_path}")
-                print(f"Review the images in each folder and delete as appropriate.")
+        # Move to review directory
+        review_path = Path(args.review_dir)
+        dry_run = not args.move
+        
+        print(f"\n{'DRY RUN - ' if dry_run else ''}Moving images to review directory: {review_path}")
+        
+        summary = move_to_review(
+            all_results, 
+            review_path, 
+            dry_run=dry_run,
+            use_symlinks=args.symlinks
+        )
+        
+        print(f"\nReview directory organization:")
+        print(f"  - Images organized by animal type in: by_animal_type/")
+        print(f"  - Images with multiple animals in: mixed_animals/")
+        
+        if dry_run:
+            print(f"\nThis was a DRY RUN. To actually move files, add --move flag")
         else:
-            print(f"\nReports saved:")
-            print(f"  - {args.output.replace('.json', '.txt')} - Full report")
-            print(f"  - {args.output.replace('.json', '_delete_candidates.txt')} - Delete candidates")
+            print(f"\nFiles {'linked' if args.symlinks else 'moved'} to: {review_path}")
+            print(f"Review the images in each folder and delete as appropriate.")
     else:
         print(f"\n✅ No animals or insects detected in any images!")
         

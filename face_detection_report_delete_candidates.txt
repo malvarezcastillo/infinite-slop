@@ -1,3 +1,0 @@
-# High-confidence detection candidates for deletion
-# Review carefully before deleting!
-

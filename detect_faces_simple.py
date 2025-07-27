@@ -384,125 +384,6 @@ def move_to_review(results: List[Dict], review_dir: Path, dry_run: bool = True, 
     return summary
 
 
-def generate_report(results: List[Dict], output_path: str, detector_type: str = "face"):
-    """Generate a detailed report of detection results"""
-    timestamp = datetime.now().isoformat()
-    
-    # Statistics
-    total_images = len(results)
-    images_with_detections = sum(1 for r in results if r.get('has_detections'))
-    total_detections = sum(r.get('count', 0) for r in results)
-    
-    # Group by directory
-    by_directory = {}
-    for result in results:
-        dir_path = str(Path(result['path']).parent)
-        if dir_path not in by_directory:
-            by_directory[dir_path] = []
-        by_directory[dir_path].append(result)
-    
-    # Group by confidence levels
-    confidence_ranges = {
-        'high': [r for r in results if any(d['confidence'] >= 0.8 for d in r.get('detections', []))],
-        'medium': [r for r in results if any(0.5 <= d['confidence'] < 0.8 for d in r.get('detections', []))],
-        'low': [r for r in results if any(d['confidence'] < 0.5 for d in r.get('detections', []))]
-    }
-    
-    report = {
-        'timestamp': timestamp,
-        'detector_type': detector_type,
-        'summary': {
-            'total_images_scanned': total_images,
-            'images_with_detections': images_with_detections,
-            'total_detections': total_detections,
-            'average_detections_per_image': total_detections / total_images if total_images > 0 else 0
-        },
-        'by_directory': {
-            dir_path: {
-                'total_images': len(images),
-                'with_detections': sum(1 for img in images if img.get('has_detections')),
-                'total_detections': sum(img.get('count', 0) for img in images)
-            }
-            for dir_path, images in by_directory.items()
-        },
-        'by_confidence': {
-            level: len(images) for level, images in confidence_ranges.items()
-        },
-        'detections': [r for r in results if r.get('has_detections')],
-        'all_results': results
-    }
-    
-    # Save JSON report
-    with open(output_path, 'w') as f:
-        json.dump(report, f, indent=2)
-    
-    # Save human-readable report
-    txt_path = output_path.replace('.json', '.txt')
-    with open(txt_path, 'w') as f:
-        f.write(f"Detection Report\n")
-        f.write(f"Generated: {timestamp}\n")
-        f.write(f"Detector Type: {detector_type}\n")
-        f.write(f"{'='*60}\n\n")
-        
-        f.write(f"SUMMARY:\n")
-        f.write(f"- Total images scanned: {total_images}\n")
-        f.write(f"- Images with detections: {images_with_detections}\n")
-        f.write(f"- Total detections: {total_detections}\n")
-        f.write(f"- Average per image: {total_detections/total_images:.2f}\n\n")
-        
-        f.write(f"CONFIDENCE DISTRIBUTION:\n")
-        f.write(f"- High (≥0.8): {len(confidence_ranges['high'])} images\n")
-        f.write(f"- Medium (0.5-0.8): {len(confidence_ranges['medium'])} images\n")
-        f.write(f"- Low (<0.5): {len(confidence_ranges['low'])} images\n\n")
-        
-        f.write(f"BY DIRECTORY:\n")
-        for dir_path, stats in sorted(report['by_directory'].items()):
-            f.write(f"\n{dir_path}:\n")
-            f.write(f"  - Total images: {stats['total_images']}\n")
-            f.write(f"  - With detections: {stats['with_detections']}\n")
-            f.write(f"  - Total detections: {stats['total_detections']}\n")
-        
-        f.write(f"\n{'='*60}\n")
-        f.write(f"IMAGES WITH DETECTIONS (sorted by confidence):\n\n")
-        
-        # Sort by highest confidence detection
-        sorted_results = sorted(
-            [r for r in results if r.get('has_detections')],
-            key=lambda x: max(d['confidence'] for d in x.get('detections', [])),
-            reverse=True
-        )
-        
-        for result in sorted_results:
-            f.write(f"{result['path']}\n")
-            f.write(f"  - Detections: {result.get('count', 0)}\n")
-            for i, detection in enumerate(result.get('detections', []), 1):
-                conf = detection['confidence']
-                bbox = detection['bbox']
-                f.write(f"    {i}. Confidence: {conf:.3f}, ")
-                f.write(f"Box: [{bbox[0]}, {bbox[1]}, {bbox[2]}, {bbox[3]}]\n")
-            f.write("\n")
-    
-    # Save list of files to delete (high confidence only)
-    delete_list_path = output_path.replace('.json', '_delete_candidates.txt')
-    with open(delete_list_path, 'w') as f:
-        f.write("# High-confidence detection candidates for deletion\n")
-        f.write("# Review carefully before deleting!\n\n")
-        
-        high_confidence = [
-            r for r in results 
-            if r.get('has_detections') and 
-            any(d['confidence'] >= 0.8 for d in r.get('detections', []))
-        ]
-        
-        for result in high_confidence:
-            max_conf = max(d['confidence'] for d in result.get('detections', []))
-            f.write(f"{result['path']} # confidence: {max_conf:.3f}\n")
-    
-    logger.info(f"Reports saved:")
-    logger.info(f"  - JSON: {output_path}")
-    logger.info(f"  - Human-readable: {txt_path}")
-    logger.info(f"  - Delete candidates: {delete_list_path}")
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -523,8 +404,6 @@ def main():
                        help='Path to gallery directory')
     parser.add_argument('--confidence', type=float, default=0.5,
                        help='Confidence threshold for detection (0.0-1.0)')
-    parser.add_argument('--output', type=str, default='face_detection_report.json',
-                       help='Output report file path')
     parser.add_argument('--subdirs', nargs='+', help='Specific subdirectories to scan')
     parser.add_argument('--review-dir', type=str, default='review_faces',
                        help='Directory to move detected images for review')
@@ -532,8 +411,6 @@ def main():
                        help='Actually move files (default is dry run)')
     parser.add_argument('--symlinks', action='store_true',
                        help='Create symlinks instead of moving files')
-    parser.add_argument('--report-only', action='store_true',
-                       help='Only generate report, do not move files')
     parser.add_argument('--no-cache', action='store_true',
                        help='Disable caching of detection results')
     parser.add_argument('--clear-cache', action='store_true',
@@ -600,9 +477,8 @@ def main():
         else:
             logger.warning(f"Directory not found: {directory}")
     
-    # Generate report
+    # Get detector type for messages
     detector_type = detector.detection_type
-    generate_report(all_results, args.output, detector_type)
     
     # Move files to review directory if requested
     images_with_detections = [r for r in all_results if r.get('has_detections')]
@@ -620,34 +496,29 @@ def main():
             print(f"  - Cache misses: {total_cache_stats['misses']}")
             print(f"  - Invalid entries: {total_cache_stats['invalid']}")
         
-        if not args.report_only:
-            # Move to review directory
-            review_path = Path(args.review_dir)
-            dry_run = not args.move
-            
-            print(f"\n{'DRY RUN - ' if dry_run else ''}Moving images to review directory: {review_path}")
-            
-            summary = move_to_review(
-                all_results, 
-                review_path, 
-                dry_run=dry_run,
-                use_symlinks=args.symlinks
-            )
-            
-            print(f"\nReview directory organization:")
-            print(f"  - High confidence (≥80%): {summary['high_confidence']} images")
-            print(f"  - Medium confidence (50-80%): {summary['medium_confidence']} images")
-            print(f"  - Low confidence (<50%): {summary['low_confidence']} images")
-            
-            if dry_run:
-                print(f"\nThis was a DRY RUN. To actually move files, add --move flag")
-            else:
-                print(f"\nFiles {'linked' if args.symlinks else 'moved'} to: {review_path}")
-                print(f"Review the images in each confidence folder and delete as appropriate.")
+        # Move to review directory
+        review_path = Path(args.review_dir)
+        dry_run = not args.move
+        
+        print(f"\n{'DRY RUN - ' if dry_run else ''}Moving images to review directory: {review_path}")
+        
+        summary = move_to_review(
+            all_results, 
+            review_path, 
+            dry_run=dry_run,
+            use_symlinks=args.symlinks
+        )
+        
+        print(f"\nReview directory organization:")
+        print(f"  - High confidence (≥80%): {summary['high_confidence']} images")
+        print(f"  - Medium confidence (50-80%): {summary['medium_confidence']} images")
+        print(f"  - Low confidence (<50%): {summary['low_confidence']} images")
+        
+        if dry_run:
+            print(f"\nThis was a DRY RUN. To actually move files, add --move flag")
         else:
-            print(f"\nReports saved:")
-            print(f"  - {args.output.replace('.json', '.txt')} - Full report")
-            print(f"  - {args.output.replace('.json', '_delete_candidates.txt')} - High-confidence candidates")
+            print(f"\nFiles {'linked' if args.symlinks else 'moved'} to: {review_path}")
+            print(f"Review the images in each confidence folder and delete as appropriate.")
     else:
         print(f"\n✅ No {detector_type} detected in any images!")
         
