@@ -175,6 +175,14 @@ body {
     line-height: 1;
 }
 
+/* Disabled state for buttons */
+.layout-btn:disabled,
+.sort-btn:disabled,
+.filter-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 .sort-btn:hover {
     background: rgba(255, 255, 255, 0.8);
     border-color: rgba(0, 0, 0, 0.15);
@@ -193,6 +201,51 @@ body {
     background: rgba(70, 70, 70, 0.9);
     transform: translateY(-1px);
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Loading indicator */
+.loading-indicator {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.loading-indicator.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+.loading-text {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Add loading animation */
+.loading-indicator::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ddd;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }
 
 /* Remove any default header/breadcrumb styling if present */
@@ -429,6 +482,14 @@ header, .breadcrumbs, #albums {
     .layout-toggle,
     .sort-toggle {
         display: none;
+    }
+    
+    /* Adjust loading indicator position on mobile */
+    .loading-indicator {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 16px;
+        font-size: 13px;
     }
 }
 

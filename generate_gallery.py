@@ -111,14 +111,18 @@ def generate_single_page_gallery(enable_tooltips=False):
     
     # Add layout toggle button (desktop only)
     html_content += """
-      <div class="layout-toggle">
-        <button class="layout-btn" data-columns="2" title="2 columns">▦</button>
-        <button class="layout-btn active" data-columns="fill" title="Fill width">▦▦</button>
+      <div class="layout-toggle" style="opacity: 0.5; pointer-events: none;">
+        <button class="layout-btn" data-columns="2" title="2 columns" disabled>▦</button>
+        <button class="layout-btn active" data-columns="fill" title="Fill width" disabled>▦▦</button>
       </div>
       
-      <div class="sort-toggle">
-        <button class="sort-btn active" data-sort="random" title="Random order">🔀</button>
-        <button class="sort-btn" data-sort="newest" title="Newest first">📅</button>
+      <div class="sort-toggle" style="opacity: 0.5; pointer-events: none;">
+        <button class="sort-btn active" data-sort="random" title="Random order" disabled>🔀</button>
+        <button class="sort-btn" data-sort="newest" title="Newest first" disabled>📅</button>
+      </div>
+      
+      <div class="loading-indicator">
+        <span class="loading-text">Loading gallery...</span>
       </div>"""
     
     html_content += """
@@ -187,11 +191,36 @@ def generate_single_page_gallery(enable_tooltips=False):
     document.addEventListener('DOMContentLoaded', function() {
         const filterButtons = document.querySelectorAll('.filter-btn');
         const sortButtons = document.querySelectorAll('.sort-btn');
+        const layoutButtons = document.querySelectorAll('.layout-btn');
         const galleryItems = document.querySelectorAll('.gallery-item');
         const activeCategories = new Set();
         const mediaGrid = document.getElementById('media');
+        const loadingIndicator = document.querySelector('.loading-indicator');
+        const sortToggle = document.querySelector('.sort-toggle');
+        const layoutToggle = document.querySelector('.layout-toggle');
         let currentSort = 'random';
         let originalOrder = [];
+        let isInitialized = false;
+        
+        // Function to enable all controls
+        function enableControls() {
+            if (isInitialized) return;
+            isInitialized = true;
+            
+            // Enable all buttons
+            sortButtons.forEach(btn => btn.disabled = false);
+            layoutButtons.forEach(btn => btn.disabled = false);
+            filterButtons.forEach(btn => btn.disabled = false);
+            
+            // Remove disabled styling
+            sortToggle.style.opacity = '';
+            sortToggle.style.pointerEvents = '';
+            layoutToggle.style.opacity = '';
+            layoutToggle.style.pointerEvents = '';
+            
+            // Hide loading indicator
+            loadingIndicator.classList.add('hidden');
+        }
         
         // Store original order of items
         galleryItems.forEach((item, index) => {
@@ -202,6 +231,20 @@ def generate_single_page_gallery(enable_tooltips=False):
         filterButtons.forEach(btn => {
             activeCategories.add(btn.dataset.category);
         });
+        
+        // Wait for initial images to load before enabling controls
+        setTimeout(() => {
+            enableControls();
+        }, 1500); // Give lazy loading time to initialize
+        
+        // Also enable when first batch of images loads
+        const checkFirstLoad = setInterval(() => {
+            const loadedImages = document.querySelectorAll('#media img.loaded');
+            if (loadedImages.length >= 10) { // At least initial batch loaded
+                clearInterval(checkFirstLoad);
+                enableControls();
+            }
+        }, 200);
         
         // Sort functionality
         function sortGallery(sortType) {
@@ -328,7 +371,6 @@ def generate_single_page_gallery(enable_tooltips=False):
         });
         
         // Layout toggle functionality
-        const layoutButtons = document.querySelectorAll('.layout-btn');
         const container = document.getElementById('container');
         
         layoutButtons.forEach(btn => {
