@@ -1,17 +1,14 @@
 Animal/Insect Detection Report
-Generated: 2025-07-27T20:16:39.618514
+Generated: 2025-07-27T20:22:56.631236
 ============================================================
 
 SUMMARY:
-- Total images scanned: 17759
-- Images with animals/insects: 6
-- Total animals detected: 9
+- Total images scanned: 17778
+- Images with animals/insects: 0
+- Total animals detected: 0
 - Average per image: 0.00
 
 ANIMAL TYPES FOUND:
-- bird: 5 images
-- dog: 1 images
-- zebra: 1 images
 
 BY DIRECTORY:
 
@@ -31,43 +28,10 @@ gallery/landscape:
   - Total detections: 0
 
 gallery/things:
-  - Total images: 10694
-  - With animals: 6
-  - Total detections: 9
+  - Total images: 10713
+  - With animals: 0
+  - Total detections: 0
 
 ============================================================
 IMAGES WITH ANIMALS (sorted by confidence):
-
-gallery/things/bdf9d911-02ca-4368-919b-b6f5888c2e14.jpg
-  - Animals: dog
-  - Count: 2
-    1. dog (confidence: 0.961)
-    2. dog (confidence: 0.959)
-
-gallery/things/9c9d7c58-6d27-418e-b74b-fd011db50ef5.jpg
-  - Animals: bird
-  - Count: 1
-    1. bird (confidence: 0.958)
-
-gallery/things/15dceb70-a04a-4ef3-b994-de1f0a4a8a5e.jpg
-  - Animals: zebra, bird
-  - Count: 3
-    1. zebra (confidence: 0.952)
-    2. zebra (confidence: 0.894)
-    3. bird (confidence: 0.701)
-
-gallery/things/67584ecc-657b-40d2-9bb6-6d68062e2fdc.jpg
-  - Animals: bird
-  - Count: 1
-    1. bird (confidence: 0.936)
-
-gallery/things/5fa65ece-82cb-49f9-afd9-6aae7b69bd6f.jpg
-  - Animals: bird
-  - Count: 1
-    1. bird (confidence: 0.906)
-
-gallery/things/e64a3a6a-e1cc-45dd-8c7f-15677dcb4cff.jpg
-  - Animals: bird
-  - Count: 1
-    1. bird (confidence: 0.836)
 

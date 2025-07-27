@@ -1,16 +1,12 @@
 {
-  "timestamp": "2025-07-27T20:16:39.618514",
+  "timestamp": "2025-07-27T20:22:56.631236",
   "detector_type": "animal",
   "summary": {
-    "total_images_scanned": 17759,
-    "images_with_detections": 6,
-    "total_detections": 9,
-    "average_detections_per_image": 0.0005067852919646376,
-    "animal_type_counts": {
-      "bird": 5,
-      "zebra": 1,
-      "dog": 1
-    }
+    "total_images_scanned": 17778,
+    "images_with_detections": 0,
+    "total_detections": 0,
+    "average_detections_per_image": 0.0,
+    "animal_type_counts": {}
   },
   "by_directory": {
     "gallery/architecture": {
@@ -29,185 +25,12 @@
       "total_detections": 0
     },
     "gallery/things": {
-      "total_images": 10694,
-      "with_detections": 6,
-      "total_detections": 9
+      "total_images": 10713,
+      "with_detections": 0,
+      "total_detections": 0
     }
   },
-  "detections": [
-    {
-      "path": "gallery/things/5fa65ece-82cb-49f9-afd9-6aae7b69bd6f.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            34,
-            348,
-            817,
-            748
-          ],
-          "confidence": 0.9056130647659302,
-          "class": 14,
-          "class_name": "bird"
-        }
-      ],
-      "count": 1,
-      "has_detections": true,
-      "animal_types": [
-        "bird"
-      ]
-    },
-    {
-      "path": "gallery/things/9c9d7c58-6d27-418e-b74b-fd011db50ef5.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            217,
-            76,
-            786,
-            904
-          ],
-          "confidence": 0.9577820897102356,
-          "class": 14,
-          "class_name": "bird"
-        }
-      ],
-      "count": 1,
-      "has_detections": true,
-      "animal_types": [
-        "bird"
-      ]
-    },
-    {
-      "path": "gallery/things/67584ecc-657b-40d2-9bb6-6d68062e2fdc.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            374,
-            133,
-            906,
-            556
-          ],
-          "confidence": 0.9361142516136169,
-          "class": 14,
-          "class_name": "bird"
-        }
-      ],
-      "count": 1,
-      "has_detections": true,
-      "animal_types": [
-        "bird"
-      ]
-    },
-    {
-      "path": "gallery/things/e64a3a6a-e1cc-45dd-8c7f-15677dcb4cff.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            643,
-            653,
-            1023,
-            1023
-          ],
-          "confidence": 0.8356943726539612,
-          "class": 14,
-          "class_name": "bird"
-        }
-      ],
-      "count": 1,
-      "has_detections": true,
-      "animal_types": [
-        "bird"
-      ]
-    },
-    {
-      "path": "gallery/things/15dceb70-a04a-4ef3-b994-de1f0a4a8a5e.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            34,
-            288,
-            793,
-            574
-          ],
-          "confidence": 0.9516040682792664,
-          "class": 22,
-          "class_name": "zebra"
-        },
-        {
-          "bbox": [
-            28,
-            796,
-            462,
-            978
-          ],
-          "confidence": 0.8935430645942688,
-          "class": 22,
-          "class_name": "zebra"
-        },
-        {
-          "bbox": [
-            479,
-            862,
-            560,
-            919
-          ],
-          "confidence": 0.7014176845550537,
-          "class": 14,
-          "class_name": "bird"
-        }
-      ],
-      "count": 3,
-      "has_detections": true,
-      "animal_types": [
-        "zebra",
-        "bird"
-      ]
-    },
-    {
-      "path": "gallery/things/bdf9d911-02ca-4368-919b-b6f5888c2e14.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            156,
-            311,
-            450,
-            814
-          ],
-          "confidence": 0.9607115983963013,
-          "class": 16,
-          "class_name": "dog"
-        },
-        {
-          "bbox": [
-            418,
-            254,
-            926,
-            824
-          ],
-          "confidence": 0.9592598080635071,
-          "class": 16,
-          "class_name": "dog"
-        }
-      ],
-      "count": 2,
-      "has_detections": true,
-      "animal_types": [
-        "dog"
-      ]
-    }
-  ],
+  "detections": [],
   "all_results": [
     {
       "path": "gallery/architecture/ba88b85e-4849-4fd1-b0c9-72437c5184da.jpg",
@@ -64002,6 +63825,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/e84d541c-f32b-460a-83c0-a4357bceb529.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/49db21ea-737a-4c90-ae0f-88aba0e7debe.jpg",
       "width": 1024,
       "height": 1024,
@@ -64714,6 +64546,15 @@
     },
     {
       "path": "gallery/things/c177dd70-aff5-49f6-ac85-4e8770a37680.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
+      "path": "gallery/things/52171098-18d9-43b9-bf70-7a4ebda46690.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -73281,6 +73122,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/17a7b222-4458-497b-8638-531ef4c39b9a.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/79dc386a-abe2-4549-9eae-146ac5301bc4.jpg",
       "width": 1024,
       "height": 1024,
@@ -73642,6 +73492,15 @@
     },
     {
       "path": "gallery/things/8a4f142b-3093-45ed-84c7-8908f926e6e8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
+      "path": "gallery/things/64f009e7-3d70-4a2e-9817-2f1443a45d6f.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -74775,6 +74634,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/d3516604-3054-4f64-85a8-1100255507a8.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/07b8fe80-5313-468c-a2e4-e5d3fb8ad887.jpg",
       "width": 1024,
       "height": 1024,
@@ -75729,6 +75597,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/e40a3131-c4a5-4905-b266-e799e0fcaee9.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/edc867f2-b2bf-459f-8d7c-9566d9352821.jpg",
       "width": 1024,
       "height": 1024,
@@ -76288,6 +76165,15 @@
     },
     {
       "path": "gallery/things/948ebe2a-d12e-4a85-be9c-d7890aee650e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
+      "path": "gallery/things/1cd11a9e-5cc2-45e3-8125-34edbe63d69b.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -84684,6 +84570,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/bf5979ed-eed1-4214-a3b6-6afdecd4eab0.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/be9eade6-63dd-4075-b812-f906f145e7e4.jpg",
       "width": 1024,
       "height": 1024,
@@ -88500,6 +88395,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/7617ca29-67db-4132-95c8-be8b94c9667c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/052dd452-42a0-4ecf-a189-a94d6d392cb9.jpg",
       "width": 1024,
       "height": 1024,
@@ -92155,6 +92059,15 @@
     },
     {
       "path": "gallery/things/e3f963ba-f878-47b3-ba31-1ba715665307.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
+      "path": "gallery/things/e0d52414-5a5b-4d7f-a2e2-5b81992c21f3.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -96681,29 +96594,6 @@
       "animal_types": []
     },
     {
-      "path": "gallery/things/5fa65ece-82cb-49f9-afd9-6aae7b69bd6f.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            34,
-            348,
-            817,
-            748
-          ],
-          "confidence": 0.9056130647659302,
-          "class": 14,
-          "class_name": "bird"
-        }
-      ],
-      "count": 1,
-      "has_detections": true,
-      "animal_types": [
-        "bird"
-      ]
-    },
-    {
       "path": "gallery/things/22524d65-2961-441c-94fa-f449a1c45a25.jpg",
       "width": 1024,
       "height": 1024,
@@ -98694,6 +98584,15 @@
     },
     {
       "path": "gallery/things/03759ac3-ebea-47a1-a78d-ae2b5616c19d.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
+      "path": "gallery/things/6764c66e-fadb-4c5f-8a30-17978e894aeb.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -105056,6 +104955,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/4e0d2e7e-4584-4992-8b1b-7095ce8595c6.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/831ac135-8e5a-4a51-a19e-d0d5b232d7a2.jpg",
       "width": 1024,
       "height": 1024,
@@ -105945,29 +105853,6 @@
       "count": 0,
       "has_detections": false,
       "animal_types": []
-    },
-    {
-      "path": "gallery/things/9c9d7c58-6d27-418e-b74b-fd011db50ef5.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            217,
-            76,
-            786,
-            904
-          ],
-          "confidence": 0.9577820897102356,
-          "class": 14,
-          "class_name": "bird"
-        }
-      ],
-      "count": 1,
-      "has_detections": true,
-      "animal_types": [
-        "bird"
-      ]
     },
     {
       "path": "gallery/things/1a936fe1-f683-484e-a1af-1d32de52c520.jpg",
@@ -107302,6 +107187,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/f60b87c6-9211-4004-9d0e-dafda6149e59.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/c714e5c5-a0d9-45aa-9a6c-898e6e8e33b3.jpg",
       "width": 1024,
       "height": 1024,
@@ -107375,6 +107269,15 @@
     },
     {
       "path": "gallery/things/8148c2c2-8520-4615-aff2-ab8926d1a7a4.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
+      "path": "gallery/things/12848c8f-9e2d-49c5-b30b-9b29eb702263.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -111649,6 +111552,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/c3317507-3ce4-4f05-9148-33b505531207.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/fa4af6e7-e62c-44b2-b4e6-77769936d1f5.jpg",
       "width": 1024,
       "height": 1024,
@@ -113756,6 +113668,15 @@
     },
     {
       "path": "gallery/things/3a468c53-1bf6-4446-b786-239911cd0713.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
+      "path": "gallery/things/acff8d6f-0d99-4aa2-89fe-cb248019d5f3.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -116705,29 +116626,6 @@
       "count": 0,
       "has_detections": false,
       "animal_types": []
-    },
-    {
-      "path": "gallery/things/67584ecc-657b-40d2-9bb6-6d68062e2fdc.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            374,
-            133,
-            906,
-            556
-          ],
-          "confidence": 0.9361142516136169,
-          "class": 14,
-          "class_name": "bird"
-        }
-      ],
-      "count": 1,
-      "has_detections": true,
-      "animal_types": [
-        "bird"
-      ]
     },
     {
       "path": "gallery/things/58ecfad3-0153-4e99-841d-4944891b14d5.jpg",
@@ -121050,6 +120948,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/1dfecbcd-e5b7-4663-b0e7-ff70c3e2c84c.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/1c0149ec-77fb-4f3e-b361-0ee4205265fc.jpg",
       "width": 1024,
       "height": 1024,
@@ -122644,6 +122551,15 @@
     },
     {
       "path": "gallery/things/cc474e13-b1a4-480d-ac3c-3fcd344221fc.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
+      "path": "gallery/things/bd860d5f-f108-46fb-bd52-c4879c138b33.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -126856,6 +126772,15 @@
     },
     {
       "path": "gallery/things/fda8b2b0-88c6-4fe0-aceb-ad0c9885278e.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
+      "path": "gallery/things/4f9ff6da-8d43-4692-9576-89996613969d.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -133461,6 +133386,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/a579c800-8152-401b-832a-30b5c3e6db81.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/219236db-6b9a-4218-836e-61129733e62f.jpg",
       "width": 1024,
       "height": 1024,
@@ -137169,29 +137103,6 @@
       "animal_types": []
     },
     {
-      "path": "gallery/things/e64a3a6a-e1cc-45dd-8c7f-15677dcb4cff.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            643,
-            653,
-            1023,
-            1023
-          ],
-          "confidence": 0.8356943726539612,
-          "class": 14,
-          "class_name": "bird"
-        }
-      ],
-      "count": 1,
-      "has_detections": true,
-      "animal_types": [
-        "bird"
-      ]
-    },
-    {
       "path": "gallery/things/f7a7ea77-afab-4407-a0fb-13deb9fde10e.jpg",
       "width": 1024,
       "height": 1024,
@@ -138840,6 +138751,15 @@
     },
     {
       "path": "gallery/things/596a0786-d262-40ec-ba18-7339826eb772.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
+      "path": "gallery/things/d8d1ae74-e56e-46ad-9c45-8688b04b1c59.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -152906,6 +152826,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/381d7382-a838-4144-9c20-6b496585eb76.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/8d2b36e6-33a0-43e7-9313-24c794b5df2d.jpg",
       "width": 1024,
       "height": 1024,
@@ -153726,6 +153655,15 @@
     },
     {
       "path": "gallery/things/772d2f28-707a-4de9-b7b5-1f8be7594795.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
+      "path": "gallery/things/8e5f0bd6-b277-4968-bdce-e45db680a39f.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -157073,6 +157011,15 @@
       "animal_types": []
     },
     {
+      "path": "gallery/things/e7221c12-b178-4ede-8a99-66da583a3f96.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
       "path": "gallery/things/14620d0e-2ce4-4cc4-a2b2-289ce9db507f.jpg",
       "width": 1024,
       "height": 1024,
@@ -157676,52 +157623,6 @@
       "animal_types": []
     },
     {
-      "path": "gallery/things/15dceb70-a04a-4ef3-b994-de1f0a4a8a5e.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            34,
-            288,
-            793,
-            574
-          ],
-          "confidence": 0.9516040682792664,
-          "class": 22,
-          "class_name": "zebra"
-        },
-        {
-          "bbox": [
-            28,
-            796,
-            462,
-            978
-          ],
-          "confidence": 0.8935430645942688,
-          "class": 22,
-          "class_name": "zebra"
-        },
-        {
-          "bbox": [
-            479,
-            862,
-            560,
-            919
-          ],
-          "confidence": 0.7014176845550537,
-          "class": 14,
-          "class_name": "bird"
-        }
-      ],
-      "count": 3,
-      "has_detections": true,
-      "animal_types": [
-        "zebra",
-        "bird"
-      ]
-    },
-    {
       "path": "gallery/things/d9a0cc88-09fb-4b98-a813-c96300aaad56.jpg",
       "width": 1024,
       "height": 1024,
@@ -158272,6 +158173,15 @@
     },
     {
       "path": "gallery/things/0542a764-00da-452d-82c4-5128cb260073.jpg",
+      "width": 1024,
+      "height": 1024,
+      "detections": [],
+      "count": 0,
+      "has_detections": false,
+      "animal_types": []
+    },
+    {
+      "path": "gallery/things/cb55e664-7db4-40d0-8bf7-9ab57785a91f.jpg",
       "width": 1024,
       "height": 1024,
       "detections": [],
@@ -159295,40 +159205,6 @@
       "count": 0,
       "has_detections": false,
       "animal_types": []
-    },
-    {
-      "path": "gallery/things/bdf9d911-02ca-4368-919b-b6f5888c2e14.jpg",
-      "width": 1024,
-      "height": 1024,
-      "detections": [
-        {
-          "bbox": [
-            156,
-            311,
-            450,
-            814
-          ],
-          "confidence": 0.9607115983963013,
-          "class": 16,
-          "class_name": "dog"
-        },
-        {
-          "bbox": [
-            418,
-            254,
-            926,
-            824
-          ],
-          "confidence": 0.9592598080635071,
-          "class": 16,
-          "class_name": "dog"
-        }
-      ],
-      "count": 2,
-      "has_detections": true,
-      "animal_types": [
-        "dog"
-      ]
     },
     {
       "path": "gallery/things/a2a9698f-5aef-4201-b8f2-842a501edd18.jpg",
