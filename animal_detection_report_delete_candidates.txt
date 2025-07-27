@@ -1,0 +1,9 @@
+# Animal/insect detection candidates for deletion
+# Review carefully before deleting!
+
+gallery/things/bdf9d911-02ca-4368-919b-b6f5888c2e14.jpg # dog (confidence: 0.961)
+gallery/things/9c9d7c58-6d27-418e-b74b-fd011db50ef5.jpg # bird (confidence: 0.958)
+gallery/things/15dceb70-a04a-4ef3-b994-de1f0a4a8a5e.jpg # zebra, bird (confidence: 0.952)
+gallery/things/67584ecc-657b-40d2-9bb6-6d68062e2fdc.jpg # bird (confidence: 0.936)
+gallery/things/5fa65ece-82cb-49f9-afd9-6aae7b69bd6f.jpg # bird (confidence: 0.906)
+gallery/things/e64a3a6a-e1cc-45dd-8c7f-15677dcb4cff.jpg # bird (confidence: 0.836)

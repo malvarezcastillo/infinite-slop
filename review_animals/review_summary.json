@@ -1,0 +1,78 @@
+{
+  "timestamp": "2025-07-27T20:16:39.758975",
+  "dry_run": false,
+  "use_symlinks": false,
+  "total_candidates": 6,
+  "by_animal_type": {
+    "bird": 4,
+    "dog": 1
+  },
+  "mixed_animals": 1,
+  "errors": 0,
+  "movements": {
+    "by_type": {
+      "bird": [
+        {
+          "source": "gallery/things/5fa65ece-82cb-49f9-afd9-6aae7b69bd6f.jpg",
+          "target": "review_animals/by_animal_type/bird/things/5fa65ece-82cb-49f9-afd9-6aae7b69bd6f.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.9056130647659302
+        },
+        {
+          "source": "gallery/things/9c9d7c58-6d27-418e-b74b-fd011db50ef5.jpg",
+          "target": "review_animals/by_animal_type/bird/things/9c9d7c58-6d27-418e-b74b-fd011db50ef5.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.9577820897102356
+        },
+        {
+          "source": "gallery/things/67584ecc-657b-40d2-9bb6-6d68062e2fdc.jpg",
+          "target": "review_animals/by_animal_type/bird/things/67584ecc-657b-40d2-9bb6-6d68062e2fdc.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.9361142516136169
+        },
+        {
+          "source": "gallery/things/e64a3a6a-e1cc-45dd-8c7f-15677dcb4cff.jpg",
+          "target": "review_animals/by_animal_type/bird/things/e64a3a6a-e1cc-45dd-8c7f-15677dcb4cff.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.8356943726539612
+        }
+      ],
+      "dog": [
+        {
+          "source": "gallery/things/bdf9d911-02ca-4368-919b-b6f5888c2e14.jpg",
+          "target": "review_animals/by_animal_type/dog/things/bdf9d911-02ca-4368-919b-b6f5888c2e14.jpg",
+          "count": 2,
+          "types": [
+            "dog"
+          ],
+          "max_confidence": 0.9607115983963013
+        }
+      ]
+    },
+    "mixed": [
+      {
+        "source": "gallery/things/15dceb70-a04a-4ef3-b994-de1f0a4a8a5e.jpg",
+        "target": "review_animals/mixed_animals/things/15dceb70-a04a-4ef3-b994-de1f0a4a8a5e.jpg",
+        "count": 3,
+        "types": [
+          "zebra",
+          "bird"
+        ],
+        "max_confidence": 0.9516040682792664
+      }
+    ],
+    "errors": []
+  }
+}
