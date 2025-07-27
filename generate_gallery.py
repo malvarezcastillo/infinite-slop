@@ -40,11 +40,15 @@ def generate_single_page_gallery(enable_tooltips=False):
                     except Exception as e:
                         print(f"Warning: Could not read prompt file {prompt_file}: {e}")
                 
+                # Get file modification time (creation time for UUIDv7 files)
+                mtime = img.stat().st_mtime
+                
                 all_images.append({
                     'path': f"{category}/{img.name}",
                     'category': category,
                     'filename': img.name,
-                    'prompt': prompt_text
+                    'prompt': prompt_text,
+                    'mtime': mtime
                 })
             
             print(f"Found {len(images)} images in {category} category")
@@ -126,6 +130,7 @@ def generate_single_page_gallery(enable_tooltips=False):
         img_name = img['filename']
         category = img['category']
         prompt = img.get('prompt', '')
+        mtime = img.get('mtime', 0)
         
         # Escape HTML entities in prompt for safe display
         escaped_prompt = html.escape(prompt)
@@ -137,6 +142,7 @@ def generate_single_page_gallery(enable_tooltips=False):
                 data-sub-html=""
                 data-download-url="media/original/{img_path}"
                 data-filename="{img_name}"
+                data-mtime="{mtime}"
               >
               <a href="media/original/{img_path}" target="_blank" title="{escaped_prompt}">
                 <img src="media/thumbs/{img_path}"
