@@ -3,15 +3,7 @@
 
 set -e
 
-# Parse command line arguments
-ENABLE_TOOLTIPS=false
-while [[ "$#" -gt 0 ]]; do
-    case $1 in
-        --tooltips) ENABLE_TOOLTIPS=true ;;
-        *) echo "Unknown parameter: $1"; exit 1 ;;
-    esac
-    shift
-done
+# No command line arguments needed anymore
 
 echo "🖼️  Building gallery..."
 
@@ -30,18 +22,12 @@ fi
 
 # Generate all galleries
 echo "🔨 Generating gallery HTML..."
-if [ "$ENABLE_TOOLTIPS" = true ]; then
-    echo "  ℹ️  Tooltips enabled"
-    python3 generate_gallery.py --tooltips
-else
-    echo "  ℹ️  Tooltips disabled (use --tooltips to enable)"
-    python3 generate_gallery.py
-fi
+python3 generate_gallery.py
 
 # Copy custom scripts to build output root
 echo "📝 Adding custom scripts..."
 cp lazy-load-virtualized.js build_output/
-cp prompt-tooltips.js build_output/
+cp progressive-loader.js build_output/
 cp favicon.ico build_output/ 2>/dev/null || true
 
 # No need to copy scripts to subdirectories anymore

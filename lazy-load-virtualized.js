@@ -4,10 +4,10 @@
 
   // Configuration
   const CONFIG = {
-    initialLoad: 10,           // Number of images to load initially
-    bufferDistance: 1000,      // Pixels above/below viewport to keep loaded
+    initialLoad: 20,           // Number of images to load initially (increased)
+    bufferDistance: 600,       // Pixels above/below viewport to keep loaded (reduced)
     checkInterval: 100,        // Throttle for scroll events (ms)
-    placeholderSrc: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"%3E%3Crect width="400" height="400" fill="%23f0f0f0"/%3E%3C/svg%3E',
+    placeholderSrc: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', // 1x1 transparent gif
     unloadDelay: 500          // Delay before unloading images (ms)
   };
 

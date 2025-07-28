@@ -9,7 +9,7 @@ import json
 import html
 import argparse
 
-def generate_single_page_gallery(enable_tooltips=False):
+def generate_single_page_gallery():
     """Generate a single-page gallery with all images and category filters."""
     
     # Get all gallery subdirectories
@@ -87,6 +87,9 @@ def generate_single_page_gallery(enable_tooltips=False):
       <title>Slop Gallery</title>
       <link rel="stylesheet" href="public/core.css" />
       <link rel="stylesheet" href="public/theme.css" />
+      <!-- Preconnect to GitHub for faster image loading -->
+      <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+      <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
   </head>
 
   <body>
@@ -133,8 +136,11 @@ def generate_single_page_gallery(enable_tooltips=False):
       <ul id="media" class="clearfix">
 """
     
-    # Add all images as list items with category data
-    for img in all_images:
+    # Progressive loading: render first batch in DOM, rest as JSON
+    initial_batch_size = 500  # Render first 500 items in DOM
+    
+    # Add first batch of images as list items
+    for i, img in enumerate(all_images[:initial_batch_size]):
         img_path = img['path']
         img_name = img['filename']
         category = img['category']
@@ -158,11 +164,17 @@ def generate_single_page_gallery(enable_tooltips=False):
                      width="512"
                      height="512"
                      alt="{img_name}"
+                     loading="lazy"
                      title="{escaped_prompt}" />
               </a>
             </li>"""
     
     html_content += """  </ul>
+    
+      <!-- Load more indicator -->
+      <div id="load-more-indicator" style="display: none; text-align: center; padding: 40px;">
+        <span>Loading more images...</span>
+      </div>
     
       <!--
         Pagination
@@ -179,11 +191,24 @@ def generate_single_page_gallery(enable_tooltips=False):
     
     </div>
 
-    <script src="lazy-load-virtualized.js"></script>"""
-    
-    if enable_tooltips:
-        html_content += """
-    <script src="prompt-tooltips.js"></script>"""
+    <!-- Store remaining images as JSON for progressive loading -->
+    <script>
+      window.remainingImages = """ + json.dumps([{
+            'path': img['path'],
+            'category': img['category'],
+            'filename': img['filename'],
+            'prompt': img.get('prompt', ''),
+            'mtime': img.get('mtime', 0)
+        } for img in all_images[initial_batch_size:]]) + """;
+      window.progressiveLoadConfig = {
+        batchSize: 100,
+        loadMoreThreshold: 800,
+        currentIndex: """ + str(initial_batch_size) + """
+      };
+    </script>
+
+    <script src="lazy-load-virtualized.js"></script>
+    <script src="progressive-loader.js"></script>"""
     
     html_content += """
     <script>
@@ -192,7 +217,7 @@ def generate_single_page_gallery(enable_tooltips=False):
         const filterButtons = document.querySelectorAll('.filter-btn');
         const sortButtons = document.querySelectorAll('.sort-btn');
         const layoutButtons = document.querySelectorAll('.layout-btn');
-        const galleryItems = document.querySelectorAll('.gallery-item');
+        let galleryItems = document.querySelectorAll('.gallery-item');
         const activeCategories = new Set();
         const mediaGrid = document.getElementById('media');
         const loadingIndicator = document.querySelector('.loading-indicator');
@@ -248,6 +273,8 @@ def generate_single_page_gallery(enable_tooltips=False):
         
         // Sort functionality
         function sortGallery(sortType) {
+            // Re-query items to include dynamically loaded ones
+            galleryItems = document.querySelectorAll('.gallery-item');
             const items = Array.from(galleryItems);
             let sortedItems;
             
@@ -332,6 +359,11 @@ def generate_single_page_gallery(enable_tooltips=False):
                     currentSort = sortType;
                     sortGallery(sortType);
                     
+                    // Dispatch event for progressive loader
+                    window.dispatchEvent(new CustomEvent('sortChange', {
+                        detail: { sortType: sortType }
+                    }));
+                    
                     // Remove loading state
                     setTimeout(() => {
                         mediaGrid.style.opacity = '1';
@@ -362,6 +394,11 @@ def generate_single_page_gallery(enable_tooltips=False):
                         item.style.display = 'none';
                     }
                 });
+                
+                // Dispatch event for progressive loader
+                window.dispatchEvent(new CustomEvent('filterChange', {
+                    detail: { activeCategories: Array.from(activeCategories) }
+                }));
                 
                 // Handle lazy loading for filtered items
                 if (typeof lazyLoadHandleFilterChange === 'function') {
@@ -416,16 +453,11 @@ def generate_single_page_gallery(enable_tooltips=False):
 
 def main():
     """Main function to generate single-page gallery."""
-    # Parse command line arguments
-    parser = argparse.ArgumentParser(description='Generate image gallery')
-    parser.add_argument('--tooltips', action='store_true', help='Enable prompt tooltips on hover')
-    args = parser.parse_args()
-    
     # Set random seed for consistent shuffling across builds
     random.seed()
     
     print("Generating single-page gallery with filters...")
-    return generate_single_page_gallery(enable_tooltips=args.tooltips)
+    return generate_single_page_gallery()
 
 if __name__ == "__main__":
     main()
