@@ -89,12 +89,22 @@
   }
 
   function createImageElement(img) {
+    // Get base URL from existing images or use default
+    const existingImg = document.querySelector('#media img[src*="github"]');
+    let baseUrl = 'https://raw.githubusercontent.com/malvarezcastillo/infinite-slop/master/gallery';
+    if (existingImg && existingImg.src.includes('githubusercontent.com')) {
+      const match = existingImg.src.match(/(https:\/\/raw\.githubusercontent\.com\/[^\/]+\/[^\/]+\/[^\/]+\/gallery)/);
+      if (match) baseUrl = match[1];
+    }
+    
+    const fullImageUrl = `${baseUrl}/${img.path}`;
+    
     const li = document.createElement('li');
     li.className = 'gallery-item';
     li.dataset.category = img.category;
-    li.dataset.src = `media/large/${img.path}`;
+    li.dataset.src = fullImageUrl;
     li.dataset.subHtml = '';
-    li.dataset.downloadUrl = `media/original/${img.path}`;
+    li.dataset.downloadUrl = fullImageUrl;
     li.dataset.filename = img.filename;
     li.dataset.mtime = img.mtime;
 
@@ -104,12 +114,11 @@
     }
 
     const a = document.createElement('a');
-    a.href = `media/original/${img.path}`;
+    a.href = fullImageUrl;
     a.target = '_blank';
     a.title = img.prompt;
 
     const imgEl = document.createElement('img');
-    imgEl.src = `media/thumbs/${img.path}`;
     imgEl.width = 512;
     imgEl.height = 512;
     imgEl.alt = img.filename;
@@ -117,7 +126,7 @@
     imgEl.title = img.prompt;
 
     // Mark as lazy for our custom lazy loader
-    imgEl.dataset.src = imgEl.src;
+    imgEl.dataset.src = fullImageUrl;
     imgEl.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
     imgEl.classList.add('lazy');
 
