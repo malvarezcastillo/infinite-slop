@@ -1,7 +1,7 @@
 Animal/Insect Detection Review Directory
 ========================================
 
-Generated: 2025-07-28T13:14:59.737375
+Generated: 2025-07-28T14:03:12.699004
 Mode: ACTUAL MOVE
 Method: MOVED FILES
 
@@ -11,7 +11,7 @@ Summary:
 - Images with multiple animal types: 0
 
 By Animal Type:
-- bird: 1 images
+- dog: 1 images
 
 Directories:
 - by_animal_type/: Images organized by detected animal type

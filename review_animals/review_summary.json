@@ -1,24 +1,24 @@
 {
-  "timestamp": "2025-07-28T13:14:59.737375",
+  "timestamp": "2025-07-28T14:03:12.699004",
   "dry_run": false,
   "use_symlinks": false,
   "total_candidates": 1,
   "by_animal_type": {
-    "bird": 1
+    "dog": 1
   },
   "mixed_animals": 0,
   "errors": 0,
   "movements": {
     "by_type": {
-      "bird": [
+      "dog": [
         {
-          "source": "gallery/landscape/713cd939-a570-46bb-8e05-6afc700208cb.jpg",
-          "target": "review_animals/by_animal_type/bird/landscape/713cd939-a570-46bb-8e05-6afc700208cb.jpg",
+          "source": "gallery/landscape/77ea9901-8f97-45ac-a924-6be3e4e1b7b7.jpg",
+          "target": "review_animals/by_animal_type/dog/landscape/77ea9901-8f97-45ac-a924-6be3e4e1b7b7.jpg",
           "count": 1,
           "types": [
-            "bird"
+            "dog"
           ],
-          "max_confidence": 0.7884280681610107
+          "max_confidence": 0.6012726426124573
         }
       ]
     },
