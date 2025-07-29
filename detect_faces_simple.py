@@ -167,12 +167,12 @@ class SimpleFaceDetector:
         
         logger.info(f"Detector initialized successfully ({self.detection_type} mode)")
     
-    def detect(self, image_path: str) -> Dict:
+    def detect(self, image_path: str, check_cache: bool = True) -> Dict:
         """Detect faces/people in a single image"""
         image_path = Path(image_path)
         
-        # Check cache first
-        if self.use_cache:
+        # Check cache first (can be disabled when pre-filtering)
+        if self.use_cache and check_cache:
             cached_result = self.cache.get(image_path)
             if cached_result is not None:
                 logger.debug(f"Cache hit for {image_path.name}")
@@ -241,12 +241,31 @@ def scan_directory(directory: Path, detector: SimpleFaceDetector,
     
     logger.info(f"Found {len(image_files)} images in {directory}")
     
-    # Process each image
-    for i, image_path in enumerate(image_files, 1):
-        if i % 10 == 0:
-            logger.info(f"Processing image {i}/{len(image_files)}...")
+    # Pre-filter cached files if cache is enabled
+    files_to_process = []
+    if detector.use_cache:
+        logger.info("Checking cache for already processed files...")
+        for image_path in image_files:
+            cached_result = detector.cache.get(image_path)
+            if cached_result is not None:
+                # Use cached result directly
+                results.append(cached_result)
+                if cached_result.get('has_detections'):
+                    logger.debug(f"Cache hit (with detections): {image_path.name}")
+            else:
+                # Need to process this file
+                files_to_process.append(image_path)
         
-        result = detector.detect(image_path)
+        logger.info(f"Found {len(results)} cached results, {len(files_to_process)} files need processing")
+    else:
+        files_to_process = image_files
+    
+    # Process only uncached images
+    for i, image_path in enumerate(files_to_process, 1):
+        if i % 10 == 0:
+            logger.info(f"Processing new image {i}/{len(files_to_process)}...")
+        
+        result = detector.detect(image_path, check_cache=False)
         results.append(result)
         
         if result.get('has_detections'):

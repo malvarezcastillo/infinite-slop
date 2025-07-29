@@ -1,10 +1,10 @@
 {
-  "timestamp": "2025-07-29T12:07:51.066759",
+  "timestamp": "2025-07-29T14:23:56.863591",
   "dry_run": false,
   "use_symlinks": false,
-  "total_candidates": 1,
+  "total_candidates": 2,
   "by_animal_type": {
-    "bird": 1
+    "bird": 2
   },
   "mixed_animals": 0,
   "errors": 0,
@@ -12,13 +12,22 @@
     "by_type": {
       "bird": [
         {
-          "source": "gallery/interiors/45548978-e314-4d03-8013-02f7f9785b1f.jpg",
-          "target": "review_animals/by_animal_type/bird/interiors/45548978-e314-4d03-8013-02f7f9785b1f.jpg",
-          "count": 2,
+          "source": "gallery/interiors/622e3374-d8d1-4f82-9911-48ebe0a98bc6.jpg",
+          "target": "review_animals/by_animal_type/bird/interiors/622e3374-d8d1-4f82-9911-48ebe0a98bc6.jpg",
+          "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.5885241031646729
+          "max_confidence": 0.608076274394989
+        },
+        {
+          "source": "gallery/interiors/dc4cb148-8e7e-40a0-86d7-83e243005672.jpg",
+          "target": "review_animals/by_animal_type/bird/interiors/dc4cb148-8e7e-40a0-86d7-83e243005672.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.8937108516693115
         }
       ]
     },
