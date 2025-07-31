@@ -1,22 +1,22 @@
 Animal/Insect Detection Review Directory
 ========================================
 
-Generated: 2025-07-31T16:27:54.178982
+Generated: 2025-07-31T23:37:08.630496
 Mode: ACTUAL MOVE
 Method: MOVED FILES
 
 Summary:
-- Total candidates: 61
-- Images with single animal type: 60
-- Images with multiple animal types: 1
+- Total candidates: 80
+- Images with single animal type: 80
+- Images with multiple animal types: 0
 
 By Animal Type:
-- bird: 31 images
+- bird: 35 images
 - cat: 14 images
-- cow: 2 images
-- dog: 1 images
-- elephant: 2 images
-- horse: 8 images
+- cow: 7 images
+- dog: 8 images
+- elephant: 3 images
+- horse: 11 images
 - sheep: 2 images
 
 Directories:
