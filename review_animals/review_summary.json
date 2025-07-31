@@ -1,283 +1,588 @@
 {
-  "timestamp": "2025-07-30T16:17:20.184002",
+  "timestamp": "2025-07-31T16:27:54.178982",
   "dry_run": false,
   "use_symlinks": false,
-  "total_candidates": 28,
+  "total_candidates": 61,
   "by_animal_type": {
-    "bird": 19,
-    "dog": 2,
-    "cat": 4,
-    "horse": 2,
-    "elephant": 1
+    "bird": 31,
+    "sheep": 2,
+    "horse": 8,
+    "dog": 1,
+    "cat": 14,
+    "cow": 2,
+    "elephant": 2
   },
-  "mixed_animals": 0,
+  "mixed_animals": 1,
   "errors": 0,
   "movements": {
     "by_type": {
       "bird": [
         {
-          "source": "gallery/things/8b2ba995-85c0-403c-9262-b8638e31b5f1.jpg",
-          "target": "review_animals/by_animal_type/bird/things/8b2ba995-85c0-403c-9262-b8638e31b5f1.jpg",
+          "source": "gallery/things/9ea5365c-c460-44e3-a6df-2a4f535046a0.jpg",
+          "target": "review_animals/by_animal_type/bird/things/9ea5365c-c460-44e3-a6df-2a4f535046a0.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.5625758171081543
+          "max_confidence": 0.5033435821533203
         },
         {
-          "source": "gallery/things/8b0f3fd2-261c-4195-9e73-c86fdf702438.jpg",
-          "target": "review_animals/by_animal_type/bird/things/8b0f3fd2-261c-4195-9e73-c86fdf702438.jpg",
+          "source": "gallery/things/1d74f20d-e86a-4c87-aea0-0b9d919ff418.jpg",
+          "target": "review_animals/by_animal_type/bird/things/1d74f20d-e86a-4c87-aea0-0b9d919ff418.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.7445504665374756
+          "max_confidence": 0.8962051272392273
         },
         {
-          "source": "gallery/things/81c46448-388a-48ff-86c3-b70895d47dd3.jpg",
-          "target": "review_animals/by_animal_type/bird/things/81c46448-388a-48ff-86c3-b70895d47dd3.jpg",
+          "source": "gallery/things/bf1e11a6-20cc-4eb4-a7bf-d7f8690f6ff6.jpg",
+          "target": "review_animals/by_animal_type/bird/things/bf1e11a6-20cc-4eb4-a7bf-d7f8690f6ff6.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.9594364166259766
+          "max_confidence": 0.9607142210006714
         },
         {
-          "source": "gallery/things/05a7d7b6-321c-4b99-bd54-64ee2fbabcb3.jpg",
-          "target": "review_animals/by_animal_type/bird/things/05a7d7b6-321c-4b99-bd54-64ee2fbabcb3.jpg",
-          "count": 1,
+          "source": "gallery/things/4507baab-9618-4d84-af8a-3c9e2be2d111.jpg",
+          "target": "review_animals/by_animal_type/bird/things/4507baab-9618-4d84-af8a-3c9e2be2d111.jpg",
+          "count": 2,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.8765108585357666
+          "max_confidence": 0.846855640411377
         },
         {
-          "source": "gallery/things/397d4487-dd17-4184-bd5f-559ff72feb21.jpg",
-          "target": "review_animals/by_animal_type/bird/things/397d4487-dd17-4184-bd5f-559ff72feb21.jpg",
+          "source": "gallery/things/ff2969e5-a0f4-4eca-b3bc-70a8c9037b5d.jpg",
+          "target": "review_animals/by_animal_type/bird/things/ff2969e5-a0f4-4eca-b3bc-70a8c9037b5d.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.5763614773750305
+          "max_confidence": 0.6485015749931335
         },
         {
-          "source": "gallery/things/dcedb92e-1b59-432a-b74d-efef9822142d.jpg",
-          "target": "review_animals/by_animal_type/bird/things/dcedb92e-1b59-432a-b74d-efef9822142d.jpg",
+          "source": "gallery/things/449574e6-05be-4fa1-8e9a-0d8e34f39a6b.jpg",
+          "target": "review_animals/by_animal_type/bird/things/449574e6-05be-4fa1-8e9a-0d8e34f39a6b.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.5592693090438843
+          "max_confidence": 0.8736234307289124
         },
         {
-          "source": "gallery/things/391ef33f-fc53-4bff-99ce-70136c794753.jpg",
-          "target": "review_animals/by_animal_type/bird/things/391ef33f-fc53-4bff-99ce-70136c794753.jpg",
+          "source": "gallery/things/ed1329da-14dd-4965-a24c-5324e701ae8d.jpg",
+          "target": "review_animals/by_animal_type/bird/things/ed1329da-14dd-4965-a24c-5324e701ae8d.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.5501536726951599
+          "max_confidence": 0.9038015604019165
         },
         {
-          "source": "gallery/things/b6002e27-8ab9-4942-a7ac-ddb7c32163c8.jpg",
-          "target": "review_animals/by_animal_type/bird/things/b6002e27-8ab9-4942-a7ac-ddb7c32163c8.jpg",
+          "source": "gallery/things/d81257b1-d5d7-4a75-ae6b-7e508727067c.jpg",
+          "target": "review_animals/by_animal_type/bird/things/d81257b1-d5d7-4a75-ae6b-7e508727067c.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.9699714779853821
+          "max_confidence": 0.9405225515365601
         },
         {
-          "source": "gallery/things/02a6c161-dd75-43bd-9ad3-ef72a9be3270.jpg",
-          "target": "review_animals/by_animal_type/bird/things/02a6c161-dd75-43bd-9ad3-ef72a9be3270.jpg",
+          "source": "gallery/things/166aa7a0-5afa-4700-b7bd-2f32fad52c52.jpg",
+          "target": "review_animals/by_animal_type/bird/things/166aa7a0-5afa-4700-b7bd-2f32fad52c52.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.9076865911483765
+          "max_confidence": 0.6402599811553955
         },
         {
-          "source": "gallery/things/5bc47eda-2bc0-462f-9d2b-7d1511d5246c.jpg",
-          "target": "review_animals/by_animal_type/bird/things/5bc47eda-2bc0-462f-9d2b-7d1511d5246c.jpg",
-          "count": 1,
+          "source": "gallery/things/2b9c077b-7036-4907-b9bd-7cb5ec7ed6a3.jpg",
+          "target": "review_animals/by_animal_type/bird/things/2b9c077b-7036-4907-b9bd-7cb5ec7ed6a3.jpg",
+          "count": 2,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.5948435664176941
+          "max_confidence": 0.9610692262649536
         },
         {
-          "source": "gallery/things/d5b5f6f3-fce7-4c89-ae26-3e9c4ff9f7f6.jpg",
-          "target": "review_animals/by_animal_type/bird/things/d5b5f6f3-fce7-4c89-ae26-3e9c4ff9f7f6.jpg",
+          "source": "gallery/things/16c604fe-8297-49ed-a4f7-43992ee41d60.jpg",
+          "target": "review_animals/by_animal_type/bird/things/16c604fe-8297-49ed-a4f7-43992ee41d60.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.6664148569107056
+          "max_confidence": 0.8628431558609009
         },
         {
-          "source": "gallery/things/ed6c58e2-05f0-422b-bf68-7b35927ce0e3.jpg",
-          "target": "review_animals/by_animal_type/bird/things/ed6c58e2-05f0-422b-bf68-7b35927ce0e3.jpg",
+          "source": "gallery/things/b9610fb5-458b-4bcb-a24a-c2f444ca768c.jpg",
+          "target": "review_animals/by_animal_type/bird/things/b9610fb5-458b-4bcb-a24a-c2f444ca768c.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.9158045053482056
+          "max_confidence": 0.9435124397277832
         },
         {
-          "source": "gallery/things/280d55dc-37db-4982-86a8-4bf0b042910f.jpg",
-          "target": "review_animals/by_animal_type/bird/things/280d55dc-37db-4982-86a8-4bf0b042910f.jpg",
+          "source": "gallery/things/1c9dd6be-1cce-4769-addf-ecca4dce3deb.jpg",
+          "target": "review_animals/by_animal_type/bird/things/1c9dd6be-1cce-4769-addf-ecca4dce3deb.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.904133141040802
+          "max_confidence": 0.9089208841323853
         },
         {
-          "source": "gallery/things/c0c5523c-ac21-400e-a7ce-20a9bf668a32.jpg",
-          "target": "review_animals/by_animal_type/bird/things/c0c5523c-ac21-400e-a7ce-20a9bf668a32.jpg",
+          "source": "gallery/things/b4386ffb-ecf1-4421-81c6-ce6086a5a219.jpg",
+          "target": "review_animals/by_animal_type/bird/things/b4386ffb-ecf1-4421-81c6-ce6086a5a219.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.7365021705627441
+          "max_confidence": 0.9151298999786377
         },
         {
-          "source": "gallery/things/49cd5c66-1d56-4df3-9bc1-d18109a33060.jpg",
-          "target": "review_animals/by_animal_type/bird/things/49cd5c66-1d56-4df3-9bc1-d18109a33060.jpg",
-          "count": 1,
+          "source": "gallery/things/56551e49-9044-43e4-a071-22c29b35faaa.jpg",
+          "target": "review_animals/by_animal_type/bird/things/56551e49-9044-43e4-a071-22c29b35faaa.jpg",
+          "count": 2,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.935546875
+          "max_confidence": 0.9310743808746338
         },
         {
-          "source": "gallery/things/3cf09376-313f-4244-ba0c-ab626c8dc54b.jpg",
-          "target": "review_animals/by_animal_type/bird/things/3cf09376-313f-4244-ba0c-ab626c8dc54b.jpg",
+          "source": "gallery/things/7ff62929-1c7f-44bb-8106-df3cc3167380.jpg",
+          "target": "review_animals/by_animal_type/bird/things/7ff62929-1c7f-44bb-8106-df3cc3167380.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.5086607933044434
+          "max_confidence": 0.9490452408790588
         },
         {
-          "source": "gallery/things/a0e92f7e-9261-444e-87b0-17a154e2bc74.jpg",
-          "target": "review_animals/by_animal_type/bird/things/a0e92f7e-9261-444e-87b0-17a154e2bc74.jpg",
+          "source": "gallery/things/faf01e18-0fd8-4bee-a8ad-23cff900c21b.jpg",
+          "target": "review_animals/by_animal_type/bird/things/faf01e18-0fd8-4bee-a8ad-23cff900c21b.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.8915659189224243
+          "max_confidence": 0.8779251575469971
         },
         {
-          "source": "gallery/things/aa7fc2b5-7b3f-4a76-a418-549f567fe605.jpg",
-          "target": "review_animals/by_animal_type/bird/things/aa7fc2b5-7b3f-4a76-a418-549f567fe605.jpg",
+          "source": "gallery/things/4c0e1fba-8f91-40d0-995d-c604b472a62e.jpg",
+          "target": "review_animals/by_animal_type/bird/things/4c0e1fba-8f91-40d0-995d-c604b472a62e.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.6432074308395386
+          "max_confidence": 0.94290691614151
         },
         {
-          "source": "gallery/things/77bcceb5-c585-42d1-9507-10684ad24771.jpg",
-          "target": "review_animals/by_animal_type/bird/things/77bcceb5-c585-42d1-9507-10684ad24771.jpg",
+          "source": "gallery/things/d98cfd11-252c-452c-8885-777ef32f29a3.jpg",
+          "target": "review_animals/by_animal_type/bird/things/d98cfd11-252c-452c-8885-777ef32f29a3.jpg",
           "count": 1,
           "types": [
             "bird"
           ],
-          "max_confidence": 0.9548524618148804
+          "max_confidence": 0.9470729827880859
+        },
+        {
+          "source": "gallery/things/69106407-4725-44d5-ba9d-1c74088649f4.jpg",
+          "target": "review_animals/by_animal_type/bird/things/69106407-4725-44d5-ba9d-1c74088649f4.jpg",
+          "count": 2,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.9141259789466858
+        },
+        {
+          "source": "gallery/things/941f0019-b632-474d-ae66-71d378e84d69.jpg",
+          "target": "review_animals/by_animal_type/bird/things/941f0019-b632-474d-ae66-71d378e84d69.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.7642732858657837
+        },
+        {
+          "source": "gallery/things/62d094b5-d7e0-4460-8d0d-a08da5e9639d.jpg",
+          "target": "review_animals/by_animal_type/bird/things/62d094b5-d7e0-4460-8d0d-a08da5e9639d.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.8370396494865417
+        },
+        {
+          "source": "gallery/things/fcd4e1bd-c7d4-45bd-8f99-63c5b9d1e897.jpg",
+          "target": "review_animals/by_animal_type/bird/things/fcd4e1bd-c7d4-45bd-8f99-63c5b9d1e897.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.9395644664764404
+        },
+        {
+          "source": "gallery/things/a436e002-7012-4848-be0f-a5a5badabc42.jpg",
+          "target": "review_animals/by_animal_type/bird/things/a436e002-7012-4848-be0f-a5a5badabc42.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.9525272846221924
+        },
+        {
+          "source": "gallery/things/c26ff7d1-7929-4c1e-8e4c-4a1b625409d1.jpg",
+          "target": "review_animals/by_animal_type/bird/things/c26ff7d1-7929-4c1e-8e4c-4a1b625409d1.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.7714141607284546
+        },
+        {
+          "source": "gallery/things/f817cc26-d724-4438-8364-fad2697dbfb7.jpg",
+          "target": "review_animals/by_animal_type/bird/things/f817cc26-d724-4438-8364-fad2697dbfb7.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.9461549520492554
+        },
+        {
+          "source": "gallery/things/1ed187a2-da65-4431-8b26-eb1357bf5b47.jpg",
+          "target": "review_animals/by_animal_type/bird/things/1ed187a2-da65-4431-8b26-eb1357bf5b47.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.7172953486442566
+        },
+        {
+          "source": "gallery/things/3490771b-d338-41c4-b679-584f3996f7b6.jpg",
+          "target": "review_animals/by_animal_type/bird/things/3490771b-d338-41c4-b679-584f3996f7b6.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.6921015977859497
+        },
+        {
+          "source": "gallery/things/f7820240-b6f1-49fc-a564-15c5ae8a5c4b.jpg",
+          "target": "review_animals/by_animal_type/bird/things/f7820240-b6f1-49fc-a564-15c5ae8a5c4b.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.9617730975151062
+        },
+        {
+          "source": "gallery/things/1ab8051b-9958-42a5-86e0-dd3ccac37005.jpg",
+          "target": "review_animals/by_animal_type/bird/things/1ab8051b-9958-42a5-86e0-dd3ccac37005.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.9601501226425171
+        },
+        {
+          "source": "gallery/things/89a729b5-6594-4824-a6f9-f62d73b379b2.jpg",
+          "target": "review_animals/by_animal_type/bird/things/89a729b5-6594-4824-a6f9-f62d73b379b2.jpg",
+          "count": 1,
+          "types": [
+            "bird"
+          ],
+          "max_confidence": 0.9642643332481384
         }
       ],
-      "dog": [
+      "sheep": [
         {
-          "source": "gallery/things/91e33c95-2a8f-42ce-9129-5ad70ab1bb08.jpg",
-          "target": "review_animals/by_animal_type/dog/things/91e33c95-2a8f-42ce-9129-5ad70ab1bb08.jpg",
-          "count": 1,
+          "source": "gallery/things/e1f37bd6-036f-4b15-8bce-bd24a176160e.jpg",
+          "target": "review_animals/by_animal_type/sheep/things/e1f37bd6-036f-4b15-8bce-bd24a176160e.jpg",
+          "count": 5,
           "types": [
-            "dog"
+            "sheep"
           ],
-          "max_confidence": 0.9747273921966553
+          "max_confidence": 0.9262739419937134
         },
         {
-          "source": "gallery/things/1cde6304-8a68-4feb-bc9f-5024023e606b.jpg",
-          "target": "review_animals/by_animal_type/dog/things/1cde6304-8a68-4feb-bc9f-5024023e606b.jpg",
+          "source": "gallery/things/35eca927-f2de-4a30-8e41-0b3de2b6b225.jpg",
+          "target": "review_animals/by_animal_type/sheep/things/35eca927-f2de-4a30-8e41-0b3de2b6b225.jpg",
           "count": 1,
           "types": [
-            "dog"
+            "sheep"
           ],
-          "max_confidence": 0.962643563747406
-        }
-      ],
-      "cat": [
-        {
-          "source": "gallery/things/46b253f4-222f-43bd-ba8f-f8b59bf33e10.jpg",
-          "target": "review_animals/by_animal_type/cat/things/46b253f4-222f-43bd-ba8f-f8b59bf33e10.jpg",
-          "count": 1,
-          "types": [
-            "cat"
-          ],
-          "max_confidence": 0.8329422473907471
-        },
-        {
-          "source": "gallery/things/3510a54e-8324-44fa-acfe-028e935b1e7a.jpg",
-          "target": "review_animals/by_animal_type/cat/things/3510a54e-8324-44fa-acfe-028e935b1e7a.jpg",
-          "count": 1,
-          "types": [
-            "cat"
-          ],
-          "max_confidence": 0.6298718452453613
-        },
-        {
-          "source": "gallery/things/f5ed4720-13d2-4bfb-b2d9-b0839e05850a.jpg",
-          "target": "review_animals/by_animal_type/cat/things/f5ed4720-13d2-4bfb-b2d9-b0839e05850a.jpg",
-          "count": 1,
-          "types": [
-            "cat"
-          ],
-          "max_confidence": 0.6032750606536865
-        },
-        {
-          "source": "gallery/things/732d6ea9-3d00-45ee-89c0-c409385e8d0c.jpg",
-          "target": "review_animals/by_animal_type/cat/things/732d6ea9-3d00-45ee-89c0-c409385e8d0c.jpg",
-          "count": 1,
-          "types": [
-            "cat"
-          ],
-          "max_confidence": 0.9005815982818604
+          "max_confidence": 0.5240093469619751
         }
       ],
       "horse": [
         {
-          "source": "gallery/things/8ad59fc7-d166-4cc6-b89b-bd50fab4999c.jpg",
-          "target": "review_animals/by_animal_type/horse/things/8ad59fc7-d166-4cc6-b89b-bd50fab4999c.jpg",
+          "source": "gallery/things/0a8c1052-7879-4ee7-bbe8-098a4b6ebd67.jpg",
+          "target": "review_animals/by_animal_type/horse/things/0a8c1052-7879-4ee7-bbe8-098a4b6ebd67.jpg",
           "count": 1,
           "types": [
             "horse"
           ],
-          "max_confidence": 0.8879483342170715
+          "max_confidence": 0.9338810443878174
         },
         {
-          "source": "gallery/things/b74e5104-7793-4b55-8365-873a952f469f.jpg",
-          "target": "review_animals/by_animal_type/horse/things/b74e5104-7793-4b55-8365-873a952f469f.jpg",
+          "source": "gallery/things/304adbdb-d684-493b-bcc8-aba7820429dd.jpg",
+          "target": "review_animals/by_animal_type/horse/things/304adbdb-d684-493b-bcc8-aba7820429dd.jpg",
           "count": 1,
           "types": [
             "horse"
           ],
-          "max_confidence": 0.6162824034690857
+          "max_confidence": 0.9604119658470154
+        },
+        {
+          "source": "gallery/things/5275dbe4-78bb-4948-bfbf-91d1a71d905d.jpg",
+          "target": "review_animals/by_animal_type/horse/things/5275dbe4-78bb-4948-bfbf-91d1a71d905d.jpg",
+          "count": 1,
+          "types": [
+            "horse"
+          ],
+          "max_confidence": 0.792446494102478
+        },
+        {
+          "source": "gallery/things/48eabfe9-22dc-4630-ac00-d69f94001c7e.jpg",
+          "target": "review_animals/by_animal_type/horse/things/48eabfe9-22dc-4630-ac00-d69f94001c7e.jpg",
+          "count": 1,
+          "types": [
+            "horse"
+          ],
+          "max_confidence": 0.901136040687561
+        },
+        {
+          "source": "gallery/things/aae084f9-79e0-4dc6-8d33-879164b7850e.jpg",
+          "target": "review_animals/by_animal_type/horse/things/aae084f9-79e0-4dc6-8d33-879164b7850e.jpg",
+          "count": 1,
+          "types": [
+            "horse"
+          ],
+          "max_confidence": 0.9250702261924744
+        },
+        {
+          "source": "gallery/things/35f2b56c-d196-4218-8248-887eb53813f7.jpg",
+          "target": "review_animals/by_animal_type/horse/things/35f2b56c-d196-4218-8248-887eb53813f7.jpg",
+          "count": 1,
+          "types": [
+            "horse"
+          ],
+          "max_confidence": 0.5226778984069824
+        },
+        {
+          "source": "gallery/things/668636b5-4d5f-47cd-b516-6915a7eedca5.jpg",
+          "target": "review_animals/by_animal_type/horse/things/668636b5-4d5f-47cd-b516-6915a7eedca5.jpg",
+          "count": 1,
+          "types": [
+            "horse"
+          ],
+          "max_confidence": 0.6021568775177002
+        },
+        {
+          "source": "gallery/things/73a672c1-103e-464b-9146-53cd0e823ad9.jpg",
+          "target": "review_animals/by_animal_type/horse/things/73a672c1-103e-464b-9146-53cd0e823ad9.jpg",
+          "count": 1,
+          "types": [
+            "horse"
+          ],
+          "max_confidence": 0.9109861254692078
+        }
+      ],
+      "dog": [
+        {
+          "source": "gallery/things/b6b03dca-194a-48dd-a4f9-acab7887b07b.jpg",
+          "target": "review_animals/by_animal_type/dog/things/b6b03dca-194a-48dd-a4f9-acab7887b07b.jpg",
+          "count": 2,
+          "types": [
+            "dog"
+          ],
+          "max_confidence": 0.9430351853370667
+        }
+      ],
+      "cat": [
+        {
+          "source": "gallery/things/feca0eab-b0da-4b68-9567-14515095c3c5.jpg",
+          "target": "review_animals/by_animal_type/cat/things/feca0eab-b0da-4b68-9567-14515095c3c5.jpg",
+          "count": 1,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.9379032850265503
+        },
+        {
+          "source": "gallery/things/3c8c9972-d2bf-44da-8818-94c799bdfc68.jpg",
+          "target": "review_animals/by_animal_type/cat/things/3c8c9972-d2bf-44da-8818-94c799bdfc68.jpg",
+          "count": 1,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.9352859854698181
+        },
+        {
+          "source": "gallery/things/07ef8c93-6a7b-44cf-a0a9-75efcc7eb23f.jpg",
+          "target": "review_animals/by_animal_type/cat/things/07ef8c93-6a7b-44cf-a0a9-75efcc7eb23f.jpg",
+          "count": 3,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.9132990837097168
+        },
+        {
+          "source": "gallery/things/bcfe033e-da30-453f-a616-7506dff4483f.jpg",
+          "target": "review_animals/by_animal_type/cat/things/bcfe033e-da30-453f-a616-7506dff4483f.jpg",
+          "count": 1,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.5210384726524353
+        },
+        {
+          "source": "gallery/things/00c55466-1902-4c39-bea5-443c4a26d352.jpg",
+          "target": "review_animals/by_animal_type/cat/things/00c55466-1902-4c39-bea5-443c4a26d352.jpg",
+          "count": 1,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.9483643770217896
+        },
+        {
+          "source": "gallery/things/e1297f69-eef8-4f30-91a6-8bb7e5a624b0.jpg",
+          "target": "review_animals/by_animal_type/cat/things/e1297f69-eef8-4f30-91a6-8bb7e5a624b0.jpg",
+          "count": 1,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.634892463684082
+        },
+        {
+          "source": "gallery/things/eb1f3810-09c5-4367-bf44-785b61cd87bf.jpg",
+          "target": "review_animals/by_animal_type/cat/things/eb1f3810-09c5-4367-bf44-785b61cd87bf.jpg",
+          "count": 1,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.9259112477302551
+        },
+        {
+          "source": "gallery/things/3c30d301-6970-4a27-8fde-0b457797b249.jpg",
+          "target": "review_animals/by_animal_type/cat/things/3c30d301-6970-4a27-8fde-0b457797b249.jpg",
+          "count": 1,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.9356921315193176
+        },
+        {
+          "source": "gallery/things/09e2e26f-fd72-450e-a737-eec27a9db585.jpg",
+          "target": "review_animals/by_animal_type/cat/things/09e2e26f-fd72-450e-a737-eec27a9db585.jpg",
+          "count": 1,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.9215573072433472
+        },
+        {
+          "source": "gallery/things/7027975c-ad31-4fbf-ac98-d7b1ecb1004d.jpg",
+          "target": "review_animals/by_animal_type/cat/things/7027975c-ad31-4fbf-ac98-d7b1ecb1004d.jpg",
+          "count": 1,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.9343937635421753
+        },
+        {
+          "source": "gallery/things/c24b9166-b92a-482e-82d7-04be8a36210f.jpg",
+          "target": "review_animals/by_animal_type/cat/things/c24b9166-b92a-482e-82d7-04be8a36210f.jpg",
+          "count": 1,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.7878503203392029
+        },
+        {
+          "source": "gallery/things/5269b8b5-3e98-4d70-b730-f9332baa5e48.jpg",
+          "target": "review_animals/by_animal_type/cat/things/5269b8b5-3e98-4d70-b730-f9332baa5e48.jpg",
+          "count": 1,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.9534838795661926
+        },
+        {
+          "source": "gallery/things/f0679845-5d3e-45d5-a02d-05fbc11458f7.jpg",
+          "target": "review_animals/by_animal_type/cat/things/f0679845-5d3e-45d5-a02d-05fbc11458f7.jpg",
+          "count": 1,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.5432085394859314
+        },
+        {
+          "source": "gallery/things/025bc88d-714d-428b-b210-b868d2e6fa69.jpg",
+          "target": "review_animals/by_animal_type/cat/things/025bc88d-714d-428b-b210-b868d2e6fa69.jpg",
+          "count": 2,
+          "types": [
+            "cat"
+          ],
+          "max_confidence": 0.9313493967056274
+        }
+      ],
+      "cow": [
+        {
+          "source": "gallery/things/17b2d1cf-91cf-4093-a1b9-e2bce9067d07.jpg",
+          "target": "review_animals/by_animal_type/cow/things/17b2d1cf-91cf-4093-a1b9-e2bce9067d07.jpg",
+          "count": 1,
+          "types": [
+            "cow"
+          ],
+          "max_confidence": 0.9304271340370178
+        },
+        {
+          "source": "gallery/things/264624ef-8fa6-4afc-8f8b-ef0225117345.jpg",
+          "target": "review_animals/by_animal_type/cow/things/264624ef-8fa6-4afc-8f8b-ef0225117345.jpg",
+          "count": 1,
+          "types": [
+            "cow"
+          ],
+          "max_confidence": 0.9119220972061157
         }
       ],
       "elephant": [
         {
-          "source": "gallery/things/9022657f-65e2-4c5c-a737-483308eb1fbd.jpg",
-          "target": "review_animals/by_animal_type/elephant/things/9022657f-65e2-4c5c-a737-483308eb1fbd.jpg",
+          "source": "gallery/things/54feb80c-4c70-4bce-9014-bdff04294eb8.jpg",
+          "target": "review_animals/by_animal_type/elephant/things/54feb80c-4c70-4bce-9014-bdff04294eb8.jpg",
+          "count": 2,
+          "types": [
+            "elephant"
+          ],
+          "max_confidence": 0.9206007719039917
+        },
+        {
+          "source": "gallery/things/b7ed35cf-747a-41f2-85a2-192ad821a1fc.jpg",
+          "target": "review_animals/by_animal_type/elephant/things/b7ed35cf-747a-41f2-85a2-192ad821a1fc.jpg",
           "count": 1,
           "types": [
             "elephant"
           ],
-          "max_confidence": 0.6750929951667786
+          "max_confidence": 0.9235274791717529
         }
       ]
     },
-    "mixed": [],
+    "mixed": [
+      {
+        "source": "gallery/things/2f280318-6ab2-4ae6-80b3-0e39a75251c7.jpg",
+        "target": "review_animals/mixed_animals/things/2f280318-6ab2-4ae6-80b3-0e39a75251c7.jpg",
+        "count": 2,
+        "types": [
+          "cat",
+          "dog"
+        ],
+        "max_confidence": 0.5367103815078735
+      }
+    ],
     "errors": []
   }
 }
