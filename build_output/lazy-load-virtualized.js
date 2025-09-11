@@ -1,14 +1,17 @@
-// Enhanced lazy loading with DOM virtualization for cards theme
+// Enhanced lazy loading with DOM virtualization and retry mechanism
 (function() {
   'use strict';
 
   // Configuration
   const CONFIG = {
-    initialLoad: 20,           // Number of images to load initially (increased)
-    bufferDistance: 600,       // Pixels above/below viewport to keep loaded (reduced)
-    checkInterval: 100,        // Throttle for scroll events (ms)
+    initialLoad: 20,           // Number of images to load initially
+    bufferDistance: 1200,      // Pixels above/below viewport to keep loaded (increased for stability)
+    checkInterval: 150,        // Throttle for scroll events (ms) - increased for better performance
     placeholderSrc: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', // 1x1 transparent gif
-    unloadDelay: 500          // Delay before unloading images (ms)
+    unloadDelay: 2000,         // Delay before unloading images (ms) - increased to prevent flickering
+    maxConcurrentLoads: 6,     // Maximum concurrent image loads
+    maxRetries: 3,             // Maximum retry attempts per image
+    retryDelays: [1000, 2000, 4000] // Exponential backoff delays (ms)
   };
 
   // State management
@@ -16,7 +19,11 @@
     images: [],
     loadedImages: new Set(),
     scrollTimeout: null,
-    unloadTimeout: null
+    unloadTimeout: null,
+    loadQueue: [],
+    currentLoads: 0,
+    retryTracker: new Map(),   // Track retry attempts per image
+    failedImages: new Set()    // Track permanently failed images
   };
 
   // Wait for DOM ready

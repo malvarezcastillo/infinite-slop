@@ -5,77 +5,97 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 Infinite Slop is an automated AI-generated image gallery that:
-- Downloads images from a ComfyUI instance
+- Downloads images from a ComfyUI instance  
 - Processes and optimizes images (watermarking, JPEG conversion, EXIF removal)
+- Detects and moves images with faces/animals to review directories
 - Generates a static website with lazy loading and virtualization
 - Automatically deploys to GitHub Pages at http://slop.pictures/
 
 ## Key Commands
 
-### Full Workflow
+### Full Deployment Workflow
 ```bash
-# 1. Download new images from server
-./download_and_cleanup.sh
-
-# 2. Process and categorize images
-python utils/optimize_images.py
-
-# 3. Build static gallery locally  
+# Complete workflow from README
+./download_and_cleanup.sh && \
+python utils/optimize_images.py --no-resize && \
+python detect_faces_simple.py --gallery-dir gallery --move && \
+python detect_faces_simple.py --model-type face --move && \
+python detect_animals.py --model-size large --move && \
 ./build-gallery.sh
 
-# 4. Commit and push to deploy
-git add gallery/ build_output/
-git commit -m "Update gallery"
-git push
+# Commit and deploy
+git add -A && git commit -a -m "Update gallery" && git push
 ```
 
 ### Individual Commands
 ```bash
-# Process images with 75% resize (default)
+# Download images from ComfyUI server
+./download_and_cleanup.sh
+
+# Process images (with 75% resize by default)
 python utils/optimize_images.py
 
 # Process without resizing
 python utils/optimize_images.py --no-resize
 
-# Build gallery with tooltips enabled
-./build-gallery.sh --tooltips
+# Detect and move faces (YOLOv8-face model)
+python detect_faces_simple.py --gallery-dir gallery --move
+
+# Detect faces with face model
+python detect_faces_simple.py --model-type face --move
+
+# Detect and move animals
+python detect_animals.py --model-size large --move
+
+# Build static gallery
+./build-gallery.sh
 ```
 
 ## Architecture
 
 ### Image Pipeline
-1. **download_and_cleanup.sh**: Downloads PNG images from ComfyUI server (192.168.1.174)
+1. **download_and_cleanup.sh**: Downloads PNG images from ComfyUI server (192.168.1.174) using rsync
 2. **utils/optimize_images.py**: 
    - Converts to JPEG (90% quality)
-   - Adds "slop.pictures" watermark
+   - Adds "slop.pictures" watermark (bottom-right, semi-transparent white)
    - Removes EXIF data
    - Renames to UUID v7
-   - Auto-categorizes based on prompts using category_mapping.json
+   - Auto-categorizes based on ComfyUI prompts using category_mapping.json
    - Moves originals to raw_processed_images/
-3. **generate_gallery.py**: Creates static HTML with lazy loading
-4. **replace-image-urls.py**: Updates URLs to GitHub raw links
+   - Parallel processing with ThreadPoolExecutor
+3. **detect_faces_simple.py**: YOLOv8-face detection with caching
+4. **detect_animals.py**: YOLOv8 COCO animal detection (classes 14-23)
+5. **generate_gallery.py**: Creates static HTML with category filters
+6. **replace-image-urls.py**: Updates URLs to GitHub raw links
 
 ### Directory Structure
 - `preprocessed_images/` - Downloaded images waiting to be processed
 - `gallery/` - Optimized images organized by category
-  - `main/` - Main gallery
   - `landscape/` - Landscape images  
   - `architecture/` - Architecture images
   - `interiors/` - Interior design images
   - `things/` - Objects and atmosphere images
 - `raw_processed_images/` - Original images backup (gitignored)
 - `build_output/` - Generated static site (committed and deployed)
+- `review_animals/` - Animals detected for review
+  - `by_animal_type/` - Organized by animal type
+  - `mixed_animals/` - Multiple animal types
+- `.face_detection_cache/` - Face detection cache
+- `.animal_detection_cache/` - Animal detection cache
 
 ### Categorization
-Images are auto-categorized based on ComfyUI prompts via `category_mapping.json`. Images without matching categories are skipped (skip_unmatched: true).
+Images are auto-categorized based on ComfyUI prompt templates extracted from PNG metadata (DPRandomGenerator node). Configuration in `category_mapping.json`:
+- Categories: landscape, architecture, interiors, things
+- `skip_unmatched: true` - Images without matching categories are skipped
+- `case_sensitive: false` - Case-insensitive keyword matching
 
 ### Deployment
-GitHub Actions deploys `build_output/` to GitHub Pages when pushed to master branch. Images are served from GitHub raw URLs to avoid file size limits.
+GitHub Actions (.github/workflows/gallery.yml) deploys `build_output/` to GitHub Pages when pushed to master branch. Uses sparse checkout to exclude gallery/ directory. Images are served from GitHub raw URLs (https://raw.githubusercontent.com).
 
-## Important Notes
+## Python Environment
+Always use venv for Python scripts (Python 3.13 in current setup).
 
-- Always commit both `gallery/` and `build_output/` directories
-- The build process runs locally to avoid GitHub Actions timeouts
-- All image filenames are UUIDs to prevent conflicts
-- Watermark placement is bottom-right corner with semi-transparent white text
-- Gallery supports multiple categories with filter navigation
+## Server Configuration
+- Host: 192.168.1.174
+- User: nummy
+- Remote directory: /home/nummy/ComfyUI/output
