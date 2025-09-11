@@ -597,10 +597,6 @@ img {
     transition: opacity 0.3s ease;
 }
 
-img.loading {
-    opacity: 0.5;
-}
-
 /* Lazy loading styles */
 img.lazy {
     opacity: 0;
@@ -609,6 +605,46 @@ img.lazy {
 
 img.loaded {
     opacity: 1;
+}
+
+/* Enhanced loading states for improved lazy loading */
+img.loading {
+    opacity: 0.3;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+img.retrying {
+    opacity: 0.5;
+    background: linear-gradient(90deg, #fff4e6 25%, #ffe6b3 50%, #fff4e6 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+img.error {
+    opacity: 0.7;
+    background: #ffebee;
+    position: relative;
+}
+
+img.error::after {
+    content: '⚠️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    pointer-events: none;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
 }
 
 /* Additional styles to ensure aspect ratios are preserved */

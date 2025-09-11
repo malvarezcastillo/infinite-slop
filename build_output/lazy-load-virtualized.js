@@ -45,15 +45,16 @@
         index: index,
         originalSrc: img.src,
         loaded: false,
-        container: container
+        container: container,
+        loadAttempts: 0,
+        lastFailure: null
       };
       
       state.images.push(imageData);
       
       // Load first N visible images immediately
       if (isVisible && visibleCount < CONFIG.initialLoad) {
-        imageData.loaded = true;
-        state.loadedImages.add(index);
+        queueImageLoad(imageData);
         visibleCount++;
       } else {
         // Set up for lazy loading
@@ -109,8 +110,13 @@
       }
     });
     
-    // Load images that came into viewport
-    toLoad.forEach(loadImage);
+    // Queue images that came into viewport for loading
+    toLoad.forEach(imageData => {
+      queueImageLoad(imageData);
+    });
+    
+    // Process the load queue
+    processLoadQueue();
     
     // Unload images that are far from viewport (with delay to prevent flickering)
     if (toUnload.length > 0) {
@@ -124,38 +130,148 @@
     }
   }
 
-  function loadImage(imageData) {
+  // Queue management functions
+  function queueImageLoad(imageData) {
+    // Skip if already loaded, queued, or permanently failed
+    if (imageData.loaded || 
+        state.loadQueue.includes(imageData) || 
+        state.failedImages.has(imageData.index)) {
+      return;
+    }
+    
+    state.loadQueue.push(imageData);
+  }
+  
+  function processLoadQueue() {
+    // Process queue if we have capacity
+    while (state.loadQueue.length > 0 && state.currentLoads < CONFIG.maxConcurrentLoads) {
+      const imageData = state.loadQueue.shift();
+      loadImageWithRetry(imageData);
+    }
+  }
+  
+  function loadImageWithRetry(imageData, isRetry = false) {
     const img = imageData.element;
     
-    if (img.dataset.src) {
-      // Create a new image to preload
-      const tempImg = new Image();
-      
-      tempImg.onload = function() {
-        img.src = img.dataset.src;
-        img.classList.remove('lazy');
-        img.classList.add('loaded');
-        delete img.dataset.src;
-        
-        imageData.loaded = true;
-        state.loadedImages.add(imageData.index);
-      };
-      
-      tempImg.onerror = function() {
-        console.error('Failed to load image:', img.dataset.src);
-        img.classList.add('error');
-      };
-      
-      tempImg.src = img.dataset.src;
-    } else if (!imageData.loaded) {
-      // Restore from original source if dataset.src was deleted
-      img.src = imageData.originalSrc;
-      img.classList.remove('lazy');
+    // Skip if already loaded
+    if (imageData.loaded) {
+      return;
+    }
+    
+    // Track concurrent loads
+    state.currentLoads++;
+    
+    // Add loading state
+    img.classList.add('loading');
+    
+    // Determine source URL
+    const srcUrl = img.dataset.src || imageData.originalSrc;
+    
+    if (!srcUrl) {
+      console.error('No source URL available for image:', imageData.index);
+      handleImageError(imageData, new Error('No source URL'));
+      return;
+    }
+    
+    // Create a new image to preload
+    const tempImg = new Image();
+    
+    tempImg.onload = function() {
+      // Success - update the actual image
+      img.src = srcUrl;
+      img.classList.remove('lazy', 'loading', 'error');
       img.classList.add('loaded');
       
       imageData.loaded = true;
+      imageData.loadAttempts = 0; // Reset attempts on success
       state.loadedImages.add(imageData.index);
+      
+      // Remove from retry tracker if it was there
+      if (state.retryTracker.has(imageData.index)) {
+        clearTimeout(state.retryTracker.get(imageData.index).timeoutId);
+        state.retryTracker.delete(imageData.index);
+      }
+      
+      // Decrease load count and process next in queue
+      state.currentLoads--;
+      processLoadQueue();
+    };
+    
+    tempImg.onerror = function() {
+      handleImageError(imageData, new Error('Image load failed'));
+    };
+    
+    // Set a timeout for the load attempt
+    const loadTimeout = setTimeout(() => {
+      tempImg.onload = null;
+      tempImg.onerror = null;
+      handleImageError(imageData, new Error('Image load timeout'));
+    }, 10000); // 10 second timeout
+    
+    // Start loading
+    tempImg.src = srcUrl;
+    
+    // Clear timeout on success or error
+    const originalOnload = tempImg.onload;
+    const originalOnerror = tempImg.onerror;
+    
+    tempImg.onload = function() {
+      clearTimeout(loadTimeout);
+      if (originalOnload) originalOnload.apply(this, arguments);
+    };
+    
+    tempImg.onerror = function() {
+      clearTimeout(loadTimeout);
+      if (originalOnerror) originalOnerror.apply(this, arguments);
+    };
+  }
+  
+  function handleImageError(imageData, error) {
+    const img = imageData.element;
+    
+    // Decrease load count
+    state.currentLoads--;
+    
+    // Increment attempt counter
+    imageData.loadAttempts++;
+    imageData.lastFailure = new Date();
+    
+    console.warn(`Image load failed (attempt ${imageData.loadAttempts}):`, 
+                 img.dataset.src || imageData.originalSrc, error.message);
+    
+    // Check if we should retry
+    if (imageData.loadAttempts < CONFIG.maxRetries) {
+      // Schedule retry with exponential backoff
+      const retryDelay = CONFIG.retryDelays[imageData.loadAttempts - 1] || CONFIG.retryDelays[CONFIG.retryDelays.length - 1];
+      
+      const timeoutId = setTimeout(() => {
+        // Retry the load
+        loadImageWithRetry(imageData, true);
+        state.retryTracker.delete(imageData.index);
+      }, retryDelay);
+      
+      // Track the retry
+      state.retryTracker.set(imageData.index, {
+        timeoutId,
+        nextAttempt: new Date(Date.now() + retryDelay)
+      });
+      
+      // Update UI to show retry state
+      img.classList.remove('loading');
+      img.classList.add('retrying');
+      
+    } else {
+      // Max retries reached - mark as permanently failed
+      state.failedImages.add(imageData.index);
+      img.classList.remove('loading', 'retrying');
+      img.classList.add('error');
+      
+      console.error('Image permanently failed after', CONFIG.maxRetries, 'attempts:', 
+                   img.dataset.src || imageData.originalSrc);
     }
+    
+    // Process next item in queue
+    processLoadQueue();
   }
 
   function unloadImage(imageData) {
@@ -170,15 +286,34 @@
     
     const isInViewport = elementBottom >= viewportTop && elementTop <= viewportBottom;
     
-    if (!isInViewport) {
-      // Store the source for reloading
-      img.dataset.src = imageData.originalSrc;
+    if (!isInViewport && imageData.loaded) {
+      // Cancel any pending retries for this image
+      if (state.retryTracker.has(imageData.index)) {
+        clearTimeout(state.retryTracker.get(imageData.index).timeoutId);
+        state.retryTracker.delete(imageData.index);
+      }
+      
+      // Remove from load queue if present
+      const queueIndex = state.loadQueue.indexOf(imageData);
+      if (queueIndex !== -1) {
+        state.loadQueue.splice(queueIndex, 1);
+      }
+      
+      // Store the source for reloading - always preserve the original source
+      if (!img.dataset.src) {
+        img.dataset.src = imageData.originalSrc;
+      }
+      
       img.src = CONFIG.placeholderSrc;
       img.classList.add('lazy');
-      img.classList.remove('loaded', 'error');
+      img.classList.remove('loaded', 'loading', 'retrying', 'error');
       
       imageData.loaded = false;
+      imageData.loadAttempts = 0; // Reset attempts when unloading
       state.loadedImages.delete(imageData.index);
+      
+      // Remove from failed images set to allow retry when visible again
+      state.failedImages.delete(imageData.index);
     }
   }
 
@@ -198,7 +333,8 @@
 
   // Function to handle DOM reordering (for sorting)
   window.lazyLoadHandleReorder = function() {
-    // Clear state
+    // Clear load queue and reset state
+    state.loadQueue = [];
     state.images = [];
     state.loadedImages.clear();
     
@@ -216,7 +352,9 @@
         index: index,
         originalSrc: img.dataset.src || img.src,
         loaded: isAlreadyLoaded,
-        container: container
+        container: container,
+        loadAttempts: 0,
+        lastFailure: null
       };
       
       state.images.push(imageData);
@@ -235,8 +373,34 @@
     console.log({
       totalImages: state.images.length,
       loadedImages: state.loadedImages.size,
-      loadedIndices: Array.from(state.loadedImages).sort((a, b) => a - b)
+      loadedIndices: Array.from(state.loadedImages).sort((a, b) => a - b),
+      queuedImages: state.loadQueue.length,
+      currentLoads: state.currentLoads,
+      retrying: state.retryTracker.size,
+      permanentlyFailed: state.failedImages.size,
+      retryDetails: Array.from(state.retryTracker.entries()).map(([index, data]) => ({
+        imageIndex: index,
+        nextAttempt: data.nextAttempt
+      }))
     });
+  };
+
+  // Function to manually retry failed images
+  window.lazyLoadRetryFailed = function() {
+    console.log('Retrying', state.failedImages.size, 'failed images...');
+    
+    // Clear failed images set and reset attempts
+    state.failedImages.forEach(index => {
+      const imageData = state.images[index];
+      if (imageData) {
+        imageData.loadAttempts = 0;
+        imageData.lastFailure = null;
+      }
+    });
+    state.failedImages.clear();
+    
+    // Trigger visibility check to reload failed images
+    checkVisibility();
   };
 
   // Cleanup function
@@ -245,6 +409,12 @@
     window.removeEventListener('resize', throttledScrollHandler);
     if (state.scrollTimeout) clearTimeout(state.scrollTimeout);
     if (state.unloadTimeout) clearTimeout(state.unloadTimeout);
+    
+    // Clear all retry timeouts
+    state.retryTracker.forEach(retryData => {
+      clearTimeout(retryData.timeoutId);
+    });
+    state.retryTracker.clear();
   };
 
 })();
